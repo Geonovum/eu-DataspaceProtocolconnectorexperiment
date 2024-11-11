@@ -31,7 +31,7 @@ var documentConfig =
     },
     {
       name: "Tim Ebben",
-      company: "",
+      company: "Sogelink",
       companyURL: ""
     },
     {
@@ -57,11 +57,11 @@ var documentConfig =
     {
       name: "Marcel Reuvers",
       company: "Kadaster",
-      companyURL: ""
+      companyURL: "htpps://www.kadaster.nl/"
     },
     {
       name: "Henk J. Scholten",
-      company: "",
+      company: "Sogelink",
       companyURL: ""
     },
     {
@@ -71,7 +71,12 @@ var documentConfig =
     },
     {
       name: "Brian de Vogel",
-      company: "",
+      company: "Sogelink",
+      companyURL: ""
+    },
+    {
+      name: "Gineke van Putten",
+      company: "Geonovum",
       companyURL: ""
     }
   ],
