@@ -41,7 +41,7 @@ var documentConfig =
     },
     {
       name: "Stefan de Graaf",
-      company: "",
+      company: "Sogelink",
       companyURL: ""
     },
     {
@@ -66,7 +66,7 @@ var documentConfig =
     },
     {
       name: "Annita Vijverberg",
-      company: "",
+      company: "Sogelink",
       companyURL: ""
     },
     {
