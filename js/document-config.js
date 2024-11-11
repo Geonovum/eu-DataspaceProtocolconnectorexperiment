@@ -18,6 +18,63 @@ var documentConfig =
   issueBase: "https://github.com/geonovum/eu-DataspaceProtocolconnectorexperiment/issues/",
   edDraftURI: "https://geonovum.github.io/eu-DataspaceProtocolconnectorexperiment/",
   canonicalURI: "https://docs.geostandaarden.nl/eu/DataspaceProtocolconnectorexperiment/",
+  authors: [
+    {
+      name: "Anne Blankert",
+      company: "Sogelink",
+      companyURL: ""
+    },
+    {
+      name: "Emanual Buttacci",
+      company: "Sogelink",
+      companyURL: ""
+    },
+    {
+      name: "Tim Ebben",
+      company: "",
+      companyURL: ""
+    },
+    {
+      name: "Yvette van Turnhout-Elllenkamp",
+      company: "Geonovum",
+      companyURL: "https://www.geonovum.nl/"
+    },
+    {
+      name: "Stefan de Graaf",
+      company: "",
+      companyURL: ""
+    },
+    {
+      name: "Michel Grothe",
+      company: "Geonovum",
+      companyURL: "https://www.geonovum.nl/"
+    },
+    {
+      name: "Kas Kroese",
+      company: "Sogelink",
+      companyURL: ""
+    },
+    {
+      name: "Marcel Reuvers",
+      company: "Kadaster",
+      companyURL: ""
+    },
+    {
+      name: "Henk J. Scholten",
+      company: "",
+      companyURL: ""
+    },
+    {
+      name: "Annita Vijverberg",
+      company: "",
+      companyURL: ""
+    },
+    {
+      name: "Brian de Vogel",
+      company: "",
+      companyURL: ""
+    }
+  ],
   editors: [
     {
       name: "Michel Grothe",
