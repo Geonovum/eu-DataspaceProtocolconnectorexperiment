@@ -9,7 +9,7 @@ var documentConfig =
   latestVersion: [
     "https://docs.geostandaarden.nl/eu/DataspaceProtocolconnectorexperiment/"
   ],
-  publishDate: "2024-11-11",
+  publishDate: "2024-11-12",
   publishVersion: "0.2.0",
   thisVersion: [
     "https://geonovum.github.io/eu-DataspaceProtocolconnectorexperiment/"
