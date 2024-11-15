@@ -30,6 +30,7 @@ De inzet van opdrachtnemer resulteert in:
 <br/>
 <br/>
 De rapportage met opgedane bevindingen is een digitaal document en wordt gepubliceerd als respec document op de website van Geonovum.
+
 ## Aanpak experiment; minimum viable data space {#38020F80}
 Voor de uitvoering van het experiment is de volgende aanpak gehanteerd. Volgens het concept van een ‘minimum viable data space’ is met twee of drie use cases binnen de casus Circulaire grondstromen een experiment uitgevoerd met vertrouwd en souvereign data delen. Daarbij is het open en gestandaardiseerd ‘Dataspace Protocol’ toegepast, dat is geïmplementeerd in diverse data connector software producten. Er is gebruik gemaakt van de TNO Security Gateway (TSG), die als open source software beschikbaar is. Deze <a href='https://internationaldataspaces.org/data-connector-report/' target='_blank'>implementatie van het Dataspace Protocol is gecertificeerd</a> door het IDSA. 
 <br/>
@@ -38,6 +39,7 @@ Een Minimum Viable Data Space (MVDS) is een combinatie van componenten die het m
 <br/>
 <br/>
 Het MVDS concept willen we toepassen om het werk van het experiment te vergemakkelijken door de implementatietijd te verkorten (door lange details te vermijden die de eerste release zouden vertragen). Dit stelt ons in staat om te beginnen met een eerste werkende versie (waar veilige en soevereine data-uitwisseling tussen twee partijen wordt toegestaan), waar het ontwikkelteam de aannames over de vereisten van de data space kan herhalen, identificeren en erop kan reageren. 
+
 ## Componenten van een MVDS {#6944BD65}
 Een MVDS bestaat uit:
 1. Twee connectoren (één als dataprovider en één als dataconsument); 
