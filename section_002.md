@@ -47,6 +47,7 @@ Het protocol bestaat uit 3 verschillende protocollen:
 <li>Verhoogde samenwerking: Door een standaard zoals DSP kunnen organisaties makkelijker samenwerken en data delen, wat leidt tot nieuwe kansen en innovatie;</li>
 <li>Veiligheid en naleving: Dankzij ingebouwde privacybescherming en security-mechanismen wordt voldaan aan de strengste normen, waaronder de Europese privacyregelgeving (AVG).</li>
 </ul>
+
 ### Catalog protocol {#2E1AE007}
 pm
 ### Contract negotiation potocol {#7774D9F4}
@@ -54,5 +55,6 @@ pm
 ### Transfer protocol {#7C75A7C4}
 pm
 ## Control plane and data plane {#3F4448FC}
+
 ## Dataspace Protocol connectors {#15F866F1}
 Pm
