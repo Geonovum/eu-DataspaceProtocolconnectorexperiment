@@ -1,6 +1,18 @@
 # Inleiding {#12DAD25F}
+Het ministerie van VRO (afdeling Kennis en Geo-informatie) werkt samen met het Beraad voor Geo-informatie aan het programma ‘Zicht op Nederland Datafundament’, waarin wordt gewerkt aan een toekomstvast, flexibel en samenhangend geo-datafundament. Een ander relevant programma is ‘Realisatie IBDS’ (Interbestuurlijke Datastrategie) dat wordt aangestuurd door het Overheidsbreed Beleidsoverleg Digitale Overheid (OBDO) en het Interbestuurlijk Data Overleg (IDO). Een van de projecten van het programma Realisatie IBDS is het Federatief Datastelsel dat gezien wordt als een doorontwikkeling van het huidige stelsel van basisregistraties. Zowel Zicht op Nederland Datafundament als Realisatie IBDS stuurt op het delen van data volgens het ‘data bij de bron’ principe. Data spaces bieden de mogelijkheid om data veilig en vertrouwd uit te wisselen waarbij geen kopieën van de data worden gemaakt (data bij de bron).  
+<br/>
+<br/> 
+Het experiment heeft als doel het IDSA data space protocol en de data connector in de praktijk te testen en opgedane bevindingen en aanbevelingen te beschrijven zodat het experiment herhaalbaar is en anderen ook kennis te laten maken met de werking van het data space protocol. 
 ## Context experiment: EU data spaces {#5D9FCCAA}
-Pm
+Het concept data space komt voort uit de Europese Datastrategie. De Europese Data Strategie die begin 2020 is voorgesteld, streeft naar een eenheidsmarkt voor de beschikbaarheid en het gebruik van data. De strategie is daarbij gericht op het wereldwijd concurrentievermogen van Europa en op datasoevereiniteit. Technisch wordt naar een pan-Europese data space (dataruimte) gestreefd om te zorgen dat er meer data beschikbaar komt voor socio-economisch gebruik, terwijl bedrijven en individuen die data genereren er wel zeggenschap over blijven houden.  
+<br/>
+<br/>
+Deze pan-Europese data space wordt opgebouwd met meerdere sectorale data spaces die vervolgens onderling interoperabel zijn. Binnen sectoren en thema's zijn er vaak al geldende afspraken t.a.v. standaarden en professionele normen t.a.v. omgang met data, die telkens gebaseerd zijn op de context van die sector. Een data space bouwt daar dan op voort, zowel om dubbel werk te voorkomen als om de vorming van data spaces te versnellen. 
+<br/>
+<br/>
+Zie ook ‘Handreiking EU Informatie m.b.t. digitale en data-strategie' voor het wettelijke kader en ‘Verkenning dataspaces’ voor richtinggevende data space initiatieven in Nederland en Europa en de positie van de Nationale Geo-informatie Infrastructuur (NGII) in deze initiatieven.
+<br/>
+<br/>
 GDDS 
 Use case Circulaire grondstromen
 ## Het experiment {#026C60F0}
@@ -10,7 +22,7 @@ Dit experiment is een verkenning naar het gebruiken van het IDSA Dataspace Proto
 Binnen het gedachtegoed van data spaces staat het veilig en vertrouwd uitwisselen van data centraal. Het Dataspace Protocol, dat is ontwikkeld door IDSA is hierin gepositioneerd als een  mogelijke voorziene (ISO/IEC) standaard in data spaces om vertrouwd data delen mogelijk te maken.  Om voorbereid te zijn op de toekomst is het doel van deze verkenning een beter beeld te krijgen van de wijze waarop de IDSA Dataspace Protocol connector functioneert in een  minimum viable data space setting. 
 <br/>
 <br/>
-Een belangrijk doel van het experiment voor Geonovum is verder kennismaken met het IDSA Dataspace Protocol en de data connector en te leren in een praktijkcasus hoe deze toe te passen. Daarbij wordt de Dataspace Protocol connector  in een minimal vailable data space setting toegepast bij  2 of 3 use cases uit de praktijk casus Circulaire grondstromen.  
+Een belangrijk doel van het experiment voor Geonovum is verder kennismaken met het IDSA Dataspace Protocol en de data connector en te leren in een praktijkcasus hoe deze toe te passen. Daarbij wordt de Dataspace Protocol connector  in een minimal vailable data space setting toegepast bij 2 of 3 use cases uit de praktijk casus Circulaire grondstromen.  
 <br/>
 <br/>
 Het experiment zal daarvoor gebruik maken van een technische experimenteeromgeving van de opdrachtnemer en zal geen operationele omgeving opleveren. Het is een leerexperiment, dat wordt vastgelegd in een rapportage met een onderbouwing van alle gemaakte keuzes, de opgedane bevindingen en aanbevelingen en in online trainingsmateriaal zodat het experiment eenvoudig herhaalbaar is om  anderen ook kennis te laten maken met de werking van het Dataspace Protocol. 
