@@ -1,5 +1,7 @@
 # Uitvoering experiment en use cases Circulaire grondstromen {#181E2B20}
 ## Use cases Digital Twin Circulaire grondstromen {#2152E6F8}
+De Circulaire grondstromen Use Case is een verkenning of een Dataspace gebruikt kan worden voor het faciliteren van een marktplaats voor grond. 
+Doordat aanbieders en afnemers van grond de vraag en aanbod van grond kunnen delen via een data space, kan er door slimme software een match gemaakt worden tussen de aabieders en afnemers.
 Onderstaande afbeelding geeft de business functies van de Circulaire grondstromen Use Case weer volgens de Archimate standaard.
 <img src='media/s4_Business_functions.png' alt='Business functies van de Circulaire grondstromen Use Case volgens de Archimate Standaard' style='width: 100%;'></img>
 De linkerkant van de het schema toont de grondafnemer en de rechterkant de aanbieder.
