@@ -66,18 +66,22 @@ De belangrijkste elementen worden hieronder beschreven:
   - De matchmaker (overheid) faciliteert het vinden van een match.
 
 ### Geïntegreerde datadiensten
-- Deze diensten ondersteunen het proces door het identificeren, ophalen, vinden en 
-  publiceren van relevante datasets:
+- De functionele omschrijving van een dataspace. De relevante functies voor deze usecase van de dataspace zijn onderverdeeld in vier categorieën:
   - **Identificeren**: Het faciliteren van het toegang verlenen op basis identificatie.
   - **Data ophalen**: Gebruikers of applicaties hebben de mogelijkheid om data uit verschillende bronnen op te halen.
   - **Dataset vinden**: Gebruikers of applicaties kunnen zoeken naar specifieke datasets.
   - **Data publiceren**: Het beschikbaar maken van data voor alle betrokkenen.
 
-Onderstaande afbeelding geeft de architectuur van de Circulaire grondstromen Use Case weer volgens de Archimate standaard.
+In onderstaande afbeelding zijn bijbehorende applicatie- en databouwblokken toegevoegd en geeft een overzicht van de archtiectuur van de Circulaire grondstromen Use Case volgens de Archimate standaard.
 <img src='media/s4_Architecture_overview.png' alt='Overzicht van de architectuur van de Circulaire grondstromen Use Case volgens de Archimate standaard' style='width: 100%;'></img>
 
-Onderstaande afbeelding geeft de applicatie- en databouwblokken van de Circulaire grondstromen Use Case weer volgens de Archimate standaard.
+Een afbeelding met alleen de applicatie en databouwblokken ziet er dan als volgt uit:
 <img src='media/s4_application-data_functions.png' alt='Applicatie- en databouwblokken van de Circulaire grondstromen Use Case volgens de Archimate standaard' style='width: 100%;'></img>
+
+In bovenstaande afbeelding is duidelijk te zien dat de data space een centrale rol speelt in het applicatielandschap. 
+De data space fungeert als een soort 'hub' waar alle data samenkomt en vanuit waar de data wordt gedeeld met de verschillende applicaties.
+De data zelf is niet opgeslagen in de data space, maar wordt vanuit de data space opgehaald en gedeeld met de applicaties die deze data nodig hebben vanuit de zogenaamde dataplanes.
+
 
 ## Use case 1:  {#1200E5F8}
 User story
