@@ -8,7 +8,7 @@ Om ervoor te zorgen dat de toekomstige data-economie soepel functioneert en zijn
 
 IDSA is verantwoordelijk voor het bijhouden van het regelboek en voor het ondersteunen van de toepassing ervan. De IDSA organisatie helpt bij het coördineren van belangrijke processen en als algemeen bestuur een basis voor de realisatie van interne structuren en interfaces met andere partijen. Daarnaast bestaat het IDSA Open Source project, dat de software componenten ontwikkeld voor het implementeren en testen van de essentiële IDSA componenten. De implementatie van het Dataspace Protocol heeft daarmee in de afgelopen jaren een behoorlijke vlucht genomen. De belangrijke actoren en bouwstenen van een IDS data space zijn in onderstaande figuur ? weergegeven.
 
-//<img src='media/IDSA data space bouwstenen (zwart).png' alt='Afbeelding met tekst, schermopname, Lettertype, nummer' style='width: 100%;'></img>
+\\<img src='media/IDSA data space bouwstenen (zwart).png' alt='Afbeelding met tekst, schermopname, Lettertype, nummer' style='width: 100%;'></img>
 
 <figure id="Figuur_x">
 <a href="media/IDSA data space bouwstenen (zwart).png" target="_blank"><img src="media/IDSA data space bouwstenen (zwart).png" alt=""></a>
@@ -41,7 +41,7 @@ In het figuur ? van IDSA is de data aanbieder en data consument gedefinieerd als
 3. Is geen partij in de daadwerkelijk data-uitwisseling; data aanbieders en data gebruikers wisselen onderling data uit zonder tussenkomst van de data space beheerder.  
 Alle typen deelnemers in een data space vervullen daarmee een bepaalde rol (zie figuur ?).
 
-//<img src='media/Rollen in de dataspace (figuur TNO).png' alt='Afbeelding met tekst, schermopname, Lettertype, nummer' style='width: 100%;'></img>
+\\<img src='media/Rollen in de dataspace (figuur TNO).png' alt='Afbeelding met tekst, schermopname, Lettertype, nummer' style='width: 100%;'></img>
 
 <figure id="Figuur_x">
 <a href="media/Rollen in de dataspace (figuur TNO).png" target="_blank"><img src="media/Rollen in de dataspace (figuur TNO).png" alt=""></a>
@@ -66,7 +66,7 @@ De IDSA Data Connector werkt vervolgens met gestandaardiseerde protocollen en af
 <br/>
 De control plane (controlelaag) is verantwoordelijk voor beheer en beslissingen over hoe datastromen worden verwerkt of hoe de data space functioneert. De control plane verwerkt geen echte data, maar richt zich op controle-informatie, die nodig is om de datatransfer plaats te laten vinden op een vertrouwde en souvereine wijze. Het functioneert min of meer als een soort ‘brein’ van de data space en geeft opdrachten aan de data plane voor de data transfer. Daarmee bepaalt de control plane wat er moet gebeuren en hoe het moet gebeuren (het verzorgt de voorbereiding van de datatransfer), terwijl de data plane de uitvoering verzorgt en daadwerkelijk data transporteert. De data plane is dus verantwoordelijk voor het fysieke transport van de data  tussen aanbieder en consument. De data plane voert daadwerkelijk de datatransfer (data overdracht) uit volgens de instructies van de control plane en het verwerkt en transporteert de werkelijke data  (bijvoorbeeld een videostream, datasets, bestanden). Er zijn daarvoor diverse mogelijkheden om data transfer te laten plaatsvinden, zoals via API-verzoeken, event-streams, bulkdownloads, et cetera. De data plane schrijft voor data spaces dus niet één standaard procedure voor om data transfer te laten plaatsvinden. De controle plane bij data spaces werkt (bij voorkeur) wel volgens gestandaardiseerde protocollen en afspraken (één standaard procedure).<br/>
 
-//<img src='media/image6.png' alt='Afbeelding met tekst, schermopname, Lettertype, nummer' style='width: 100%;'></img>
+\\<img src='media/image6.png' alt='Afbeelding met tekst, schermopname, Lettertype, nummer' style='width: 100%;'></img>
 
 <figure id="Figuur_x">
 <a href="media/De rol van de IDS data connector in een Dataspace IDSA.png" target="_blank"><img src="media/De rol van de IDS data connector in een Dataspace IDSA.png" alt=""></a>
@@ -139,7 +139,7 @@ Het Dataspace Protocol bestaat uit verschillende componenten en mechanismen, die
 <br/>
 <br/>
 <aside class='note' title="Making the Dataspace Protocol an international standard" [[IDS-DSP-S]]>
-    De specificatie werkzaamheden voor het Dataspace Protocol zijn eind 2022 gestart als subwerkgroep van WG Architectuur van IDSA. De werkgroep heeft in februari 2024 de Dataspace Protocol-specificatie 2024-1 uitgebracht. Deze versie van de Dataspace Protocol-specificatie is de releasekandidaat en wordt als stabiel beschouwd. De leden van IDSA zijn in 2017 in werkgroepen en commissies begonnen met het ontwerpen van technologie voor data spaces, zodat het Dataspace Protocol in 2024 klaar zou kunnen zijn om een standaardisatieproces te starten (zie verder [[IDS-DSP-S]]). Het Dataspace-protocol op zich is vrij licht, maar het is de essentie van het werk van IDSA. Naast het DSP vormen het IDSA Reference Architecture Model [[IDS-RAM4]] en het IDSA Rulebook [[IDS-PPRB]] de kern van het werk van International Data Spaces (IDS).  
+    De specificatie werkzaamheden voor het Dataspace Protocol zijn eind 2022 gestart als subwerkgroep van WG Architectuur van IDSA. De werkgroep heeft in februari 2024 de Dataspace Protocol-specificatie 2024-1 uitgebracht. Deze versie van de Dataspace Protocol-specificatie is de releasekandidaat en wordt als stabiel beschouwd. De leden van IDSA zijn in 2017 in werkgroepen en commissies begonnen met het ontwerpen van technologie voor data spaces, zodat het Dataspace Protocol in 2024 klaar zou kunnen zijn om een standaardisatieproces te starten (zie verder [[IDS-DSP-S]]). Het Dataspace-protocol op zich is vrij licht, maar het is de essentie van het werk van IDSA. Naast het DSP vormen het IDSA Reference Architecture Model [[IDS-RAM4]] en het IDSA Rulebook [IDS-PPRB] de kern van het werk van International Data Spaces (IDS).  
     
     Eind 2023 heeft IDSA de samenwerking gezocht met de Eclipse Foundation om het Data Space Protocol richting een internationale standaard te krijgen. Daarvoor is een gezamenlijke Eclipse Dataspace Working Group (EDWG), opgericht, die het protocol in een Eclipse Dataspace Protocol Specification-project heeft ondergebracht. Dit project zorgt voor de realisatie en oprichting van de Dataspace Technology Compatibility Kit om interoperabiliteit en naleving te kunnen garanderen. Van hieruit wordt het DSP ingediend bij ISO/IEC als een internationale norm. Het normalisatieproces door het Joint Technical Committee (JTC1) is inmiddels in gang gezet.  
 </aside>
@@ -154,14 +154,14 @@ Voor het delen van data met de data connector worden aldus drie stadia doorlopen
 <br/>
 <br/>
 
-//<br/>
-//<br/>
-// <img src='media/image5.png' alt='Afbeelding met tekst, schermopname, Lettertype, nummer' style='width: 100%;'></img>
-//<br/>
-//<br/>
-// <img src='media/image6.png' alt='Afbeelding met tekst, schermopname, Lettertype, nummer' style='width: 100%;'></img>
-//<br/>
-//<br/>
+\\<br/>
+\\<br/>
+\\ <img src='media/image5.png' alt='Afbeelding met tekst, schermopname, Lettertype, nummer' style='width: 100%;'></img>
+\\<br/>
+\\<br/>
+\\<img src='media/image6.png' alt='Afbeelding met tekst, schermopname, Lettertype, nummer' style='width: 100%;'></img>
+\\<br/>
+\\<br/>
 
 ## Het Dataspace informatiemodel
 pm
