@@ -8,8 +8,6 @@ Om ervoor te zorgen dat de toekomstige data-economie soepel functioneert en zijn
 
 IDSA is verantwoordelijk voor het bijhouden van het regelboek en voor het ondersteunen van de toepassing ervan. De IDSA organisatie helpt bij het coördineren van belangrijke processen en als algemeen bestuur een basis voor de realisatie van interne structuren en interfaces met andere partijen. Daarnaast bestaat het IDSA Open Source project, dat de software componenten ontwikkeld voor het implementeren en testen van de essentiële IDSA componenten. De implementatie van het Dataspace Protocol heeft daarmee in de afgelopen jaren een behoorlijke vlucht genomen. De belangrijke actoren en bouwstenen van een IDS data space zijn in onderstaande figuur ? weergegeven.
 
-\\<img src='media/IDSA data space bouwstenen (zwart).png' alt='Afbeelding met tekst, schermopname, Lettertype, nummer' style='width: 100%;'></img>
-
 <figure id="Figuur_x">
 <a href="media/IDSA data space bouwstenen (zwart).png" target="_blank"><img src="media/IDSA data space bouwstenen (zwart).png" alt=""></a>
 <figcaption>IDS bouwstenen voor een data space (bron: IDSA)<figcaption>
@@ -41,8 +39,6 @@ In het figuur ? van IDSA is de data aanbieder en data consument gedefinieerd als
 3. Is geen partij in de daadwerkelijk data-uitwisseling; data aanbieders en data gebruikers wisselen onderling data uit zonder tussenkomst van de data space beheerder.  
 Alle typen deelnemers in een data space vervullen daarmee een bepaalde rol (zie figuur ?).
 
-\\<img src='media/Rollen in de dataspace (figuur TNO).png' alt='Afbeelding met tekst, schermopname, Lettertype, nummer' style='width: 100%;'></img>
-
 <figure id="Figuur_x">
 <a href="media/Rollen in de dataspace (figuur TNO).png" target="_blank"><img src="media/Rollen in de dataspace (figuur TNO).png" alt=""></a>
 <figcaption>Typen deelnemers (en rollen) in een data space (vrij naar TNO)<figcaption>
@@ -65,8 +61,6 @@ De IDS data connector is de centrale technische component voor veilige en vertro
 De IDSA Data Connector werkt vervolgens met gestandaardiseerde protocollen en afspraken. Een relevant concept voor het gebruik van de data connector is daarbij het onderscheid tussen control plane en data plane (zie figuur ?). Het onderscheid wordt gemaakt om aan te geven dat afspraken en standaarden voor een data space betrekking hebben op de control plane.<br/>
 <br/>
 De control plane (controlelaag) is verantwoordelijk voor beheer en beslissingen over hoe datastromen worden verwerkt of hoe de data space functioneert. De control plane verwerkt geen echte data, maar richt zich op controle-informatie, die nodig is om de datatransfer plaats te laten vinden op een vertrouwde en souvereine wijze. Het functioneert min of meer als een soort ‘brein’ van de data space en geeft opdrachten aan de data plane voor de data transfer. Daarmee bepaalt de control plane wat er moet gebeuren en hoe het moet gebeuren (het verzorgt de voorbereiding van de datatransfer), terwijl de data plane de uitvoering verzorgt en daadwerkelijk data transporteert. De data plane is dus verantwoordelijk voor het fysieke transport van de data  tussen aanbieder en consument. De data plane voert daadwerkelijk de datatransfer (data overdracht) uit volgens de instructies van de control plane en het verwerkt en transporteert de werkelijke data  (bijvoorbeeld een videostream, datasets, bestanden). Er zijn daarvoor diverse mogelijkheden om data transfer te laten plaatsvinden, zoals via API-verzoeken, event-streams, bulkdownloads, et cetera. De data plane schrijft voor data spaces dus niet één standaard procedure voor om data transfer te laten plaatsvinden. De controle plane bij data spaces werkt (bij voorkeur) wel volgens gestandaardiseerde protocollen en afspraken (één standaard procedure).<br/>
-
-\\<img src='media/image6.png' alt='Afbeelding met tekst, schermopname, Lettertype, nummer' style='width: 100%;'></img>
 
 <figure id="Figuur_x">
 <a href="media/De rol van de IDS data connector in een Dataspace IDSA.png" target="_blank"><img src="media/De rol van de IDS data connector in een Dataspace IDSA.png" alt=""></a>
@@ -128,7 +122,6 @@ De figuur ? toont een systeemarchitectuur met drie hoofdlagen [[DSCC-BP]]:
 3. Data Plane(s) zorgt voor daadwerkelijke data-uitwisseling (data exchange).
 <br/>
 <br/>
-
 <b>Belangrijkste componenten van het Dataspace Protocol</b>
 Het Dataspace Protocol bestaat uit verschillende componenten en mechanismen, die samenwerken om betrouwbare data-uitwisseling mogelijk te maken:
 <ul><li><b>Data Providers en Data </b><b>Consumers</b>: Dit zijn respectievelijk de partijen die data delen en die toegang willen tot die data. Het protocol maakt afspraken over de rollen van beide partijen.</li>
@@ -143,7 +136,8 @@ Het Dataspace Protocol bestaat uit verschillende componenten en mechanismen, die
     
     Eind 2023 heeft IDSA de samenwerking gezocht met de Eclipse Foundation om het Data Space Protocol richting een internationale standaard te krijgen. Daarvoor is een gezamenlijke Eclipse Dataspace Working Group (EDWG), opgericht, die het protocol in een Eclipse Dataspace Protocol Specification-project heeft ondergebracht. Dit project zorgt voor de realisatie en oprichting van de Dataspace Technology Compatibility Kit om interoperabiliteit en naleving te kunnen garanderen. Van hieruit wordt het DSP ingediend bij ISO/IEC als een internationale norm. Het normalisatieproces door het Joint Technical Committee (JTC1) is inmiddels in gang gezet.  
 </aside>
-
+<br/>
+<br/>
 In dit experiment staat de werking en het gebruik van het data space protocol en de data connectors centraal. Het data space protocol zorgt voor het vertrouwd data delen in een data space en bestaat uit drie afspraken of protocollen:
 <ol>
 <li>1. Catalog protocol;</li>
@@ -153,15 +147,6 @@ In dit experiment staat de werking en het gebruik van het data space protocol en
 Voor het delen van data met de data connector worden aldus drie stadia doorlopen, waarvoor elk verschillende protocollen zijn overeengekomen. Alvorens de werking van het data space protocol connectors in meer detail toe te lichten gaan we eerst in op het informatiemodel achter het data space protocol toe. 
 <br/>
 <br/>
-
-\\<br/>
-\\<br/>
-\\ <img src='media/image5.png' alt='Afbeelding met tekst, schermopname, Lettertype, nummer' style='width: 100%;'></img>
-\\<br/>
-\\<br/>
-\\<img src='media/image6.png' alt='Afbeelding met tekst, schermopname, Lettertype, nummer' style='width: 100%;'></img>
-\\<br/>
-\\<br/>
 
 ## Het Dataspace informatiemodel
 pm
