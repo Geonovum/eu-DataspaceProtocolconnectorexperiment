@@ -8,7 +8,7 @@ In deze sectie worden de kernconcepten, entiteiten en relaties gedefinieerd, die
 <col id='col2' style='width: 69.2110476634425%;'>
 </colgroup>
 <thead valign='top'><tr><th align='left' style='border-top: 0pt none #000000; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #005A9C;'><p id='11350A7E'>Begrip</th>
-<th align='left' style='border-top: 0pt none #000000; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #D3D3D3;'><p id='3AE04064'>Uitleg</th>
+<th align='left' style='border-top: 0pt none #000000; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #005A9C;'><p id='3AE04064'>Uitleg</th>
 </tr>
 </thead>
 <tbody valign='top'><tr><td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: none;'><p id='1EF8A4C9'>Aanbieder (‘Provider’)</td>
