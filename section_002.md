@@ -147,13 +147,12 @@ In dit experiment staat de werking en het gebruik van het data space protocol en
 Voor het delen van data met de data connector worden aldus drie stadia doorlopen, waarvoor elk verschillende protocollen zijn overeengekomen. Alvorens de werking van het data space protocol connectors in meer detail toe te lichten gaan we eerst in op het informatiemodel achter het data space protocol toe. 
 <br/>
 <br/>
-
 ## Het Dataspace informatiemodel
 pm
 ## Catalog protocol {#2E1AE007}
 pm
 ## Contract negotiation potocol {#7774D9F4}
-pm
+pm Test normatieve referenties [[ODRL]]
 ## Transfer protocol {#7C75A7C4}
 pm
 ## Dataspace Protocol connectors {#15F866F1}
