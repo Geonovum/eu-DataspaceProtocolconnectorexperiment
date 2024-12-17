@@ -139,28 +139,21 @@ In dit experiment staat de werking en het gebruik van het data space protocol en
 Voor het delen van data met de data connector worden aldus drie stadia doorlopen, waarvoor elk verschillende protocollen zijn overeengekomen. Alvorens de werking van het data space protocol connectors in meer detail toe te lichten gaan we eerst in op het informatiemodel achter het data space protocol toe. 
 <br/>
 
-## Het Dataspace informatiemodel
+## Het Dataspace informatiemodel <br/>
 pm [[IDS-IM]]
 <br/>
-<br/>
 
-## Catalog protocol {#2E1AE007}
+## Catalog protocol {#2E1AE007} <br/>
 pm
-<br/>
-<br/>
 
-## Contract negotiation potocol {#7774D9F4}
+## Contract negotiation potocol {#7774D9F4} <br/>
 pm [[ODRL]]
-<br/>
-<br/>
 
-## Transfer protocol {#7C75A7C4}
+## Transfer protocol {#7C75A7C4} <br/>
 pm
 <br/>
-<br/>
 
-## De IDS data connector
+## De IDS data connector <br/>
 pm
-<br/>
-<br/>
+
 
