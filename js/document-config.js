@@ -362,13 +362,6 @@ var documentConfig =
       ],
       publisher: "International Data Spaces Association (IDSA)"
     },
-    "Gaia-X-TF":
-    {
-      title: "Gaia-X Trust framework",
-      href: "https://Gaia-X.eu/wp-content/uploads/2022/05/Gaia-X-Trust-Framework-22.04.pdf ",
-      publisher: "Gaia-X",
-      date: "2022-04-01"
-    },
     "IDS-DC":
     {
       title: "IDS Data connectors report",
@@ -382,7 +375,15 @@ var documentConfig =
     "IDS-IM":
     {
       title: "IDS Informationmodel Version 4.1.0.",
-      href: "https://w3id.org/idsa/core-410"
+      href: "https://w3id.org/idsa/core-410",
+      publisher: "International Data Spaces Association"
+    },
+    "IDS-DSP-S":
+    {
+      title: "Making the Dataspace Protocol an international standard Version 1.0",
+      href: "https://internationaldataspaces.org/wp-content/uploads/dlm_uploads/IDSA-Statement_Making-the-Dataspace-Protocol-an-international-standard.pdf",
+      publisher: "International Data Spaces Association",
+      date: "July 2024"
     },
     "DSCC-G":
     {
@@ -392,6 +393,15 @@ var documentConfig =
         "Data Spaces Support Centre"
       ],
       date: "2023-03-01"
+    },    
+    "DSCC-BP":
+    {
+      title: "DSCC Blueprint version 1.5",
+      href: "https://dssc.eu/space/bv15e/766061169/Data+Spaces+Blueprint+v1.5+-+Home",
+      authors: [
+        "Data Spaces Support Centre"
+      ],
+      date: "2024-10-11"
     },
     "Gaia-X-G":
     {
