@@ -10,7 +10,7 @@ IDSA is verantwoordelijk voor het bijhouden van het regelboek en voor het onders
 
 <figure id="Figuur_x">
 <a href="media/IDSA data space bouwstenen (zwart).png" target="_blank"><img src="media/IDSA data space bouwstenen (zwart).png" alt=""></a>
-<figcaption>IDS bouwstenen voor een data space (bron: IDSA)<figcaption>
+<figcaption>IDS bouwstenen voor een data space (bron: IDSA)</figcaption>
 </figure>
 <br/>
 
@@ -40,7 +40,7 @@ Alle typen deelnemers in een data space vervullen daarmee een bepaalde rol (zie 
 
 <figure id="Figuur_x">
 <a href="media/Rollen in de dataspace (figuur TNO).png" target="_blank"><img src="media/Rollen in de dataspace (figuur TNO).png" alt=""></a>
-<figcaption>Typen deelnemers (en rollen) in een data space (vrij naar TNO)<figcaption>
+<figcaption>Typen deelnemers (en rollen) in een data space (vrij naar TNO)</figcaption>
 </figure>
 
 <br/>
@@ -61,7 +61,7 @@ De control plane (controlelaag) is verantwoordelijk voor beheer en beslissingen 
 
 <figure id="Figuur_x">
 <a href="media/De rol van de IDS data connector in een Dataspace IDSA.png" target="_blank"><img src="media/De rol van de IDS data connector in een Dataspace IDSA.png" alt=""></a>
-<figcaption>De rol van de IDS data connector in een dataspace (vrij naar IDSA)<figcaption>
+<figcaption>De rol van de IDS data connector in een dataspace (vrij naar IDSA)</figcaption>
 </figure>
 
 <br/>
