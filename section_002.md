@@ -128,6 +128,7 @@ Het Dataspace Protocol bestaat uit verschillende componenten en mechanismen, die
     
     Eind 2023 heeft IDSA de samenwerking gezocht met de Eclipse Foundation om het Data Space Protocol richting een internationale standaard te krijgen. Daarvoor is een gezamenlijke Eclipse Dataspace Working Group (EDWG), opgericht, die het protocol in een Eclipse Dataspace Protocol Specification-project heeft ondergebracht. Dit project zorgt voor de realisatie en oprichting van de Dataspace Technology Compatibility Kit om interoperabiliteit en naleving te kunnen garanderen. Van hieruit wordt het DSP ingediend bij ISO/IEC als een internationale norm. Het normalisatieproces door het Joint Technical Committee (JTC1) is inmiddels in gang gezet.  
 </aside>
+
 <br/>
 In dit experiment staat de werking en het gebruik van het data space protocol en de data connectors centraal. Het data space protocol zorgt voor het vertrouwd data delen in een data space en bestaat uit drie afspraken of protocollen:
 <ol>
