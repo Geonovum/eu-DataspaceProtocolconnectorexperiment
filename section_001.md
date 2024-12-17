@@ -41,6 +41,15 @@ Het “Dataspace Protocol connector experiment” is geschreven voor iedereen, d
 In het bijzonder richten we ons op iedereen, die betrokken is bij het uitwisselen van geo-informatie (of locatie-gebonden informatie), het toepassen van standaarden voor geo-informatie en de Nationale en Europese geo-informatie infrastructuur. Daarvoor worden in het experiment geografische datasets en diensten (API’s) gebruikt.  
 <br/>
 
+## Aanpak experiment
+
+Voor de uitvoering van het experiment is de volgende aanpak gehanteerd. Volgens het concept van een ‘minimum viable data space’ is met twee of drie use cases binnen de casus Circulaire grondstromen een experiment uitgevoerd met vertrouwd en souvereign data delen. Daarbij is het open en gestandaardiseerd ‘Dataspace Protocol’ toegepast, dat is geïmplementeerd in diverse data connector software producten [[IDS-DCS]]. Er is gebruik gemaakt van de TNO Security Gateway (TSG), die als open source software beschikbaar is. 
+<br/>
+Een Minimum Viable Data Space (MVDS) is een combinatie van componenten die het mogelijk maken om een data space te creëren met net genoeg functies om bruikbaar te zijn voor veilige en soevereine data-uitwisseling tussen twee partijen, zoals gespecificeerd door de International Data Spaces Association (IDSA). Het doel van een MVDS is om het implementatieproces te stroomlijnen, waardoor het gemakkelijker en sneller wordt om een werkende data space te creëren met veilige en soevereine data-uitwisseling. Door te beginnen met een MVDS kan het ontwikkelteam snel itereren en reageren op de vereisten van de data space, door indien nodig aanpassingen te maken om aan de behoeften van gebruikers te voldoen.
+<br/>
+Het MVDS concept willen we toepassen om het werk van het experiment te vergemakkelijken door de implementatietijd te verkorten (door lange details te vermijden die de eerste release zouden vertragen). Dit stelt ons in staat om te beginnen met een eerste werkende versie (waar veilige en soevereine data-uitwisseling tussen twee partijen wordt toegestaan), waar het ontwikkelteam de aannames over de vereisten van de data space kan herhalen, identificeren en erop kan reageren.
+
+
 ## Leeswijzer
 
 Hoofdstuk twee biedt algemene informatie en achtergronden bij het Dataspace Protocol en de IDS data connector. In hoofdstuk drie zijn de gebruikte begrippen opgenomen. Hoofdstuk vier word de opzet van het experiment toegelicht: de technische werking van het data space protocol en de data connector worden beschreven. In hoofdstuk vijf wordt de uitvoering van het experiment toegelicht;  de data deel use cases voor Circulaire grondstromen geïntroduceerd en het data delen met de data connector toegelicht. Vervolgens wordt in hoofdstuk zes de opgedane bevindingen en evt. aanbevelingen vastgelegd. Tot slot, wordt in hoofdstuk een korte toelichting gegeven op het ontwikkelde online trainingsmateriaal zodat het experiment eenvoudig herhaalbaar is in praktijkworkshops.

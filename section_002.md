@@ -1,6 +1,7 @@
 # Het Dataspace Protocol {#4CDCCFF6}
 
 ## International Data Spaces {#021221E8}
+
 Het Dataspace Protocol is ontwikkeld door International Data Spaces Association. De International Data Spaces Association (IDSA) is op een missie om de toekomst van de wereldwijde, digitale economie te creëren met International Data Spaces (IDS), een veilig, soeverein systeem voor het delen van data waarin alle deelnemers de volledige waarde van hun data kunnen realiseren. IDS maakt het mogelijk om nieuwe "slimme diensten" en innovatieve bedrijfsprocessen in verschillende bedrijven en industrieën te laten werken, terwijl ervoor wordt gezorgd dat de zelfbepaalde controle over data gebruik (datasoevereiniteit) in handen blijft van dataproviders.
 De IDSA heeft tot doel de data-gedreven economie van de toekomst te ontsluiten door de blauwdruk te bieden voor veilige, zelfbepaalde data-uitwisseling tussen partners die elkaar vertrouwen. Dit is wat wordt aangeduid als ‘dataoevereiniteit’ en het is van vitaal belang, in het licht van het feit dat gegevenstoegang en -uitwisseling snel kritieke succesfactoren worden voor zowel bedrijven, overheid en particulieren als hele economieën. Tot nu toe hebben vooral bedrijven enorme hoeveelheden waardevolle data bewaard, die ze niet op hun eigen voorwaarden konden beheren, delen of te gelde konden maken. De IDSA heeft een referentiearchitectuur en een reeks overeenkomsten gedefinieerd die kunnen worden gebruikt om data spaces te creëren die vertrouwen tussen partners en een basis voor innovatieve, nieuwe bedrijfsmodellen, producten en diensten tot stand brengen.
 
@@ -66,5 +67,47 @@ De control plane (controlelaag) is verantwoordelijk voor beheer en beslissingen 
 
 <br/>
 De IDS data connector in dit experiment werkt vervolgens met gestandaardiseerde protocollen en afspraken. Dat wordt het ‘Dataspace Protocol’ (kortweg DSP) genoemd. In de volgende paragraaf wordt de werking van het Dataspace Protocol verder beschouwd.
+<br/>
 
+## Het Dataspace Protocol
+
+Het Dataspace Protocol is een cruciale stap in de richting van een nieuwe manier van data-uitwisseling, waarbij controle, veiligheid en interoperabiliteit centraal staan. Het biedt een gestandaardiseerde manier voor organisaties om data te delen zonder dat ze hun soevereiniteit over die data verliezen [[IDS-DSP]]. Vooral in sectoren waar vertrouwelijkheid en veiligheid van groot belang zijn, zoals gezondheidszorg, productie en logistiek, biedt dit protocol grote voordelen. De implementatie van het Dataspace Protocol heeft in de afgelopen jaren een behoorlijke vlucht genomen. Het Dataspace Protocol is een technische standaard en raamwerk dat bedoeld is om veilige en soepele data-uitwisseling mogelijk te maken tussen verschillende partijen en systemen. Dit protocol speelt een cruciale rol in het opzetten van een <b>dataspace</b> — een gedeelde digitale ruimte waarin organisaties data kunnen delen op een gecontroleerde, veilige en privacy vriendelijke manier. 
+<br/>
+Het Dataspace Protocol is ontworpen om een aantal belangrijke uitdagingen rond data-uitwisseling op te lossen:
+<ul><li><b>Interoperabiliteit</b>: Het stelt verschillende systemen in staat om op een uniforme manier gegevens uit te wisselen, onafhankelijk van de technologie of het platform dat ze gebruiken.</li>
+<li><b>Data-soevereiniteit</b>: Elke data-eigenaar houdt controle over wie toegang heeft tot hun data en onder welke voorwaarden.</li>
+<li><b>Privacy en veiligheid</b>: Het protocol waarborgt dat data op een veilige manier wordt gedeeld, waarbij privacyrichtlijnen worden nageleefd, zoals de AVG (GDPR).</li>
+<li><b>Transparantie</b>: Deelnemers aan een data space kunnen altijd zien wie hun data gebruikt en waarvoor deze wordt gebruikt.</li>
+<br/>
+
+Het Dataspace Protocol is een reeks van afspraken, standaarden en technologieën die worden gebruikt om veilige, gecontroleerde en interoperabele datadelen tussen de deelnemers in een data space mogelijk te maken. Het is een essentieel onderdeel van Europese data spaces, zoals die gepromoot worden door initiatieven zoals de International Data Spaces, Gaia-X en het EU Data Space Support Centre. Het Dataspace Protocol is gedefinieerd als:
+
+<br/>
+“a set of specifications designed to facilitate interoperable data sharing between entities governed by usage control and based on Web technologies. These specifications define the schemas and protocols required for entities to publish data, negotiate Agreements, and access data as part of a federation of technical systems termed a Dataspace.” [[IDS-DSP]].
+<br/>
+</ul>
+<b>Voordelen van het Dataspace Protocol</b>
+<ul><li>Controle en soevereiniteit: Organisaties behouden de controle over hun eigen data, zelfs als ze deze delen met andere partijen;</li>
+<li>Verhoogde samenwerking: Door een standaard zoals DSP kunnen organisaties makkelijker samenwerken en data delen, wat leidt tot nieuwe kansen en innovatie;</li>
+<li>Veiligheid en naleving: Dankzij ingebouwde privacybescherming en security-mechanismen wordt voldaan aan de strengste normen, waaronder de Europese privacyregelgeving (AVG).</li>
+</ul>
+<br/>
+De onderstaande figuur ? [[DSCC-BP]] geeft een gedetailleerd overzicht van de belangrijke concepten, componenten en protocollen voor een data space, te weten ‘Identity Governance Scope’ (bovenaan), ‘Control Plane’ (midden) en ‘Data Plane’ (onderaan). Daarbinnen zijn data connectors (links en rechts) en is het data space prototol gepositioneerd (midden). De ondersteunende componenten, zoals de ‘Vocabulary Hub’ en de ‘Catalog’ zijn aan de onderzijde weergegeven. Deze twee intermediaire en ondersteunende diensten zorgen voor het gebruik van datamodellen en formaten (de ‘vocabulary hub’) en voor de publicatie en het vinden van data (de catalogus). Op rol en functies van deze laatste twee componenten gaan we hier niet verder in.
+
+<figure id="Figuur_x">
+<a href="media/DSP systeemarchitectuur.png" target="_blank"><img src="media/DSP systeemarchitectuur.png" alt=""></a>
+<figcaption>De globale systeemarchitectuur van het Dataspace Prototol [[DSCC-BP]]<figcaption>
+</figure>
+
+De figuur ? toont een systeemarchitectuur met drie hoofdlagen [[DSCC-BP]]:
+1. ‘Identity governance scope’ met drie kerncomponenten:
+    - Identity register voor identiteitbeheer;
+    - Identity provider, die de identity management diensten levert; 
+    - Identity manager, die de identiteiten en toegangsrechten beheert.
+2. De control plane is de centrale laag voor beheer en coördinatie van uiteindelijk delen van de data (de datatransfer of -uitwisseling). De control plane kent eveneens enkele onderdelen met bijbehorende protocollen: 
+    - Een catalog, die zorgt voor beschrijvingen (metadata) van data en diensten;
+    - Policy Negotiation, die onderhandelingen over toegangs- en gebruiksvoorwaarden faciliteert;
+    - Transfer Process Management, die ervoor dat voorbereidingen worden getroffen voor Beheert processen voor data-uitwisseling. Daarbij 
+    - Policy Enforcement: Verantwoordelijk voor de naleving van de onderhandelde toegangs- en gebruiksvoorwaarden.
+3. Data Plane(s) zorgt voor daadwerkelijke data-uitwisseling (data exchange).
 <br/>
