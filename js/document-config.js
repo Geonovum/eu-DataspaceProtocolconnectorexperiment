@@ -88,15 +88,6 @@ var documentConfig =
     }
   ],
   localBiblio: {
-    "DONL": {
-      title: "data.overheid.nl",
-      href: "https://data.overheid.nl",
-      authors: "",
-      publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties",
-      editors: "",
-      date: "",
-      status: ""
-    },
     "NLISO19115": 
     {
       title: "Nederlands metadata profiel op ISO 19115 voor geografie versie 2.1.0",
@@ -250,7 +241,7 @@ var documentConfig =
       href: "://www.rijksoverheid.nl/documenten/rapporten/2021/10/31/nl-digitaal-interbestuurlijke-datastrategie-nederland ",
       publisher: "Ministerie van Economische zaken en Koninkrijksrelaties"
     },
-    "Geonovum":
+    "GNVM-VPGDD":
     {
       title: "Geonovum Rapport  - Verkenning Publiek Gebruik Data van Derden",
       href: "https://www.geonovum.nl/uploads/documents/Rapportage%20%27Verkenning%20Publiek%20Gebruik%20Data%20van%20Derden%27%20%28eindversie%29_0.pdf ",
@@ -258,6 +249,24 @@ var documentConfig =
         "Marc de Vries en Suzanne van Poelgeest"
       ],
       date: "2021-06-01"
+    },
+    "GNVM-VEUI":
+    {
+      title: "Geonovum Handreiking -Handreiking EU Informatie m.b.t. digitale en data-strategie",
+      href: "https://docs.geostandaarden.nl/eu/handreiking-EU-informatie/",
+      authors: [
+        "Ton Zijlstra",
+        "Wideke Boersma",
+      ],
+      date: "26 november 2024"
+    },"GNVM-VDS":
+    {
+      title: "Geonovum Handreiking - Verkenning dataspaces",
+      href: "https://geonovum.github.io/eu-VerkenningDataspaces/",
+      authors: [
+        "Michel Grothe"
+      ],
+      date: "29 maart 2023"
     },
     "TNO":
     {
@@ -362,7 +371,7 @@ var documentConfig =
       ],
       publisher: "International Data Spaces Association (IDSA)"
     },
-    "IDS-DC":
+    "IDS-DCR":
     {
       title: "IDS Data connectors report",
       href: "tps://internationaldataspaces.org/wp-content/uploads/dlm_uploads/IDSA-Data-Connector-Report-5_March-2023.pdf",
@@ -403,25 +412,5 @@ var documentConfig =
       ],
       date: "2024-10-11"
     },
-    "Gaia-X-G":
-    {
-      title: "Gaia-X",
-      href: "Gaia-X specifications on Gitlab"
-    },
-    "JRC126319":
-    {
-      title: "INSPIRE – A Public Sector Contribution to the European Green Deal Data Space. A vision for the technological evolution of Europe’s Spatial Data Infrastructures for 2030",
-      href: "https://publications.jrc.ec.europa.eu/repository/handle/JRC126319",
-      authors: [
-        "Kotsev A.",
-        "Minghini M.",
-        "Cetl V.",
-        "Penninga F.",
-        "Robbrecht J.",
-        "Lutz M."
-      ],
-      publisher: "Publications Office of the European Union, Luxembourg",
-      date: "2021-01-01"
-    }
   }
 }
