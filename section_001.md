@@ -1,15 +1,15 @@
 # Inleiding {#12DAD25F}
 Vanuit Europa is de afgelopen jaren een uitdagende nieuwe digitaliserings- en data strategie opgesteld. De Europese digitale strategie en data strategie [[EUDS]]is bedoeld als de grote aanjager van de Europese data-economie. Via regulering en projecten wil de EU meer grip krijgen op haar eigen data via de realisatie van een ‘common EU data space’. Een ‘data space’ is gericht is op het veilig, vertrouwd en soeverein delen van data binnen domeinen en over domeinen heen. 
-<br/>
-</b>Controle over data</b><br/>
+</br>
+<b>Controle over data</b>
 Datasoevereiniteit zorgt ervoor dat organisaties, overheden en individuen controle hebben over hun data. Met deze controle kunnen ze zelf bepalen hoe hun gegevens worden verzameld, opgeslagen, gedeeld en gebruikt door anderen. Datasoevereiniteit is een spectrum; Het gaat erom de juiste balans te vinden tussen het veilig houden van gegevens en het delen ervan om toegevoegde waarde te krijgen.
-<br/>
-</b>Innovatie en vertrouwen</b><br/>
+</br>
+<b>Innovatie en vertrouwen</b>
 In een data-economie is vertrouwen essentieel voor het bevorderen van innovatie en het aanmoedigen van deelname aan ecosystemen voor het delen van gegevens. Door gegevenssoevereiniteit vast te stellen en regels voor gegevensbeheer af te dwingen, zoals beleid voor gegevensgebruik en contracten, kunnen organisaties een omgeving van vertrouwen en betrouwbaarheid creëren. Wanneer deelnemers er zeker van zijn dat hun gegevens veilig en zelfbepaald worden behandeld, is de kans groter dat ze deelnemen aan samenwerkingsinitiatieven, wat leidt tot innovatie, kennisdeling en economische groei.
-
-</b>Interoperabiliteit en samenwerking</b><br/>
+</br>
+<b>Interoperabiliteit en samenwerking</b>
 Gegevenssoevereiniteit bevordert de interoperabiliteit tussen deelnemers aan dataruimten. Door zich te houden aan gemeenschappelijke technische standaarden kunnen organisaties naadloos gegevens delen en effectief samenwerken op verschillende platforms en domeinen. Het groeiende aantal industriële cloudplatforms en de heterogeniteit van het platformlandschap onderstrepen de noodzaak van normen voor gegevenssoevereiniteit om veilige en betrouwbare gegevensuitwisseling tussen verschillende platforms te garanderen.
-<br/>
+</br>
 Binnen het gedachtegoed van data spaces staat het veilig en vertrouwd uitwisselen van data aldus centraal. Het Dataspace Protocol, dat is ontwikkeld door IDSA is hierin gepositioneerd als een mogelijke voorziene standaard in data spaces om vertrouwd data delen mogelijk te maken. Om voorbereid te zijn op de toekomst is het doel van deze verkenning een beter beeld te krijgen van de wijze waarop het Dataspace Protocol functioneert en kan worden geïmplementeerd in een eenvoudige casus, te weten in een ‘minimum viable dataspace’.  Belangrijke context voor het opzetten van dit experiment zijn de EU common dataspaces. In de volgende paragraaf meer daarover.  
 
 <aside class='note' title="Handreikingen EU Informatie m.b.t. digitale en datastrategie en Verkenning dataspaces">
