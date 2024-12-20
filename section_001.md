@@ -39,9 +39,11 @@ Om de EU common dataspaces te realiseren, heeft de Europese commissie het Data S
 </figure>
 <br/>
 De bouwstenen voor datasoevereiniteit en -vertrouwen bieden technische enablers de mogelijkheid om de betrouwbaarheid en authenticiteit van de informatie van deelnemers te garanderen, terwijl deelnemers soevereiniteit kunnen uitoefenen over de data die ze delen. Dit is essentieel voor het opbouwen van vertrouwen tussen deelnemers bij interacties en het uitvoeren van datatransacties. De pijler “Data Sovereignty and Trust" bestaat uit de volgende drie bouwstenen:  
-1.	Identiteits- en attestatiebeheer: Het beheer van identiteiten en attesten binnen een gegevensruimte om de betrouwbaarheid en integriteit van de informatie van de deelnemers te waarborgen.
-2.	Trust Framework: Verificatie dat een deelnemer in een gegevensruimte zich houdt aan bepaalde regels en een gemeenschappelijke reeks normen.
-3.	Afdwingen van toegangs- en gebruiksbeleid: de mogelijkheid om beleid en regels binnen een bepaalde gegevensruimte te specificeren door de autoriteit voor de gegevensruimte en de individuele deelnemers.  
+<ol>
+  <li>Identiteits- en attestatiebeheer: Het beheer van identiteiten en attesten binnen een gegevensruimte om de betrouwbaarheid en integriteit van de informatie van de deelnemers te waarborgen.</li>
+  <li>Trust Framework: Verificatie dat een deelnemer in een gegevensruimte zich houdt aan bepaalde regels en een gemeenschappelijke reeks normen.</li>
+  <li>Afdwingen van toegangs- en gebruiksbeleid: de mogelijkheid om beleid en regels binnen een bepaalde gegevensruimte te specificeren door de autoriteit voor de gegevensruimte en de individuele deelnemers.</li>
+</ol>
 <br/>
 Voor de realisatie van de EU sectorale dataspaces heeft de DCSS een blauwdruk of ‘Blueprint’ uitgebracht [[DCSS-BP]]. In de DSCC Blueprint zijn overigens niet alleen de technische bouwstenen, maar ook de besturingsbouwstenen voor de EU sectorale data spaces (‘governance’ bouwstenen’) uitgewerkt. In de blauwdruk is het Dataspace Protocol voor souvereine data delen in EU sectorale data spaces de ‘Foundational Technical Standards’ benoemt en is het IDS Dataspace Protocol een implementatie van de ‘Foundational Technical Standards’  voor de EU sectorale data spaces. Daarbij wordt aangetekend, dat “this protocol only specifies the generic elements. The APIs/technical interfaces for the actual data exchange are data space-specific” [[DCSS-BP]]. Wat dat betekent is onderdeel van deze verkenning.  
 <br/>
@@ -56,15 +58,13 @@ Dit experiment is een verkenning naar het gebruiken van het Dataspace Protocol e
 <br/>
 Een belangrijk doel van het experiment is verder kennismaken met het Dataspace Protocol en de data connector en te leren in een eenvoudige praktijkcasus hoe de data connector toe te passen. Daarbij wordt de Dataspace Protocol connector in een minimal vailable data space setting toegepast bij 2 of 3 use cases uit de praktijk casus Circulaire grondstromen.  
 <br/>
-Het is een leerexperiment, dat wordt vastgelegd in een rapportage met een onderbouwing van alle gemaakte keuzes, de opgedane bevindingen en aanbevelingen en in online trainingsmateriaal zodat het experiment eenvoudig herhaalbaar is om anderen ook kennis te laten maken met de werking van het Dataspace Protocol.
-<br/>
-Dit verslag heeft als doel het Dataspace Protocol en de data connector experiment de in de praktijk opgedane bevindingen en aanbevelingen te beschrijven zodat het experiment herhaalbaar is en anderen ook kennis te laten maken met de werking van het data space protocol.
+Het is een leerexperiment dat is vastgelegd in dit verslag met daarin een onderbouwing van alle gemaakte keuzes en de opgedane bevindingen en aanbevelingen. Bovendien wordt het vastgelegd in online trainingsmateriaal zodat het experiment herhaalbaar is om anderen ook kennis te laten maken met de werking van het Dataspace Protocol.
 
 ## Doelgroep
 
-Het “Dataspace Protocol connector experiment” is geschreven voor iedereen, die betrokken is bij het uitwisselen van data, het toepassen van standaarden voor data-uitwisseling in de context van dataspaces. Zoals informatiemanagers, stuurgroepleden, beleidsmedewerkers, projectleiders, adviseurs, architecten, IT-leveranciers, en voor personen die dataproducten, standaarden en specificaties implementeren in hun organisatie en deze data producten willen delen met andere organisaties en data space initiatieven in Nederland en Europa.
+Het “Dataspace Protocol connector experiment” is geschreven voor iedereen die betrokken is bij het uitwisselen van data en het toepassen van standaarden voor data-uitwisseling in de context van dataspaces. Dit zijn bijvoorbeeld informatiemanagers, stuurgroepleden, beleidsmedewerkers, projectleiders, adviseurs, architecten, IT-leveranciers, en voor personen die dataproducten, standaarden en specificaties implementeren in hun organisatie en deze data producten willen delen met andere organisaties en dataspace initiatieven in Nederland en Europa.  
 <br/>
-In het bijzonder richten we ons op iedereen, die betrokken is bij het uitwisselen van geo-informatie (of locatie-gebonden informatie), het toepassen van standaarden voor geo-informatie en de Nationale en Europese geo-informatie infrastructuur. Daarvoor worden in het experiment geografische datasets en diensten (API’s) gebruikt.  
+In het bijzonder richten we ons op iedereen die betrokken is bij het uitwisselen van geo-informatie (of locatie-gebonden informatie), het toepassen van standaarden voor geo-informatie en de Nationale en Europese geo-informatie infrastructuur. Daarvoor worden in het experiment geografische datasets en diensten (API’s) gebruikt.  
 <br/>
 
 ## Aanpak experiment
