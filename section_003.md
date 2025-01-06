@@ -1,61 +1,69 @@
 # Opzet experiment {#01340370}
-## Systeem opzet van de minimum viable dataspace {#001BD7C0}
-Our experimental objective is to verify whether we can achieve a data transfer between two connectors beloging to a dataspace ecosystem. In this regard, each dataspace connector may act as a data provider, consumer or both. Moreover, connectors are linked to dataspace participant who can be people, institutions, companies or possibly governaments. In our specific setting, we deploy a single data provider, named `Alfa`, and consumer, named `Bravo`, under the same participant for the sake of the
-simulation, and we accomplish an HTTP request using the OGC API.
+
+## Systeemopzet van de minimum viable dataspace {#001BD7C0}
+Ons experiment is bedoeld om te verifiëren of we een gegevensoverdracht kunnen realiseren tussen twee connectors binnen een dataspace-ecosysteem. Binnen dit ecosysteem kan elke dataspace-connector fungeren als gegevensaanbieder, consument of beiden. Bovendien zijn connectors gekoppeld aan dataspace-deelnemers (participants), die mensen, instellingen, bedrijven of mogelijk overheden kunnen zijn. In onze specifieke opzet implementeren we één gegevensaanbieder, genaamd `Alfa`, en één consument, genaamd `Bravo`, onder dezelfde deelnemer voor simulatie-doeleinden. We voeren een HTTP-verzoek uit met behulp van de OGC API.
+
 ## TNO Security Gateway (TSG) {#6193360E}
-The TNO Security Gateway is ready-to-use implementation of dataspace componenents offered by TNO. The documentation provided along with the project explains us how to deploy a full working dataspace ecosystem on a cloud environment of ours. Let us focus on the module subdivision provided by TNO regarding each dataspace connector.
+De TNO Security Gateway is een kant-en-klare implementatie van dataspace-componenten die door TNO worden aangeboden. De documentatie die bij het project wordt geleverd, legt uit hoe een volledig werkend dataspace-ecosysteem op een eigen cloudomgeving kan worden geïmplementeerd. Heronder richten we ons op de modulaire indeling van de dataspace-connector zoals beschreven door TNO:
 
 - **Control Plane**
 - **HTTP Data Plane**
 - **Wallet**
 
-Each module has fundamental functions and cannot be discarded in the context of a barebone and functional dataspace connector. Moreover, after a basic TNO deployment, each module has its own dashboard service running. We will be using these dashboards to demonstrate the basic dataspace workflow and experiment.
-### TSG Control Plane  {#4125B625}
-The control plane works as the brain of a dataspace connector and allows us to do the vast majority of the things promised by the dataspace protocol. In the first place, it allows authentication by generating a token valid for a fixed amount of time and usable for subsequent operations. When we authenticate, we might look at the catalogs, initiate a negotation with another connector as data provider using this connector as data consumer, and possibly follow up with a data transfer.
-### TSG HTTP Data Plane  {#5EC97A70}
-The data plane acts as the counter part of the control plane for a specific connector. In simple words, it follows the indications of the control plane in regard to data transfer. For instance, when used as a consumer's data plane, it allows as to make direct data downloads or to fetch data through API requests from a provider's data plane.
-### TSG Wallet  {#726B0216}
-The wallet holds the verifiable credentials for each participant in the dataspace. Again, a participant can be associated to multiple connectors while the opposite is not true. A central wallet (or multiple ones) issues credentials to participants within the dataspace ecosystem.
-## Functies en processen van de minimum viable data space {#01C8311E}
-We describe in this section how to undertake the core steps towards a data transfer between two connectors acting separately as data consumer and provider.
-### Onboarding door producent en consument {#4D30B938}
-pm
-### Dataproducten aanbieden {#32BDC7C7}
-### Bekijken en wijzigen van condities (‘policies’) {#143AA289}
-We show how to change rules for `Bravo`'s dataset `BravoHTTPBin`. YOu can freely add permissions and prohibitions. 
+Elke module heeft fundamentele functies en kan niet worden weggelaten in de context van een minimale en functionele dataspace-connector. Bovendien heeft elke module na een basisimplementatie van TNO zijn eigen dashboard-service. We zullen deze dashboards gebruiken om de basisworkflow en het experiment binnen een dataspace te demonstreren.
 
-<img src='media/section_003/change-rules-dataset.png' alt='Sending contract negotiation' style='width: 100%;'></img>
+### TSG Control Plane {#4125B625}
+De control plane fungeert als het "brein" van een dataspace-connector en stelt ons in staat het grootste deel van de functionaliteiten van het dataspace-protocol uit te voeren. Het biedt onder andere authenticatie door een token te genereren dat een vastgestelde tijd geldig is en dat kan worden gebruikt voor verdere acties. Na authenticatie kunnen we catalogi bekijken, een onderhandeling starten met een andere connector (bijvoorbeeld als gegevensaanbieder) en eventueel overgaan tot een gegevensoverdracht.
+
+### TSG HTTP Data Plane {#5EC97A70}
+De data plane fungeert als tegenhanger van de control plane voor een specifieke connector. Simpel gezegd volgt het de instructies van de control plane met betrekking tot gegevensoverdracht. Als het wordt gebruikt als consument, stelt het ons in staat directe gegevensdownloads uit te voeren of gegevens op te halen via API-requests van de data plane van een aanbieder.
+
+### TSG Wallet {#726B0216}
+De wallet bevat de verifieerbare referenties voor elke deelnemer binnen de dataspace. Een deelnemer kan aan meerdere connectors worden gekoppeld, maar andersom is dit niet het geval. Een centrale wallet (of meerdere wallets) geeft referenties uit aan deelnemers binnen het dataspace-ecosysteem.
+
+## Functies en processen van de minimum viable dataspace {#01C8311E}
+In deze sectie beschrijven we de kernstappen die nodig zijn voor een gegevensoverdracht tussen twee connectors die afzonderlijk optreden als consument en aanbieder.
+
+### Onboarding door producent en consument {#4D30B938}
+
+### Dataproducten aanbieden {#32BDC7C7}
+
+### Bekijken en wijzigen van condities (‘policies’) {#143AA289}
+We laten zien hoe regels kunnen worden gewijzigd voor de dataset `BravoHTTPBin` van `Bravo`. Je kunt vrijelijk toestemmingen en verboden toevoegen.
+
+<img src='media/section_003/change-rules-dataset.png' alt='Verander regels voor dataset' style='width: 100%;'></img>
 
 ### Zoeken van catalogi van andere aanbieders (participanten) {#59F4CA7D}
-### Zoek dataproducten in de catalog {#79E15E32}
-In the `Registry` within a connector's control plane, we can find the list of data resources offered by the current connector and the external connectors of which ours is aware.
 
-<img src='media/section_003/browsing-catalog.png' alt='Browsing catalogs from consumer' style='width: 100%;'></img>
+### Zoek dataproducten in de catalogus {#79E15E32}
+In de `Registry` binnen de control plane van een connector kunnen we de lijst vinden van gegevensbronnen die worden aangeboden door de huidige connector en de externe connectors waarvan onze connector op de hoogte is.
 
-In the example picture, we can see the dataset `Bravo HTTPBin` belonging to our consumer's connector `Bravo` as well as `Kadaster Percelen` and `Alfa HTTPBin` belonging to `Alfa`.
-### Contractonderhandeling producent en consument  {#288808F5}
-The negotation of a contract concerning a specific data product involves multiple steps between the consumer and provider. First, as the consumer `Bravo`, we forward a negotation request to `Alfa`, the provider, as follows.
+<img src='media/section_003/browsing-catalog.png' alt='Catalogus doorzoeken vanaf consument' style='width: 100%;'></img>
 
-<img src='media/section_003/contract-negotiation.png' alt='Sending contract negotiation' style='width: 100%;'></img>
+In het voorbeeld zien we de dataset `Bravo HTTPBin` dat toebehoort aan de consument `Bravo` evenals `Kadaster Percelen` en `Alfa HTTPBin` die toebehoren aan `Alfa`.
 
-Now, the provider `Alfa` will decide whether to proceed or not with the negotation received from `Bravo`.
+### Contractonderhandeling producent en consument {#288808F5}
+De onderhandeling over een contract met betrekking tot een specifiek dataproduct omvat meerdere stappen tussen de consument en aanbieder. Eerst stuurt de consument `Bravo` een onderhandelingsverzoek naar de aanbieder `Alfa` zoals hieronder weergegeven.
 
-<img src='media/section_003/accept-negotiation.png' alt='Accepting a negotiation' style='width: 100%;'></img>
+<img src='media/section_003/contract-negotiation.png' alt='Contractonderhandeling versturen' style='width: 100%;'></img>
 
-In case of acceptance, and after signing and countersigning on both connectors' control planes, `Bravo` is finally allowed to ask the data transfer as shown in the following picture.
+Nu beslist de aanbieder `Alfa` of hij de ontvangen onderhandeling van `Bravo` wil accepteren.
 
-<img src='media/section_003/request-transfer.png' alt='Requesting a transfer' style='width: 100%;'></img>
+<img src='media/section_003/accept-negotiation.png' alt='Onderhandeling accepteren' style='width: 100%;'></img>
 
-### Data transfer tussen producent en consument  {#7BC4931F}
+Bij acceptatie, en na ondertekening en tegenondertekening op beide control planes, mag `Bravo` uiteindelijk de gegevensoverdracht aanvragen zoals in de volgende afbeelding wordt getoond.
 
-Once the consumer requests the transfer to the provider, the transfer can be considered initiated and stays "open" until marked as `Terminated` or `Complete` by any of the parties involved. 
+<img src='media/section_003/request-transfer.png' alt='Overdracht aanvragen' style='width: 100%;'></img>
 
-<img src='media/section_003/initiated-transfer.png' alt='Initiated data transfer' style='width: 100%;'></img>
+### Gegevensoverdracht tussen producent en consument {#7BC4931F}
+Zodra de consument de overdracht aanvraagt bij de aanbieder, wordt de overdracht als gestart beschouwd en blijft "open" totdat deze door een van de betrokken partijen als `Beëindigd` of `Voltooid` wordt gemarkeerd.
 
-What does "open" mean? It means that actual data transfers can be performed between the data planes of the consumer and provider. To really move data from the provider `Alfa` to the consumer `Bravo`, we need to authenticate into the consumer's data plane interface and forward a specific HTTP request to the provider's exposed API. In this case, we use the OGC API endpoint exposed through `Alfa`'s Kadaster data plane to request a collections of Dutch buildings.
+<img src='media/section_003/initiated-transfer.png' alt='Gestarte gegevensoverdracht' style='width: 100%;'></img>
 
-<img src='media/section_003/http-request-params.png' alt='Sending a request to the provider' style='width: 100%;'></img>
+Wat betekent "open"? Het betekent dat daadwerkelijke gegevensoverdrachten kunnen worden uitgevoerd tussen de data planes van de consument en aanbieder. Om echt gegevens van aanbieder `Alfa` naar consument `Bravo` te verplaatsen, moeten we authenticeren op de interface van de data plane van de consument en een specifiek HTTP-verzoek doorsturen naar de API van de aanbieder. In dit geval gebruiken we de OGC API-endpoint die beschikbaar is via de Kadaster data plane van `Alfa` om een verzameling Nederlandse gebouwen op te vragen.
 
-Here follows the response got from such a request.
+<img src='media/section_003/http-request-params.png' alt='Verzoek sturen naar aanbieder' style='width: 100%;'></img>
 
-<img src='media/section_003/http-request-response.png' alt='Getting a response from the provider' style='width: 100%;'></img>
+De response van het verzoek ziet er dan als volgt uit:
+
+<img src='media/section_003/http-request-response.png' alt='Respons ontvangen van aanbieder' style='width: 100%;'></img>
