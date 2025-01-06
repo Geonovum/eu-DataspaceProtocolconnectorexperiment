@@ -24,7 +24,7 @@ De wallet bevat de verifieerbare referenties voor elke deelnemer binnen de datas
 ## Functies en processen van de minimum viable dataspace {#01C8311E}
 In deze sectie beschrijven we de kernstappen die nodig zijn voor een gegevensoverdracht tussen twee connectors die afzonderlijk optreden als consument en aanbieder.
 
-### Onboarding door producent en consument {#4D30B938}
+### Onboarding door aanbieder en consument {#4D30B938}
 
 ### Dataproducten aanbieden {#32BDC7C7}
 
@@ -33,7 +33,7 @@ We laten zien hoe regels kunnen worden gewijzigd voor de dataset `BravoHTTPBin` 
 
 <img src='media/section_003/change-rules-dataset.png' alt='Verander regels voor dataset' style='width: 100%;'></img>
 
-### Zoeken van catalogi van andere aanbieders (participanten) {#59F4CA7D}
+### Zoeken van catalogi van andere aanbieders ('participants') {#59F4CA7D}
 
 ### Zoek dataproducten in de catalogus {#79E15E32}
 In de `Registry` binnen de control plane van een connector kunnen we de lijst vinden van gegevensbronnen die worden aangeboden door de huidige connector en de externe connectors waarvan onze connector op de hoogte is.
@@ -42,7 +42,7 @@ In de `Registry` binnen de control plane van een connector kunnen we de lijst vi
 
 In het voorbeeld zien we de dataset `Bravo HTTPBin` dat toebehoort aan de consument `Bravo` evenals `Kadaster Percelen` en `Alfa HTTPBin` die toebehoren aan `Alfa`.
 
-### Contractonderhandeling producent en consument {#288808F5}
+### Contractonderhandeling aanbieder en consument {#288808F5}
 De onderhandeling over een contract met betrekking tot een specifiek dataproduct omvat meerdere stappen tussen de consument en aanbieder. Eerst stuurt de consument `Bravo` een onderhandelingsverzoek naar de aanbieder `Alfa` zoals hieronder weergegeven.
 
 <img src='media/section_003/contract-negotiation.png' alt='Contractonderhandeling versturen' style='width: 100%;'></img>
@@ -55,7 +55,7 @@ Bij acceptatie, en na ondertekening en tegenondertekening op beide control plane
 
 <img src='media/section_003/request-transfer.png' alt='Overdracht aanvragen' style='width: 100%;'></img>
 
-### Gegevensoverdracht tussen producent en consument {#7BC4931F}
+### Gegevensoverdracht tussen aanbieder en consument {#7BC4931F}
 Zodra de consument de overdracht aanvraagt bij de aanbieder, wordt de overdracht als gestart beschouwd en blijft "open" totdat deze door een van de betrokken partijen als `Beëindigd` of `Voltooid` wordt gemarkeerd.
 
 <img src='media/section_003/initiated-transfer.png' alt='Gestarte gegevensoverdracht' style='width: 100%;'></img>
