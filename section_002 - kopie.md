@@ -1,7 +1,6 @@
 # Het Dataspace Protocol {#4CDCCFF6}
 
 ## International Data Spaces {#021221E8}
-
 Het Dataspace Protocol is ontwikkeld door International Data Spaces Association. De International Data Spaces Association (IDSA) is op een missie om de toekomst van de wereldwijde, digitale economie te creëren met International Data Spaces (IDS), een veilig, soeverein systeem voor het delen van data waarin alle deelnemers de volledige waarde van hun data kunnen realiseren. IDS maakt het mogelijk om nieuwe "slimme diensten" en innovatieve bedrijfsprocessen in verschillende bedrijven en industrieën te laten werken, terwijl ervoor wordt gezorgd dat de zelfbepaalde controle over data gebruik (datasoevereiniteit) in handen blijft van dataproviders.
 De IDSA heeft tot doel de data-gedreven economie van de toekomst te ontsluiten door de blauwdruk te bieden voor veilige, zelfbepaalde data-uitwisseling tussen partners die elkaar vertrouwen. Dit is wat wordt aangeduid als ‘dataoevereiniteit’ en het is van vitaal belang, in het licht van het feit dat gegevenstoegang en -uitwisseling snel kritieke succesfactoren worden voor zowel bedrijven, overheid en particulieren als hele economieën. Tot nu toe hebben vooral bedrijven enorme hoeveelheden waardevolle data bewaard, die ze niet op hun eigen voorwaarden konden beheren, delen of te gelde konden maken. De IDSA heeft een referentiearchitectuur en een reeks overeenkomsten gedefinieerd die kunnen worden gebruikt om data spaces te creëren die vertrouwen tussen partners en een basis voor innovatieve, nieuwe bedrijfsmodellen, producten en diensten tot stand brengen.
 
@@ -67,11 +66,12 @@ De control plane (controlelaag) is verantwoordelijk voor beheer en beslissingen 
 
 <br/>
 De IDS data connector in dit experiment werkt vervolgens met gestandaardiseerde protocollen en afspraken. Dat wordt het ‘Dataspace Protocol’ (kortweg DSP) genoemd. In de volgende paragraaf wordt de werking van het Dataspace Protocol verder beschouwd.
+
 <br/>
 
 ## Het Dataspace Protocol
-
 Het Dataspace Protocol is een cruciale stap in de richting van een nieuwe manier van data-uitwisseling, waarbij controle, veiligheid en interoperabiliteit centraal staan. Het biedt een gestandaardiseerde manier voor organisaties om data te delen zonder dat ze hun soevereiniteit over die data verliezen [[IDS-DSP]]. Vooral in sectoren waar vertrouwelijkheid en veiligheid van groot belang zijn, zoals gezondheidszorg, productie en logistiek, biedt dit protocol grote voordelen. De implementatie van het Dataspace Protocol heeft in de afgelopen jaren een behoorlijke vlucht genomen. Het Dataspace Protocol is een technische standaard en raamwerk dat bedoeld is om veilige en soepele data-uitwisseling mogelijk te maken tussen verschillende partijen en systemen. Dit protocol speelt een cruciale rol in het opzetten van een <b>dataspace</b> — een gedeelde digitale ruimte waarin organisaties data kunnen delen op een gecontroleerde, veilige en privacy vriendelijke manier. 
+
 <br/>
 Het Dataspace Protocol is ontworpen om een aantal belangrijke uitdagingen rond data-uitwisseling op te lossen:
 <ul><li><b>Interoperabiliteit</b>: Het stelt verschillende systemen in staat om op een uniforme manier gegevens uit te wisselen, onafhankelijk van de technologie of het platform dat ze gebruiken.</li>
@@ -110,4 +110,50 @@ De figuur ? toont een systeemarchitectuur met drie hoofdlagen [[DSCC-BP]]:
     - Transfer Process Management, die ervoor dat voorbereidingen worden getroffen voor Beheert processen voor data-uitwisseling. Daarbij 
     - Policy Enforcement: Verantwoordelijk voor de naleving van de onderhandelde toegangs- en gebruiksvoorwaarden.
 3. Data Plane(s) zorgt voor daadwerkelijke data-uitwisseling (data exchange).
+
 <br/>
+
+<b>Belangrijkste componenten van het Dataspace Protocol</b>
+Het Dataspace Protocol bestaat uit verschillende componenten en mechanismen, die samenwerken om betrouwbare data-uitwisseling mogelijk te maken:
+<ul><li><b>Data Providers en Data </b><b>Consumers</b>: Dit zijn respectievelijk de partijen die data delen en die toegang willen tot die data. Het protocol maakt afspraken over de rollen van beide partijen.</li>
+<li><b>Connectoren</b>: Dit zijn technische componenten die data-uitwisseling mogelijk maken. De connectoren zorgen ervoor dat de data veilig en in overeenstemming met de voorwaarden van de data-eigenaar wordt gedeeld. De <b>IDS Connector</b> van het International Data Spaces initiatief is een voorbeeld van zo'n connector.</li>
+<li><b>Toestemmings- en voorwaardenbeheer</b>: Data-eigenaren kunnen via het protocol gedetailleerde voorwaarden instellen voor het delen van hun data. Denk hierbij aan beperkingen op het gebruik, tijdsduur, of zelfs geografische restricties.</li>
+<li><b>Certificering en trust </b><b>frameworks</b>: Het DSP zorgt voor vertrouwen tussen partijen door middel van certificeringsmechanismen. Alleen gecertificeerde deelnemers kunnen toegang krijgen tot de data space, wat een zekere mate van zekerheid en veiligheid biedt.</li>
+</ul>
+
+<br/>
+
+<aside class='note' title="Making the Dataspace Protocol an international standard" [[IDS-DSP-S]]>
+    De specificatie werkzaamheden voor het Dataspace Protocol zijn eind 2022 gestart als subwerkgroep van WG Architectuur van IDSA. De werkgroep heeft in februari 2024 de Dataspace Protocol-specificatie 2024-1 uitgebracht. Deze versie van de Dataspace Protocol-specificatie is de releasekandidaat en wordt als stabiel beschouwd. De leden van IDSA zijn in 2017 in werkgroepen en commissies begonnen met het ontwerpen van technologie voor data spaces, zodat het Dataspace Protocol in 2024 klaar zou kunnen zijn om een standaardisatieproces te starten (zie verder [[IDS-DSP-S]]). Het Dataspace-protocol op zich is vrij licht, maar het is de essentie van het werk van IDSA. Naast het DSP vormen het IDSA Reference Architecture Model [[IDS-RAM4]] en het IDSA Rulebook [IDS-PPRB] de kern van het werk van International Data Spaces (IDS).  
+    
+    Eind 2023 heeft IDSA de samenwerking gezocht met de Eclipse Foundation om het Data Space Protocol richting een internationale standaard te krijgen. Daarvoor is een gezamenlijke Eclipse Dataspace Working Group (EDWG), opgericht, die het protocol in een Eclipse Dataspace Protocol Specification-project heeft ondergebracht. Dit project zorgt voor de realisatie en oprichting van de Dataspace Technology Compatibility Kit om interoperabiliteit en naleving te kunnen garanderen. Van hieruit wordt het DSP ingediend bij ISO/IEC als een internationale norm. Het normalisatieproces door het Joint Technical Committee (JTC1) is inmiddels in gang gezet.  
+</aside>
+
+<br/>
+In dit experiment staat de werking en het gebruik van het data space protocol en de data connectors centraal. Het data space protocol zorgt voor het vertrouwd data delen in een data space en bestaat uit drie afspraken of protocollen:
+<ol>
+<li>Catalog protocol;</li>
+<li>Contract negotiation protocol;</li>
+<li>Transfer process protocol.</li>
+</ol> 
+Voor het delen van data met de data connector worden aldus drie stadia doorlopen, waarvoor elk verschillende protocollen zijn overeengekomen. Alvorens de werking van het data space protocol connectors in meer detail toe te lichten gaan we eerst in op het informatiemodel achter het data space protocol toe. 
+<br/>
+
+## Het Dataspace informatiemodel <br/>
+pm [[IDS-IM]]
+<br/>
+
+## Catalog protocol {#2E1AE007} <br/>
+pm
+
+## Contract negotiation potocol {#7774D9F4} <br/>
+pm [[ODRL]]
+
+## Transfer protocol {#7C75A7C4} <br/>
+pm
+<br/>
+
+## De IDS data connector <br/>
+pm
+
+
