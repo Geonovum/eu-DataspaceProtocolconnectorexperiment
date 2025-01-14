@@ -31,9 +31,11 @@ Identiteitsproviders bieden een scala aan diensten voor het maken, onderhouden, 
 Een transparant certificeringsproces zorgt voor vertrouwen van deelnemers en componenten binnen de data space. IDS maakt betrouwbare data-uitwisseling mogelijk tussen gecertificeerde data-aanbieders en -ontvangers, op basis van onderling overeengekomen regels.  
 <br/>
 In het figuur 3 van IDSA is de data aanbieder en data consument gedefinieerd als een ‘apparaat’. In werkelijkheid is het een apparaat in handen van respectievelijk een ‘data eigenaar’ en een ‘data gebruiker’. De data eigenaar bepaalt onder welke voorwaarden en restricties (‘usage policies’) zijn/haar data wordt gedeeld met de data gebruiker. Zij zijn twee belangrijke typen participanten oftewel deelnemers in de data space. De diverse ondersteunende (technologische) diensten, die nodig zijn in een data space, zoals identity providers, catalogs brokers, data connectors of de app store, worden doorgaans geleverd door dienstverleners (‘service providers’), het derde type deelnemers in een data space. Tenslotte, dient een data space bestuurd te worden. Dat is de data space beheerder of ‘data space authority’. De data space autoriteit vervult daarbij de volgende rollen [[IDS-RAM4]]:
-1. Beheert de afspraken tussen alle deelnemers in de data space; 
-2. Zorgt voor het beheer van het ‘deelnemersregister’ van de data space; 
-3. Is geen partij in de daadwerkelijk data-uitwisseling; data aanbieders en data gebruikers wisselen onderling data uit zonder tussenkomst van de data space beheerder.  
+<ol>
+    <li>Beheert de afspraken tussen alle deelnemers in de data space;</li>
+    <li>Zorgt voor het beheer van het ‘deelnemersregister’ van de data space;</li>
+    <li>Is geen partij in de daadwerkelijk data-uitwisseling; data aanbieders en data gebruikers wisselen onderling data uit zonder tussenkomst van de data space beheerder.</li>
+</ol>
 Alle typen deelnemers in een data space vervullen daarmee een bepaalde rol (zie figuur 4).
 
 <figure id="Figuur_x">
@@ -42,15 +44,17 @@ Alle typen deelnemers in een data space vervullen daarmee een bepaalde rol (zie 
 </figure>
 
 <br/>
-In dit Dataspace Protocol experiment gaan we kennismaken met de wijze waarop een data aanbieders en data gebruikers data kunnen uitwisselen. Dat doen we in een minimale data space setting. De data space beheerder speelt ook een rol als beheerder van het deelnemersregister. Data space dienstverleners worden vooralsnog buiten beschouwing gelaten. 
+In dit Dataspace Protocol experiment gaan we kennismaken met de wijze waarop een data aanbieders en data gebruikers data kunnen uitwisselen. Dat doen we in een minimale data space setting. De data space beheerder speelt ook een rol als beheerder van het deelnemersregister. Data space dienstverleners worden vooralsnog buiten beschouwing gelaten.  
 <br/>
 <b>De IDS data connector</b><br/>
-De IDS data connector is de centrale technische component voor veilige en vertrouwde data-uitwisseling. De connector verzendt data rechtstreeks naar de consument in een vertrouwde, gecertificeerde data space, zodat de oorspronkelijke data aanbieder altijd de controle over de data behoudt en de voorwaarden voor het gebruik ervan bepaalt. De IDS connector maakt gebruik van technologie, die data in een soort virtuele "container" plaatst, en zorgt dat deze alleen worden gebruikt zoals overeengekomen volgens de gebruiksvoorwaarden van de data aanbieder en zijn overeengekomen tussen de betrokken partijen. In de onderstaande figuur ? is de rol van  de data connector expliciet weergeven in uitwisseling van data (producten). Daarbij kan de data connector ook worden gezien als ‘container’ als een verzameling van (meta)data en functies over de diverse aspecten, die van belang zijn voor de data-transfer tussen de data aanbieder en data consument:<br/>
-1.	De data connector heeft een functie bij het beheer van deelnemers identiteiten en het deelnemersregister;<br/>
-2.	De data connector bevat het data aanbod in een catalogus;<br/>
-3.	De data connector kan de ‘offers’ en contracten uitonderhandelen tussen aanbieder en consument op basis van de gebruiksvoorwaarden (‘policy engine’);<br/>
-4.	De data connector heeft een configuratie en monitoringsfunctie;<br/>
-5.	De data connector zorgt er dat de datatransfer kan plaatsvinden tussen data aanbieder en data consument.<br/>
+De IDS data connector is de centrale technische component voor veilige en vertrouwde data-uitwisseling. De connector verzendt data rechtstreeks naar de consument in een vertrouwde, gecertificeerde data space, zodat de oorspronkelijke data aanbieder altijd de controle over de data behoudt en de voorwaarden voor het gebruik ervan bepaalt. De IDS connector maakt gebruik van technologie, die data in een soort virtuele "container" plaatst, en zorgt dat deze alleen worden gebruikt zoals overeengekomen volgens de gebruiksvoorwaarden van de data aanbieder en zijn overeengekomen tussen de betrokken partijen. In de onderstaande figuur ? is de rol van  de data connector expliciet weergeven in uitwisseling van data (producten). Daarbij kan de data connector ook worden gezien als ‘container’ als een verzameling van (meta)data en functies over de diverse aspecten, die van belang zijn voor de data-transfer tussen de data aanbieder en data consument:
+<ol>
+    <li>De data connector heeft een functie bij het beheer van deelnemers identiteiten en het deelnemersregister;</li>
+    <li>De data connector bevat het data aanbod in een catalogus;</li>
+    <li>De data connector kan de ‘offers’ en contracten uitonderhandelen tussen aanbieder en consument op basis van de gebruiksvoorwaarden (‘policy engine’);</li>
+    <li>De data connector heeft een configuratie en monitoringsfunctie;</li>
+    <li>De data connector zorgt er dat de datatransfer kan plaatsvinden tussen data aanbieder en data consument.</li>
+</ol>
 <br/>
 <b>Control plane en data plane</b><br/>
 De IDSA Data Connector werkt vervolgens met gestandaardiseerde protocollen en afspraken. Een relevant concept voor het gebruik van de data connector is daarbij het onderscheid tussen control plane en data plane (zie figuur 5). Het onderscheid wordt gemaakt om aan te geven dat afspraken en standaarden voor een data space betrekking hebben op de control plane.<br/>
@@ -68,7 +72,7 @@ De IDS data connector in dit experiment werkt vervolgens met gestandaardiseerde 
 
 ## Het Dataspace Protocol
 
-Het Dataspace Protocol is een cruciale stap in de richting van een nieuwe manier van data-uitwisseling, waarbij controle, veiligheid en interoperabiliteit centraal staan. Het biedt een gestandaardiseerde manier voor organisaties om data te delen zonder dat ze hun soevereiniteit over die data verliezen [[IDS-DSP]]. Vooral in sectoren waar vertrouwelijkheid en veiligheid van groot belang zijn, zoals gezondheidszorg, productie en logistiek, biedt dit protocol grote voordelen. De implementatie van het Dataspace Protocol heeft in de afgelopen jaren een behoorlijke vlucht genomen. Het Dataspace Protocol is een technische standaard en raamwerk dat bedoeld is om veilige en soepele data-uitwisseling mogelijk te maken tussen verschillende partijen en systemen. Dit protocol speelt een cruciale rol in het opzetten van een <b>dataspace</b> — een gedeelde digitale ruimte waarin organisaties data kunnen delen op een gecontroleerde, veilige en privacy vriendelijke manier. 
+Het Dataspace Protocol is een cruciale stap in de richting van een nieuwe manier van data-uitwisseling, waarbij controle, veiligheid en interoperabiliteit centraal staan. Het biedt een gestandaardiseerde manier voor organisaties om data te delen zonder dat ze hun soevereiniteit over die data verliezen [[IDS-DSP]]. Vooral in sectoren waar vertrouwelijkheid en veiligheid van groot belang zijn, zoals gezondheidszorg, productie en logistiek, biedt dit protocol grote voordelen. De implementatie van het Dataspace Protocol heeft in de afgelopen jaren een behoorlijke vlucht genomen. Het Dataspace Protocol is een technische standaard en raamwerk dat bedoeld is om veilige en soepele data-uitwisseling mogelijk te maken tussen verschillende partijen en systemen. Dit protocol speelt een cruciale rol in het opzetten van een <b>dataspace</b> — een gedeelde digitale ruimte waarin organisaties data kunnen delen op een gecontroleerde, veilige en privacy vriendelijke manier.  
 <br/>
 Het Dataspace Protocol is ontworpen om een aantal belangrijke uitdagingen rond data-uitwisseling op te lossen:
 <ul><li><b>Interoperabiliteit</b>: Het stelt verschillende systemen in staat om op een uniforme manier gegevens uit te wisselen, onafhankelijk van de technologie of het platform dat ze gebruiken.</li>
