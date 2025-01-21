@@ -38,6 +38,7 @@ In het figuur ? van IDSA is de data aanbieder en data consument gedefinieerd als
 2. Zorgt voor het beheer van het ‘deelnemersregister’ van de data space; 
 3. Is geen partij in de daadwerkelijk data-uitwisseling; data aanbieders en data gebruikers wisselen onderling data uit zonder tussenkomst van de data space beheerder.  
 Alle typen deelnemers in een data space vervullen daarmee een bepaalde rol (zie figuur 4).
+<br/>
 
 <figure id="Figuur_x">
 <a href="media/Rollen in de dataspace (figuur TNO).png" target="_blank"><img src="media/Rollen in de dataspace (figuur TNO).png" alt=""></a>
@@ -47,6 +48,7 @@ Alle typen deelnemers in een data space vervullen daarmee een bepaalde rol (zie 
 <br/>
 In dit Dataspace Protocol experiment gaan we kennismaken met de wijze waarop een data aanbieders en data gebruikers data kunnen uitwisselen. Dat doen we in een minimale data space setting. De data space beheerder speelt ook een rol als beheerder van het deelnemersregister. Data space dienstverleners worden vooralsnog buiten beschouwing gelaten.  
 <br/>
+
 **De data connector**<br/>
 De data connector is de centrale technische component voor veilige en vertrouwde data-uitwisseling. De connector verzendt data rechtstreeks naar de consument in een vertrouwde, gecertificeerde data space, zodat de oorspronkelijke data aanbieder altijd de controle over de data behoudt en de voorwaarden voor het gebruik ervan bepaalt. De data connector maakt gebruik van technologie, die data in een soort virtuele "container" plaatst, en zorgt dat deze alleen worden gebruikt zoals overeengekomen volgens de gebruiksvoorwaarden van de data aanbieder en zijn overeengekomen tussen de betrokken partijen. In de onderstaande figuur ? is de rol van  de data connector expliciet weergeven in uitwisseling van data (producten). Daarbij kan de data connector ook worden gezien als ‘container’ als een verzameling van (meta)data en functies over de diverse aspecten, die van belang zijn voor de data-transfer tussen de data aanbieder en data consument:
 1.	De data connector heeft een functie bij het beheer van deelnemers identiteiten en het deelnemersregister; <br/>
@@ -55,6 +57,7 @@ De data connector is de centrale technische component voor veilige en vertrouwde
 4.	De data connector heeft een configuratie en monitoringsfunctie; <br/>
 5.	De data connector zorgt er dat de datatransfer kan plaatsvinden tussen data aanbieder en data consument. <br/>
 <br/>
+
 **Control plane en data plane**<br/>
 De data connector werkt vervolgens met gestandaardiseerde protocollen en afspraken. Een relevant concept voor het gebruik van de data connector is daarbij het onderscheid tussen control plane en data plane (zie figuur 5). Het onderscheid wordt gemaakt om aan te geven dat afspraken en standaarden voor een data space betrekking hebben op de control plane.<br/>
 <br/>
@@ -111,14 +114,15 @@ De figuur 6 toont een systeemarchitectuur met drie hoofdlagen [[DSCC-BP]]:
 3. Data Plane(s) zorgt voor daadwerkelijke data-uitwisseling (data exchange).
 <br/>
 
-<aside class='note' title="Making the Dataspace Protocol an international standard [[IDS-DSP-S]]">
-    De specificatie werkzaamheden voor het Dataspace Protocol zijn eind 2022 gestart als subwerkgroep van WG Architectuur van IDSA. De werkgroep heeft in februari 2024 de Dataspace Protocol-specificatie 2024-1 uitgebracht. Deze versie van de Dataspace Protocol-specificatie is de releasekandidaat en wordt als stabiel beschouwd. De leden van IDSA zijn in 2017 in werkgroepen en commissies begonnen met het ontwerpen van technologie voor data spaces, zodat het Dataspace Protocol in 2024 klaar zou kunnen zijn om een standaardisatieproces te starten (zie verder [[IDS-DSP-S]]). Het Dataspace-protocol op zich is vrij licht, maar het is de essentie van het werk van IDSA. Naast het DSP vormen het IDSA Reference Architecture Model [[IDS-RAM4]], [[IDSRAM5]] en het IDSA Rulebook [[IDS-PPRB]] de kern van het werk van International Data Spaces (IDS).  
+<aside class='note' title="Making the Dataspace Protocol an international standard">
+    De specificatie werkzaamheden voor het Dataspace Protocol zijn eind 2022 gestart als subwerkgroep van WG Architectuur van IDSA [[IDS-DSP-S]]. De werkgroep heeft in februari 2024 de Dataspace Protocol-specificatie 2024-1 uitgebracht. Deze versie van de Dataspace Protocol-specificatie is de releasekandidaat en wordt als stabiel beschouwd. De leden van IDSA zijn in 2017 in werkgroepen en commissies begonnen met het ontwerpen van technologie voor data spaces, zodat het Dataspace Protocol in 2024 klaar zou kunnen zijn om een standaardisatieproces te starten (zie verder [[IDS-DSP-S]]). Het Dataspace-protocol op zich is vrij licht, maar het is de essentie van het werk van IDSA. Naast het DSP vormen het IDSA Reference Architecture Model [[IDS-RAM4]], [[IDSRAM5]] en het IDSA Rulebook [[IDS-PPRB]] de kern van het werk van International Data Spaces (IDS).
     
     Eind 2023 heeft IDSA de samenwerking gezocht met de Eclipse Foundation om het Data Space Protocol richting een internationale standaard te krijgen. Daarvoor is een gezamenlijke Eclipse Dataspace Working Group (EDWG), opgericht, die het protocol in een Eclipse Dataspace Protocol Specification-project heeft ondergebracht. Dit project zorgt voor de realisatie en oprichting van de Dataspace Technology Compatibility Kit om interoperabiliteit en naleving te kunnen garanderen. Van hieruit wordt het DSP ingediend bij ISO/IEC als een internationale norm. Het normalisatieproces door het Joint Technical Committee (JTC1) is inmiddels in gang gezet.  
 </aside>
+
 <br/>
 
-In dit experiment staat de werking en het gebruik van het data space protocol en de data connectors centraal. Voor het delen van data met de data connector worden aldus drie stadia doorlopen, waarvoor elk verschillende protocollen zijn overeengekomen. Alvorens de werking van het data space protocol connectors in meer detail toe te lichten gaan we eerst in op het informatiemodel achter het data space protocol toe. 
+In dit experiment staat de werking en het gebruik van het Dataspace Protocol en de data connectors centraal. Voor het delen van data met een data connector worden aldus drie stadia doorlopen, waarvoor elk verschillende protocollen zijn overeengekomen. Alvorens de werking van het data space protocol connectors in meer detail toe te lichten gaan we eerst in op het informatiemodel achter het data space protocol toe. 
 <br/>
 
 ## Het Dataspace informatiemodel
