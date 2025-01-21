@@ -122,4 +122,4 @@ In dit experiment staat de werking en het gebruik van het data space protocol en
 <br/>
 
 ## Het Dataspace informatiemodel
-pm
+pm pm
