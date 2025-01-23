@@ -37,7 +37,7 @@ Gecertificeerd voor betrouwbaarheid. Een transparant certificeringsproces zorgt 
 In het figuur ? van IDSA is de data aanbieder en data consument gedefinieerd als een ‘apparaat’. In werkelijkheid is het een apparaat in handen van respectievelijk een ‘data eigenaar’ en een ‘data gebruiker’. De data eigenaar bepaalt onder welke voorwaarden en restricties (‘usage policies’) zijn/haar data wordt gedeeld met de data gebruiker. Zij zijn twee belangrijke typen participanten oftewel deelnemers in de data space. De diverse ondersteunende (technologische) diensten, die nodig zijn in een data space, zoals identity providers, catalogs brokers, data connectors of de app store, worden doorgaans geleverd door dienstverleners (‘service providers’), het derde type deelnemers in een data space. Tenslotte, dient een data space bestuurd te worden. Dat is de data space beheerder of ‘data space authority’. De data space autoriteit vervult daarbij de volgende rollen [[IDS-RAM4]]:
 1. Beheert de afspraken tussen alle deelnemers in de data space; 
 2. Zorgt voor het beheer van het ‘deelnemersregister’ van de data space; 
-3. Is geen partij in de daadwerkelijk data-uitwisseling; data aanbieders en data gebruikers wisselen onderling data uit zonder tussenkomst van de data space beheerder.  
+3. Is geen partij in de daadwerkelijk data-uitwisseling; data aanbieders en data gebruikers wisselen onderling data uit zonder tussenkomst van de data space beheerder.
 Alle typen deelnemers in een data space vervullen daarmee een bepaalde rol (zie figuur 4).
 <br/>
 
@@ -47,7 +47,7 @@ Alle typen deelnemers in een data space vervullen daarmee een bepaalde rol (zie 
 </figure>
 
 <br/>
-In dit Dataspace Protocol experiment gaan we kennismaken met de wijze waarop een data aanbieders en data gebruikers data kunnen uitwisselen. Dat doen we in een minimale data space setting. De data space beheerder speelt ook een rol als beheerder van het deelnemersregister. Data space dienstverleners worden vooralsnog buiten beschouwing gelaten.  
+In dit Dataspace Protocol experiment gaan we kennismaken met de wijze waarop een data aanbieders en data gebruikers data kunnen uitwisselen. Dat doen we in een minimale data space setting. De data space beheerder speelt ook een rol als beheerder van het deelnemersregister. Data space dienstverleners worden vooralsnog buiten beschouwing gelaten.
 <br/>
 
 </b>De data connector</b>
@@ -61,7 +61,7 @@ De data connector is de centrale technische component voor veilige en vertrouwde
 
 </b>Control plane en data plane</b>
 
-De data connector werkt vervolgens met gestandaardiseerde protocollen en afspraken. Een relevant concept voor het gebruik van de data connector is daarbij het onderscheid tussen control plane en data plane (zie figuur 5). Het onderscheid wordt gemaakt om aan te geven dat afspraken en standaarden voor een data space betrekking hebben op de control plane.<br/>
+De data connector werkt vervolgens met gestandaardiseerde protocollen en afspraken. Een relevant concept voor het gebruik van de data connector is daarbij het onderscheid tussen control plane en data plane (zie figuur 5). Het onderscheid wordt gemaakt om aan te geven dat afspraken en standaarden voor een data space betrekking hebben op de control plane.
 <br/>
 De control plane (controlelaag) is verantwoordelijk voor beheer en beslissingen over hoe datastromen worden verwerkt of hoe de data space functioneert. De control plane verwerkt geen echte data, maar richt zich op controle-informatie, die nodig is om de datatransfer plaats te laten vinden op een vertrouwde en souvereine wijze. Het functioneert min of meer als een soort ‘brein’ van de data space en geeft opdrachten aan de data plane voor de data transfer. Daarmee bepaalt de control plane wat er moet gebeuren en hoe het moet gebeuren (het verzorgt de voorbereiding van de datatransfer), terwijl de data plane de uitvoering verzorgt en daadwerkelijk data transporteert. De data plane is dus verantwoordelijk voor het fysieke transport van de data  tussen aanbieder en consument. De data plane voert daadwerkelijk de datatransfer (data overdracht) uit volgens de instructies van de control plane en het verwerkt en transporteert de werkelijke data  (bijvoorbeeld een videostream, datasets, bestanden). Er zijn daarvoor diverse mogelijkheden om data transfer te laten plaatsvinden, zoals via API-verzoeken, event-streams, bulkdownloads, et cetera. De data plane schrijft voor data spaces dus niet één standaard procedure voor om data transfer te laten plaatsvinden. De controle plane bij data spaces werkt (bij voorkeur) wel volgens gestandaardiseerde protocollen en afspraken (één standaard procedure).<br/>
 
@@ -117,9 +117,9 @@ De figuur 6 toont een systeemarchitectuur met drie hoofdlagen [[DSCC-BP]]:
 <br/>
 
 <aside class='note' title="Making the Dataspace Protocol an international standard">
-    De specificatie werkzaamheden voor het Dataspace Protocol zijn eind 2022 gestart als subwerkgroep van WG Architectuur van IDSA [[IDS-DSP-S]]. De werkgroep heeft in februari 2024 de Dataspace Protocol-specificatie 2024-1 uitgebracht. Deze versie van de Dataspace Protocol-specificatie is de releasekandidaat en wordt als stabiel beschouwd. De leden van IDSA zijn in 2017 in werkgroepen en commissies begonnen met het ontwerpen van technologie voor data spaces, zodat het Dataspace Protocol in 2024 klaar zou kunnen zijn om een standaardisatieproces te starten (zie verder [[IDS-DSP-S]]). Het Dataspace-protocol op zich is vrij licht, maar het is de essentie van het werk van IDSA. Naast het DSP vormen het IDSA Reference Architecture Model [[IDS-RAM4]], [[IDSRAM5]] en het IDSA Rulebook [[IDS-PPRB]] de kern van het werk van International Data Spaces (IDS).
-    
-    Eind 2023 heeft IDSA de samenwerking gezocht met de Eclipse Foundation om het Data Space Protocol richting een internationale standaard te krijgen. Daarvoor is een gezamenlijke Eclipse Dataspace Working Group (EDWG), opgericht, die het protocol in een Eclipse Dataspace Protocol Specification-project heeft ondergebracht. Dit project zorgt voor de realisatie en oprichting van de Dataspace Technology Compatibility Kit om interoperabiliteit en naleving te kunnen garanderen. Van hieruit wordt het DSP ingediend bij ISO/IEC als een internationale norm. Het normalisatieproces door het Joint Technical Committee (JTC1) is inmiddels in gang gezet.  
+De specificatie werkzaamheden voor het Dataspace Protocol zijn eind 2022 gestart als subwerkgroep van WG Architectuur van IDSA [[IDS-DSP-S]]. De werkgroep heeft in februari 2024 de Dataspace Protocol-specificatie 2024-1 uitgebracht. Deze versie van de Dataspace Protocol-specificatie is de releasekandidaat en wordt als stabiel beschouwd. De leden van IDSA zijn in 2017 in werkgroepen en commissies begonnen met het ontwerpen van technologie voor data spaces, zodat het Dataspace Protocol in 2024 klaar zou kunnen zijn om een standaardisatieproces te starten (zie verder [[IDS-DSP-S]]). Het Dataspace-protocol op zich is vrij licht, maar het is de essentie van het werk van IDSA. Naast het DSP vormen het IDSA Reference Architecture Model [[IDS-RAM4]], [[IDSRAM5]] en het IDSA Rulebook [[IDS-PPRB]] de kern van het werk van International Data Spaces (IDS).
+
+Eind 2023 heeft IDSA de samenwerking gezocht met de Eclipse Foundation om het Data Space Protocol richting een internationale standaard te krijgen. Daarvoor is een gezamenlijke Eclipse Dataspace Working Group (EDWG), opgericht, die het protocol in een Eclipse Dataspace Protocol Specification-project heeft ondergebracht. Dit project zorgt voor de realisatie en oprichting van de Dataspace Technology Compatibility Kit om interoperabiliteit en naleving te kunnen garanderen. Van hieruit wordt het DSP ingediend bij ISO/IEC als een internationale norm. Het normalisatieproces door het Joint Technical Committee (JTC1) is inmiddels in gang gezet.  
 </aside>
 
 <br/>
