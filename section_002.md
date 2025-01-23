@@ -8,6 +8,7 @@ De IDSA heeft tot doel de data-gedreven economie van de toekomst te ontsluiten d
 Om ervoor te zorgen dat de toekomstige data-economie soepel functioneert en zijn waardepropositie waarmaakt, moeten alle spelers zich houden aan een gemeenschappelijk governancekader dat de functionele, technische, operationele en juridische overeenkomsten specificeert die hun rollen en interacties binnen en tussen de verschillende delen van het ecosysteem structureren. Dit boek met regels en richtlijnen schetst dat kader [[IDS-PPRB]]. Door deze regels en richtlijnen te volgen, kunnen alle spelers samenwerken om het gedeelde doel te bereiken om de volledige waarde van de wereldwijde data-economie te ontsluiten.
 
 IDSA is verantwoordelijk voor het bijhouden van het regelboek en voor het ondersteunen van de toepassing ervan. De IDSA organisatie helpt bij het coördineren van belangrijke processen en als algemeen bestuur een basis voor de realisatie van interne structuren en interfaces met andere partijen. Daarnaast bestaat het IDSA Open Source project, dat de software componenten ontwikkeld voor het implementeren en testen van de essentiële IDSA componenten. De implementatie van het Dataspace Protocol heeft daarmee in de afgelopen jaren een behoorlijke vlucht genomen. De belangrijke actoren en bouwstenen van een IDS data space zijn in onderstaande figuur 3 weergegeven.
+<br/>
 
 <figure id="Figuur_x">
 <a href="media/IDSA data space bouwstenen (zwart).png" target="_blank"><img src="media/IDSA data space bouwstenen (zwart).png" alt=""></a>
@@ -51,11 +52,11 @@ In dit Dataspace Protocol experiment gaan we kennismaken met de wijze waarop een
 
 </b>De data connector</b>
 De data connector is de centrale technische component voor veilige en vertrouwde data-uitwisseling. De connector verzendt data rechtstreeks naar de consument in een vertrouwde, gecertificeerde data space, zodat de oorspronkelijke data aanbieder altijd de controle over de data behoudt en de voorwaarden voor het gebruik ervan bepaalt. De data connector maakt gebruik van technologie, die data in een soort virtuele "container" plaatst, en zorgt dat deze alleen worden gebruikt zoals overeengekomen volgens de gebruiksvoorwaarden van de data aanbieder en zijn overeengekomen tussen de betrokken partijen. In de onderstaande figuur ? is de rol van  de data connector expliciet weergeven in uitwisseling van data (producten). Daarbij kan de data connector ook worden gezien als ‘container’ als een verzameling van (meta)data en functies over de diverse aspecten, die van belang zijn voor de data-transfer tussen de data aanbieder en data consument:
-1.	De data connector heeft een functie bij het beheer van deelnemers identiteiten en het deelnemersregister; <br/>
-2.	De data connector bevat het data aanbod in een catalogus;<br/>
-3.	De data connector kan de ‘offers’ en contracten uitonderhandelen tussen aanbieder en consument op basis van de gebruiksvoorwaarden (‘policy engine’); <br/>
-4.	De data connector heeft een configuratie en monitoringsfunctie; <br/>
-5.	De data connector zorgt er dat de datatransfer kan plaatsvinden tussen data aanbieder en data consument. <br/>
+1.	De data connector heeft een functie bij het beheer van deelnemers identiteiten en het deelnemersregister;
+2.	De data connector bevat het data aanbod in een catalogus;
+3.	De data connector kan de ‘offers’ en contracten uitonderhandelen tussen aanbieder en consument op basis van de gebruiksvoorwaarden (‘policy engine’);
+4.	De data connector heeft een configuratie en monitoringsfunctie;
+5.	De data connector zorgt er dat de datatransfer kan plaatsvinden tussen data aanbieder en data consument. 
 <br/>
 
 </b>Control plane en data plane</b>
