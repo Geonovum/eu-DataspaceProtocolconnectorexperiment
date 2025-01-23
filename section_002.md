@@ -58,7 +58,7 @@ De data connector is de centrale technische component voor veilige en vertrouwde
 5.	De data connector zorgt er dat de datatransfer kan plaatsvinden tussen data aanbieder en data consument. <br/>
 <br/>
 
-</b>Control plane en data plane*</b>
+</b>Control plane en data plane</b>
 
 De data connector werkt vervolgens met gestandaardiseerde protocollen en afspraken. Een relevant concept voor het gebruik van de data connector is daarbij het onderscheid tussen control plane en data plane (zie figuur 5). Het onderscheid wordt gemaakt om aan te geven dat afspraken en standaarden voor een data space betrekking hebben op de control plane.<br/>
 <br/>
