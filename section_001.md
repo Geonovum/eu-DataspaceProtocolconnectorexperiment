@@ -1,7 +1,7 @@
 # Inleiding {#12DAD25F}
 Vanuit Europa is de afgelopen jaren een uitdagende nieuwe digitaliserings- en data strategie opgesteld. De Europese digitale strategie en data strategie [[EUDS]]is bedoeld als de grote aanjager van de Europese data-economie. Via regulering en projecten wil de EU meer grip krijgen op haar eigen data via de realisatie van een ‘common EU data space’. Een ‘data space’ is gericht is op het veilig, vertrouwd en soeverein delen van data binnen domeinen en over domeinen heen.  
 <br/>
-<b>Controle over data</b>  
+<b>Controle over data</b>
 Datasoevereiniteit zorgt ervoor dat organisaties, overheden en individuen controle hebben over hun data. Met deze controle kunnen ze zelf bepalen hoe hun gegevens worden verzameld, opgeslagen, gedeeld en gebruikt door anderen. Datasoevereiniteit is een spectrum; Het gaat erom de juiste balans te vinden tussen het veilig houden van gegevens en het delen ervan om toegevoegde waarde te krijgen.  
 <br/>
 <b>Innovatie en vertrouwen</b>  
