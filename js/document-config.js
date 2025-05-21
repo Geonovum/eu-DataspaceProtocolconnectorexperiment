@@ -128,6 +128,23 @@ var documentConfig =
       date: "9 maart 2022",
       status: "Vastgesteld"
     },
+    "ECLPS-DSP":
+    {
+      title: "Dataspace Protocol 2025-1-RC1",
+      href: "https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/2025-1-RC1/",
+      publisher: "Eclipse Foundation",
+      editors: [
+        "P. Koen",
+        "M. Kollenstart",
+        "J. Marino", 
+        "J. Pampus",	
+        "A. Turkmayali", 
+        "S. Steinbuss", 
+        "A. Weiß" 
+      ],
+      date: "27 February 2025",
+      status: "Draft"
+    }
     "FE20":
     {
       title: "OGC 09-026r2: OGC Filter Encoding 2.0 Encoding Standard - With Corrigendum, Version 2.0.3",
@@ -250,7 +267,7 @@ var documentConfig =
       ],
       date: "2021-06-01"
     },
-    "GNVM-VEUI":
+    "GNVM-HEUI":
     {
       title: "Geonovum Handreiking -Handreiking EU Informatie m.b.t. digitale en data-strategie",
       href: "https://docs.geostandaarden.nl/eu/handreiking-EU-informatie/",
@@ -277,6 +294,13 @@ var documentConfig =
       ],
       publisher: "TNO"
     },
+    "IDS-DSP":
+    {
+      title: "IDS DataSpace Protocol 2024-01",
+      href: "https://docs.internationaldataspaces.org/ids-knowledgebase/dataspace-protocol",
+      publisher: "International Data Spaces Association",
+      date: "2024-01"
+    }
     "IDS-CH":
     {
       title: "IDS Specification: Clearing House",
@@ -394,18 +418,18 @@ var documentConfig =
       publisher: "International Data Spaces Association",
       date: "July 2024"
     },
-    "DSCC-G":
+    "DSSC-G":
     {
-      title: "DSCC Glossary Version 1.0",
+      title: "DSSC Glossary Version 1.0",
       href: "https://dssc.eu/wp-content/uploads/2023/03/DSSC-Data-Spaces-Glossary-v1.0.pdf",
       authors: [
         "Data Spaces Support Centre"
       ],
       date: "2023-03-01"
     },    
-    "DSCC-BP":
+    "DSSC-BP":
     {
-      title: "DSCC Blueprint version 1.5",
+      title: "DSSC Blueprint version 1.5",
       href: "https://dssc.eu/space/bv15e/766061169/Data+Spaces+Blueprint+v1.5+-+Home",
       authors: [
         "Data Spaces Support Centre"
