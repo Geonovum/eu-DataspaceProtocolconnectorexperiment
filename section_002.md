@@ -161,7 +161,8 @@ Samengevat zijn de belangrijkste relaties tussen de entiteiten in het Dataspace 
 ## De catalog
 
 ### DCAT metadata
-De catalogus in de dataspace voorziet in de vindbaarheid van datasets van de deelnemers en zijn de basis om een datatransfer een transactie te starten. In een dataspace biedt de catalogus een overzicht van alle beschikbare datasets en diensten, die in het dataspace worden aangeboden door de aanbieders. De catalogus kan volledig publiek toegankelijk of alleen voor de deelnemers in de dataspace. Het catalog protocol definieert hoe een catalogus door een consument wordt bevraagd bij een catalogusdienst met behulp van een beschrijving van de data (producten en diensten). Deze beschrijving wordt in de vorm het metadata formaat DCAT beschikbaar opgeslagen en uitgewisseld. De Data Catalog Vocabulary (DCAT) is een vocabulaire ontwikkeld door het World Wide Web Consortium (W3C) om datasets en datacatalogi te beschrijven en met elkaar te verbinden ([[DCAT-3.0]]). De dataset metadata in een DCAT Catalog is met de DCAT standaard beschreven en vastgelegd en wordt ook gebruikt om specifieke DCAT profielen te maken (zie ook onderstaande noot). Door het beschrijven van deze  informatie-elementen wordt voldaan aan de vereisten van het beschrijven van datasets in het Dataspace Protocol. De onderstaande tabel 1 zijn de DCAT elementen opgenomen conform DCAT, die toegepast kunnen worden om het Dataspace Protocol te implementeren ([[IDS-DSP]]). 
+De catalogus in de dataspace voorziet in de vindbaarheid van datasets van de deelnemers en zijn de basis om een datatransfer een transactie te starten. In een dataspace biedt de catalogus een overzicht van alle beschikbare datasets en diensten, die in het dataspace worden aangeboden door de aanbieders. De catalogus kan volledig publiek toegankelijk of alleen voor de deelnemers in de dataspace. Het catalog protocol definieert hoe een catalogus door een consument wordt bevraagd bij een catalogusdienst met behulp van een beschrijving van de data (producten en diensten). Deze beschrijving wordt in de vorm het metadata formaat DCAT beschikbaar opgeslagen en uitgewisseld. De Data Catalog Vocabulary (DCAT) is een vocabulaire ontwikkeld door het World Wide Web Consortium (W3C) om datasets en datacatalogi te beschrijven en met elkaar te verbinden ([[vocab-dcat-3]]). De dataset metadata in een DCAT Catalog is met de DCAT standaard beschreven en vastgelegd en wordt ook gebruikt om specifieke DCAT profielen te maken (zie ook onderstaande noot). Door het beschrijven van deze  informatie-elementen wordt voldaan aan de vereisten van het beschrijven van datasets in het Dataspace Protocol. De onderstaande tabel 1 zijn de DCAT elementen opgenomen conform DCAT, die toegepast kunnen worden om het Dataspace Protocol te implementeren ([[IDS-DSP]]). 
+<br>
 
 Tabel 1 - Overzicht van Dataspace Protocol DCAT metadata elementen
 
@@ -174,18 +175,14 @@ Tabel 1 - Overzicht van Dataspace Protocol DCAT metadata elementen
   <thead valign='top'>
     <tr>
       <th align='left' style='border-top: 0pt none #000000; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #005A9C;'>
-        <p id='11350A7E'>Begrip</p>
+        <p id='11350A7E'>DCAT metadata element</p>
       </th>
       <th align='left' style='border-top: 0pt none #000000; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #005A9C;'>
-        <p id='3AE04064'>Uitleg</p>
+        <p id='3AE04064'>Beschrijving</p>
       </th>
     </tr>
   </thead>
   <tbody valign='top'>
-    <tr>
-      <td align='left' style='border-top: 0.75pt solid #DDDDDD;'><p>Aanbieder (‘Provider’)</p></td>
-      <td align='left' style='border-top: 0.75pt solid #DDDDDD;'><p>Een ‘Deelnemer’, die een ‘Dataset’ aanbiedt.</p></td>
-    </tr>
     <tr><td><p>dct:identifier (@id)</p></td><td><p>Unieke identifier van de dataset.</p></td></tr>
     <tr><td><p>dcat:contactPoint</p></td><td><p>Contactinformatie voor vragen over de dataset.</p></td></tr>
     <tr><td><p>dcat:keyword</p></td><td><p>Trefwoorden die de dataset beschrijven.</p></td></tr>
@@ -221,8 +218,9 @@ De eerste versie werd in 2014 gepubliceerd, met een verbeterde en uitgebreidere 
 1. DCAT-AP (Application Profile) is het Europese applicatieprofiel van DCAT, dat is ontwikkeld om interoperabiliteit tussen Europese open data-portalen te bevorderen [[DCAT-AP]]. DCAT-AP specificeert verplichte en optionele metadata-elementen, die nodig zijn om datasets en catalogi op EU-niveau uitwisselbaar te maken, zoals het Europese dataportaal;
 2. DCAT-AP-NL is de Nederlandse variant van DCAT-AP, aangepast aan de Nederlandse context en specifiek gericht op de behoeften van Nederlandse organisaties en datasets [[DCAT-AP-NL]];
 3. GeoDCAT is een extensie van de DCAT-standaard die is ontwikkeld om metadata van  geografische data en diensten te integreren in datacatalogi die DCAT gebruiken [[GeoDCAT-AP]]. GeoDCAT vormt ook de brug tussen de ISO 19115 metadata standaard voor geografische datasets en DCAT, zodat geografische datasets en services naadloos kunnen worden opgenomen in open data-portalen en catalogi.
+<br>
 
-Metadata standaarden voor geografische datasets en diensten
+**Metadata standaarden voor geografische datasets en diensten**
 
 Het Nederlands metadata profiel op ISO 19115 voor geografie versie 2.1.0 ([[NLISO19115]])is de Nederlandse standaard die richtlijnen biedt voor het beschrijven van geografische datasets en diensten, gebaseerd op de internationale ISO 19115-norm. Het profiel is specifiek afgestemd op de Nederlandse en Europese  geo-informatie infrastructuur en is bedoeld om consistentie en interoperabiliteit te bevorderen bij het documenteren en delen van geografische informatie / geodatasets. Het beschrijft welke metadata-elementen verplicht, aanbevolen, of optioneel zijn, en hoe deze moeten worden toegepast, inclusief specifieke aanpassingen voor Nederland. Het Nederlands metadata profiel op ISO 19115 voor geografie definieert verplichte, aanbevolen en optionele metadata-elementen voor geografische datasets. Voor geografische diensten bestaat een equivalent, de Nederlands metadata profiel op ISO 19115 voor geografie. De metadata beschreven volgens het Nederlands profiel kunnen worden opgeslagen en uitgewisseld in XML en in JSON formaat. De XML-encoding is gebaseerd op het ISO 19139-schema, dat een gestructureerd formaat biedt voor interoperabele uitwisseling van metadata tussen catalogi en geografische informatiesystemen. JSON-encoding biedt een lichtere optie die beter geschikt is voor webtoepassingen en API's. Beide formaten ondersteunen gestandaardiseerde elementen die aansluiten bij het profiel.
 </aside>
@@ -327,19 +325,16 @@ ODRL-beleid voor een CC0-gelicentieerde dataset in een machine-leesbare ODRL pol
 
 <figure id="Figuur_x">
 <a href="media/ODRL code voorbeeld 1"><img src="media/ODRL code voorbeeld 1.png" alt=""></a>
-<figcaption>IDS Zoeken naar datasets in de centrale catalog [[IDS-RAM4]]<figcaption>
 </figure>
 <br/>
 
 **Voorbeeld 2: in JSON-LD**
-<br>
 In dit voorbeeld is een policy opgenomen, waarin een organisatie A data mag gebruiken voor onderzoek, maar moet wel verwijzen naar de bron en de data niet commercieel mag inzetten. 
 
 <figure id="Figuur_x">
 <a href="media/ODRL code voorbeeld 2.png" target="_blank"><img src="media/ODRL code voorbeeld 2.png" alt=""></a>
-<figcaption>IDS Zoeken naar datasets in de centrale catalog [[IDS-RAM4]]<figcaption>
 </figure>
-<br/>
+
 </aside>
 <br>
 
