@@ -13,7 +13,7 @@ Gegevenssoevereiniteit bevordert de interoperabiliteit tussen deelnemers aan dat
 Binnen het gedachtegoed van data spaces staat het veilig en vertrouwd uitwisselen van data aldus centraal. Het Dataspace Protocol, dat is ontwikkeld door IDSA is hierin gepositioneerd als een mogelijke voorziene standaard in data spaces om vertrouwd data delen mogelijk te maken. Om voorbereid te zijn op de toekomst is het doel van deze verkenning een beter beeld te krijgen van de wijze waarop het Dataspace Protocol functioneert en kan worden geïmplementeerd in een eenvoudige casus, te weten in een ‘minimum viable dataspace’.  Belangrijke context voor het opzetten van dit experiment zijn de EU common dataspaces. In de volgende paragraaf meer daarover.  
 <br/>
 <aside class='note' title="Handreikingen EU Informatie m.b.t. digitale en datastrategie en Verkenning dataspaces">
-    Zie ook ‘Handreiking EU Informatie m.b.t. digitale en data-strategie' [[GNVM-VEUI]] voor het wettelijke kader en ‘Verkenning dataspaces’ [[GNVM-VDS]] voor richtinggevende data space initiatieven in Nederland en Europa en de positie van de Nationale Geo-informatie Infrastructuur (NGII) in deze initiatieven.  
+    Zie ook ‘Handreiking EU Informatie m.b.t. digitale en data-strategie' [[GNVM-HEUI]] voor het wettelijke kader en ‘Verkenning dataspaces’ [[GNVM-VDS]] voor richtinggevende data space initiatieven in Nederland en Europa en de positie van de Nationale Geo-informatie Infrastructuur (NGII) in deze initiatieven.  
 </aside>
 
 ## Context experiment: ‘EU common dataspaces’
@@ -29,13 +29,13 @@ Deze pan-Europese data space wordt opgebouwd met meerdere sectorale data spaces 
 <br/>
 De manier waarop de EC de eenheidsmarkt voor data wil vormen, is middels sectorale data spaces, die vervolgens onderling interoperabel zijn. Binnen sectoren en thema's zijn er vaak meer al geldende afspraken t.a.v. standaarden en professionele normen t.a.v. omgang met data, die telkens gebaseerd zijn op de context van die sector. Een dataspace bouwt daar dan op voort, zowel om dubbel werk te voorkomen als om de vorming van dataspaces te versnellen.  
 <br/>
-Op Europees niveau worden de volgende thema's genoemd als sectorale dataspaces, waarop ook acties zijn ingezet: Gezondheid, Mobiliteit, Industrie, Financiële diensten, Energie, Landbouw, Green Deal (waaronder circulaire economie en smart communities), Overheid, Agricultuur, Vaardigheden (onderwijs en arbeidsmarkt), Wetenschap, Cultureel erfgoed, Toerisme, Media en Taal voor meer informatie over de sectorale dataspaces zie [[GNVM-VEUI]].  
+Op Europees niveau worden de volgende thema's genoemd als sectorale dataspaces, waarop ook acties zijn ingezet: Gezondheid, Mobiliteit, Industrie, Financiële diensten, Energie, Landbouw, Green Deal (waaronder circulaire economie en smart communities), Overheid, Agricultuur, Vaardigheden (onderwijs en arbeidsmarkt), Wetenschap, Cultureel erfgoed, Toerisme, Media en Taal voor meer informatie over de sectorale dataspaces zie[[GNVM-HEUI]].  
 <br/>
 Om de EU common dataspaces te realiseren, heeft de Europese commissie het Data Space Support Centre (DSSC) project opgericht. Het DSSC is een Europees initiatief dat ondersteuning biedt bij de ontwikkeling en implementatie van EU dataspaces, waarin organisaties op een gecontroleerde, veilige en soevereine manier data kunnen delen. Het DSSC richt zich op het bevorderen van interoperabiliteit, datasoevereiniteit en naleving van EU-regelgeving, zoals de AVG. In het ontwikkelde Bouwstenenmodel voor EU Data Spaces schetst het DSSC de fundamentele componenten die nodig zijn voor de werking van een data space. Dit model biedt een blauwdruk voor veilige en efficiënte data-uitwisseling, en ondersteunt organisaties bij het opzetten van hun eigen data spaces binnen de Europese data-economie. Binnen de technische bouwstenen kunnen we het data connector experiment positioneren binnen de bouwstenen die worden aangeduid met “Data sovereignity and Trust” (zie figuur 2):  
 
 <figure id="Figuur_x">
 <a href="media/Technische bouwstenenmodel data spaces - DSCC.png" target="_blank"><img src="media/Technische bouwstenenmodel data spaces - DSCC.png" alt=""></a>
-<figcaption>Technische bouwblokken van een data space ([[DSCC-BP]])</figcaption>
+<figcaption>Technische bouwblokken van een data space ([[DSSC-BP]])</figcaption>
 </figure>
 <br/>
 De bouwstenen voor datasoevereiniteit en -vertrouwen bieden technische enablers de mogelijkheid om de betrouwbaarheid en authenticiteit van de informatie van deelnemers te garanderen, terwijl deelnemers soevereiniteit kunnen uitoefenen over de data die ze delen. Dit is essentieel voor het opbouwen van vertrouwen tussen deelnemers bij interacties en het uitvoeren van datatransacties. De pijler “Data Sovereignty and Trust" bestaat uit de volgende drie bouwstenen:  
