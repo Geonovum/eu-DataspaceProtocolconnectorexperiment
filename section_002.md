@@ -265,49 +265,13 @@ Een dataset met een CC0-licentie (Creative Commons Zero) is volledig vrijgegeven
 
 ODRL-beleid voor een CC0-gelicentieerde dataset in een machine-leesbare ODRL policy (JSON-LD). De ‘target’ is de URI van de dataset waarop deze policy van toepassing is en de ‘action’ beschrijft welke handelingen zijn toegestaan: gebruik, distributie, reproductie en aanpassing. Er zijn geen constraints, geen duties, en geen prohibitions, omdat CC0 geen beperkingen oplegt.
 
-{
-  "@context": "http://www.w3.org/ns/odrl.jsonld",
-  "uid": "http://example.org/policy/cc0-dataset",
-  "type": "Policy",
-  "profile": "http://www.w3.org/ns/odrl/2/",
-  "permission": [
-    {
-      "target": "http://example.org/dataset/12345",
-      "action": [
-        "use",
-        "distribute",
-        "reproduce",
-        "modify"
-      ]
-    }
-  ]
-}
+figuur opnemen 
 
 **Voorbeeld 2: in JSON-LD**
 In dit voorbeeld is een policy opgenomen, waarin een organisatie A data mag gebruiken voor onderzoek, maar moet wel verwijzen naar de bron en de data niet commercieel mag inzetten. 
 
-{
-  "@context": "http://www.w3.org/ns/odrl.jsonld",
-  "uid": "http://example.com/policy:001",
-  "type": "Policy",
-  "permission": [{
-    "target": "http://example.com/data/dataset123",
-    "action": "use",
-    "constraint": [{
-      "leftOperand": "purpose",
-      "operator": "eq",
-      "rightOperand": "research"
-    }]
-  }],
-  "prohibition": [{
-    "target": "http://example.com/data/dataset123",
-    "action": "commercialize"
-  }],
-  "duty": [{
-    "action": "attribution",
-    "target": "http://example.com/data/dataset123"
-  }]
-}
+figuur opnemen
+
 </aside>
 
 **Policies aanmaken en het register met beleidspecificaties**
