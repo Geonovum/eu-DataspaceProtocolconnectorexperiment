@@ -165,6 +165,56 @@ De catalogus in de dataspace voorziet in de vindbaarheid van datasets van de dee
 
 Tabel 1 - Overzicht van Dataspace Protocol DCAT metadata elementen
 
+<table style='width: 100%;'>
+  <caption></caption>
+  <colgroup>
+    <col id='col1' style='width: 30.78895233655751%;'>
+    <col id='col2' style='width: 69.2110476634425%;'>
+  </colgroup>
+  <thead valign='top'>
+    <tr>
+      <th align='left' style='border-top: 0pt none #000000; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #005A9C;'>
+        <p id='11350A7E'>Begrip</p>
+      </th>
+      <th align='left' style='border-top: 0pt none #000000; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #005A9C;'>
+        <p id='3AE04064'>Uitleg</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody valign='top'>
+    <tr>
+      <td align='left' style='border-top: 0.75pt solid #DDDDDD;'><p>Aanbieder (‘Provider’)</p></td>
+      <td align='left' style='border-top: 0.75pt solid #DDDDDD;'><p>Een ‘Deelnemer’, die een ‘Dataset’ aanbiedt.</p></td>
+    </tr>
+    <tr><td><p>dct:identifier (@id)</p></td><td><p>Unieke identifier van de dataset.</p></td></tr>
+    <tr><td><p>dcat:contactPoint</p></td><td><p>Contactinformatie voor vragen over de dataset.</p></td></tr>
+    <tr><td><p>dcat:keyword</p></td><td><p>Trefwoorden die de dataset beschrijven.</p></td></tr>
+    <tr><td><p>dcat:landingPage</p></td><td><p>URL naar de landingspagina van de dataset.</p></td></tr>
+    <tr><td><p>dcat:theme</p></td><td><p>Thema’s waaraan de dataset is gekoppeld.</p></td></tr>
+    <tr><td><p>dcat:conformsTo</p></td><td><p>Specificaties waaraan de dataset voldoet.</p></td></tr>
+    <tr><td><p>dct:creator</p></td><td><p>De maker van de dataset.</p></td></tr>
+    <tr><td><p>dct:description</p></td><td><p>Beschrijving van de dataset (meerdere talen mogelijk).</p></td></tr>
+    <tr><td><p>dct:identifier</p></td><td><p>Unieke identificatie voor de dataset.</p></td></tr>
+    <tr><td><p>dct:isReferencedBy</p></td><td><p>URL’s of bronnen die naar deze dataset verwijzen.</p></td></tr>
+    <tr><td><p>dct:issued</p></td><td><p>Datum waarop de dataset is gepubliceerd.</p></td></tr>
+    <tr><td><p>dct:language</p></td><td><p>Taal of talen waarin de dataset beschikbaar is.</p></td></tr>
+    <tr><td><p>dct:license</p></td><td><p>De licentie waaronder de dataset beschikbaar is.</p></td></tr>
+    <tr><td><p>dct:modified</p></td><td><p>Datum van de laatste wijziging aan de dataset.</p></td></tr>
+    <tr><td><p>dct:publisher</p></td><td><p>De organisatie die verantwoordelijk is voor het publiceren van de dataset.</p></td></tr>
+    <tr><td><p>dct:relation</p></td><td><p>Verwijzingen naar gerelateerde datasets of bronnen.</p></td></tr>
+    <tr><td><p>dct:title</p></td><td><p>Titel van de dataset.</p></td></tr>
+    <tr><td><p>dct:type</p></td><td><p>Type van de dataset, bijvoorbeeld een kaart of tabel.</p></td></tr>
+    <tr><td><p>odrl:hasPolicy</p></td><td><p>Toegepaste gebruiksvoorwaarden of beleidsregels.</p></td></tr>
+    <tr><td><p>dcat:distribution</p></td><td><p>Verwijzingen naar distributies (verspreidingsmethoden) van de dataset.</p></td></tr>
+    <tr><td><p>dcat:spatialResolutionInMeters</p></td><td><p>Resolutie (detailniveau) van de dataset in meters.</p></td></tr>
+    <tr><td><p>dcat:temporalResolution</p></td><td><p>Tijdelijke frequentie van updates.</p></td></tr>
+    <tr><td><p>dct:accrualPeriodicity</p></td><td><p>Frequentie van publicatie of updates van de dataset.</p></td></tr>
+    <tr><td><p>dct:spatial</p></td><td><p>Het geografisch gebied dat door de dataset wordt gedekt.</p></td></tr>
+    <tr><td><p>dct:temporal</p></td><td><p>Tijdspanne die door de dataset wordt gedekt.</p></td></tr>
+    <tr><td><p>prov:wasGeneratedBy</p></td><td><p>Proces of gebeurtenis die de dataset heeft gegenereerd.</p></td></tr>
+  </tbody>
+</table>
+
 <aside class='note' title="Data Catalog Vocabulary (DCAT)">
 Het doel van DCAT is om metadata interoperabel te maken, zodat datasets gemakkelijk kunnen worden gevonden, gedeeld en hergebruikt tussen verschillende platforms en organisaties. Het biedt een gestandaardiseerde structuur voor metadata-elementen zoals titel, beschrijving, licentie, distributies, en toegangspunten.
 De eerste versie werd in 2014 gepubliceerd, met een verbeterde en uitgebreidere DCAT versie 2 in 2020 en versie 3.0 . Deze versie legt een sterkere nadruk op interoperabiliteit, ondersteuning voor API's en uitbreiding naar bredere gebruikscontexten. Een DCAT-profiel is een specifieke afgeleide set regels en richtlijnen die een subset van DCAT beschrijft en aanpast aan een bepaalde context of toepassing. Profielen bouwen voort op de standaard DCAT-specificatie, maar voegen specifieke eisen of beperkingen toe die nodig zijn voor een bepaald domein, sector, of land. Profielen kunnen verplicht stellen welke metadata-elementen moeten worden gebruikt en hoe deze moeten worden toegepast. Belangrijke Europese en Nederlandse DCAT-profielen zijn:
@@ -290,14 +340,16 @@ In dit voorbeeld is een policy opgenomen, waarin een organisatie A data mag gebr
 <figcaption>IDS Zoeken naar datasets in de centrale catalog [[IDS-RAM4]]<figcaption>
 </figure>
 <br/>
-
-
 </aside>
+<br>
 
 **Policies aanmaken en het register met beleidspecificaties**
+<br>
 Is het nodig om te weten hoe ODRL technisch werkt om een policy voor data te specificeren? Nee, in principe niet. Wanneer een producent of provider van plan is data aan te bieden, gebruiken ze een policy editor om een policy te specificeren, wat resulteert in een contractaanbod. In een zogenaamde beleidseditor en een bijbehorend registers worden beleidsspecificaties gemaakt en bewaard. Deze beleidsspecificaties zijn beschikbaar om producten en consumenten met verschillende achtergronden en expertises in staat te stellen om met sjablonen hun beleidsspecificaties te maken en te hergebruiken. 
+<br>
 
 **ODRL Policies in DCAT metadata**
+<br>
 Het opnemen van een ODRL policy verloopt via de metadata beschrijving van de data(set) in DCAT formaat. De policy metadata wordt in DCAT opgenomen een DCAT-element odrl:hasPolicy. Een policy kan op verschillende wijzen in het DCAT-element odrl:hasPolicy opgenomen worden:   
 1.	Via een externe verwijzing via een URL. De URL verwijst naar een ODRL-policy, die op het web beschikbaar is als een afzonderlijk resource (bijv. een RDF-bestand). Het voordeel is de bron daardoor herbruikbaar is en is losgekoppeld van de dataset (makkelijker versiebeheer);
 2.	De policy wordt direct in hetzelfde document (RDF) inline gedefinieerd als de dataset.Inline opnemen in hetzelfde RDF-document;
@@ -327,9 +379,11 @@ Zodra er een contractovereenkomst is bereikt, wordt deze geïnstantieerd en geï
 </figure>
 
 Als een deelnemer op enig moment tijdens de onderhandelingsprocedure niet akkoord gaat met de gedeelde inhoud, kan het contract worden afgewezen. In het geval van een afwijzing van een contract wordt de onderhandelingsprocedure afgebroken. De aangesloten systemen en gebruikers worden op de hoogte gebracht en eerder opgeslagen contractovereenkomsten worden ingetrokken. 
+<br>
 
-**Contractonderhandeling gestart door de dataproducent**
-De contractonderhandeling kan echter ook door de dataproducent worden gestart. In figuur 10 start niet de dataconsument, maar de dataproducent de contractonderhandeling. Daarbij wordt opgemerkt dat, aangezien de dataproducent degene is die het contract aanbiedt, de dataproducent ook dan degene is die de contractovereenkomst als laatste ondertekent.  
+**Contractonderhandeling gestart door de producent**
+<br>
+De contractonderhandeling kan echter ook door de producent worden gestart. In figuur 10 start niet de consument, maar de producent de contractonderhandeling. Daarbij wordt opgemerkt dat, aangezien de producent degene is die het contract aanbiedt, de producent ook dan degene is die de contractovereenkomst als laatste ondertekent.  
 
 <figure id="Figuur_x">
 <a href="media/IDS Contractonderhandeling gestart door de producent.png" target="_blank"><img src="media/IDS Contractonderhandeling gestart door de producent.png" alt=""></a>
@@ -348,21 +402,25 @@ Het uitvoeren van de data transfer begint met het aanroepen van een Data Operati
 <figcaption>Globale procesbeschrijving data transfer [[IDS-RAM4]]
   <figcaption>
 </figure>
+<br>
 
 **Communicatiepatroon**
+<br>
 De communicatie tussen de data connectoren kan synchroon of asynchroon zijn. In het laatste geval hoeft de consument niet te wachten op het resultaat, maar wordt de consument door de provider op de hoogte wordt gebracht zodra het resultaat beschikbaar is. Bovendien kan er in plaats van een pull-request een push-request worden verstuurd. In het geval van een abonnement kan de consument vragen om updates met betrekking tot de gevraagde data. De bijgewerkte data kunnen worden verstrekt na bepaalde gebeurtenissen (bijv. nadat de data door de dataverstrekker zijn bijgewerkt) of binnen bepaalde tijdsintervallen (bijv. elke vijf minuten). Als er een dergelijk verzoek wordt gedaan, ontvangt de dataconsument herhaaldelijk bijgewerkte queryresultaten van de dataproducent. In het geval van een pull-request kan de dataconsument het laatste deel van het proces herhalen om data opnieuw op te vragen (met dezelfde of een andere query).
 De beschrijving van het communicatiepatroon tijdens de data uitwisseling maakt geen deel uit van het Dataspace Protocol. Communicatie patronen, zoals het gebruik van downloadservices en API’s worden door vastgesteld door afspraken in de betreffende informatiedomeinen. De data-uitwisseling en het overdrachtsproces is dus niet beperkt tot een specifiek protocol. 
 
 ## Dataspace Protocol specificatie en data connector software
 
-Het Dataspace Protocol is een specificatie, die de implementatie van het Dataspace Protocol in een data connector mogelijk maakt. Het Dataspace Protocol is een reeks van technische specificaties ontworpen om interoperabele data-uitwisseling mogelijk te maken gebaseerd op webtechnologieën. Deze specificaties definiëren de schema's (JSON) en het berichtenverkeer, die nodig zijn om de datasets te publiceren, overeenkomsten te onderhandelen en toegang te krijgen tot datasets binnen een dataspace. De huidige versie van de Dataspace Protocol specificatie wordt beschouwd als stabiel, en verdere wijzigingen zullen de conformiteit niet beïnvloeden ([[ECLPS-DSP]]). De specificaties zijn georganiseerd in verschillende onderdelen, waaronder:
-1. Dataspace Model en Dataspace Terminologie; 
-2. Catalog protocol en Catalog; 
+Het Dataspace Protocol is een technische specificatie, die de implementatie van het Dataspace Protocol in een data connector mogelijk maakt. Het Dataspace Protocol is een reeks van technische specificaties ontworpen om interoperabele data-uitwisseling mogelijk te maken gebaseerd op webtechnologieën. Deze specificaties definiëren de schema's (JSON) en het berichtenverkeer, die nodig zijn om de datasets te publiceren, overeenkomsten te onderhandelen en toegang te krijgen tot datasets binnen een dataspace. De huidige versie van de Dataspace Protocol specificatie wordt beschouwd als stabiel, en verdere wijzigingen zullen de conformiteit niet beïnvloeden ([[ECLPS-DSP]]). De specificaties zijn georganiseerd in verschillende onderdelen, waaronder:
+1. Dataspace Model en Dataspace terminologie; 
+2. Catalog protocol en catalog; 
 3. Cntractonderhandelingsprotocol en contractonderhandeling;
-4. Overdrachtsprocesprotocol en overdrachtsproces.
+4. Data transfer protocol en data transfer proces.
 We gaan hier niet verder in op de technische specificatie daarvoor verwijzen we naar ([[ECLPS-DSP]]).
+<br>
 
 **Data connector software**
+<br>
 Data connectors zijn softwaretools waarmee data(sets) vertrouwd kunnen worden gedeeld en geïntegreerd tussen verschillende systemen, applicaties en databronnen. In de context van data spaces spelen data connectoren een sleutelrol in de communicatie en gegevensuitwisseling tussen verschillende platforms, systemen en applicaties. Data connectoren zullen daarbij moeten voldoen aan de vooraf gedefinieerde normen en uitwisselingsbeleidslijnen van het Dataspace Protocol. In het data connectors overview report van IDSA [[IDS-DCR]] zijn inmiddels zo’n 40 verschillende implementaties van data connector software beschikbaar. implementaties van data connector software worden door IDSA gecertificeerd. Sinds 2022 hanteert IDSA het IDS-certificeringsschema dat gericht is op het certificeren van de interoperabiliteit, compatibiliteit en betrouwbaarheid van data connectoren. Met de voltooiing van de standaardisatie van het Dataspace Protocol zal het IDS-certificeringsschema evolueren om data connector software te beoordelen door  geautomatiseerde testen.
 
 **TNO Security Gateway data connector software**
