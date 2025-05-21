@@ -294,6 +294,12 @@ var documentConfig =
       ],
       publisher: "TNO"
     },
+    "TNO-TSG":
+    {
+      title: "TNO Security Gateway (TSG)",
+      href: "https://tsg.dataspac.es/",
+      publisher: "TNO"
+    },
     "IDS-DSP":
     {
       title: "IDS DataSpace Protocol 2024-01",
@@ -435,6 +441,13 @@ var documentConfig =
         "Data Spaces Support Centre"
       ],
       date: "2024-10-11"
+    },
+    "XACML":
+    {
+      title: "eXtensible Access Control Markup Language (XACML) Version 3.0",
+      href: "https://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-os-en.html",
+      publisher: "OASIS",
+      date: "22 January 2013"
     },
   }
 }
