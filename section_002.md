@@ -51,8 +51,9 @@ Alle typen deelnemers in een data space vervullen daarmee een bepaalde rol (zie 
 <br/>
 In dit Dataspace Protocol experiment gaan we kennismaken met de wijze waarop een data aanbieders en data gebruikers data kunnen uitwisselen. Dat doen we in een minimale data space setting. De data space beheerder speelt ook een rol als beheerder van het deelnemersregister. Data space dienstverleners worden vooralsnog buiten beschouwing gelaten.  
 <br/>
-
+<br/>
 <b>De data connector</b>
+<br/>
 De data connector is de centrale technische component voor veilige en vertrouwde data-uitwisseling. De connector verzendt data rechtstreeks naar de consument in een vertrouwde, gecertificeerde data space, zodat de oorspronkelijke data aanbieder altijd de controle over de data behoudt en de voorwaarden voor het gebruik ervan bepaalt. De data connector maakt gebruik van technologie, die data in een soort virtuele "container" plaatst, en zorgt dat deze alleen worden gebruikt zoals overeengekomen volgens de gebruiksvoorwaarden van de data aanbieder en zijn overeengekomen tussen de betrokken partijen. In de onderstaande figuur ? is de rol van  de data connector expliciet weergeven in uitwisseling van data (producten). Daarbij kan de data connector ook worden gezien als ‘container’ als een verzameling van (meta)data en functies over de diverse aspecten, die van belang zijn voor de data-transfer tussen de data aanbieder en data consument:
 1.	De data connector heeft een functie bij het beheer van deelnemers identiteiten en het deelnemersregister;
 2.	De data connector bevat het data aanbod in een catalogus;
@@ -60,9 +61,9 @@ De data connector is de centrale technische component voor veilige en vertrouwde
 4.	De data connector heeft een configuratie en monitoringsfunctie;
 5.	De data connector zorgt er dat de datatransfer kan plaatsvinden tussen data aanbieder en data consument. 
 <br/>
-
+<br/>
 <b>Control plane en data plane</b>
-
+<br/>
 De data connector werkt vervolgens met gestandaardiseerde protocollen en afspraken. Een relevant concept voor het gebruik van de data connector is daarbij het onderscheid tussen control plane en data plane (zie figuur 5). Het onderscheid wordt gemaakt om aan te geven dat afspraken en standaarden voor een data space betrekking hebben op de control plane.  
 <br/>
 De control plane (controlelaag) is verantwoordelijk voor beheer en beslissingen over hoe datastromen worden verwerkt of hoe de data space functioneert. De control plane verwerkt geen echte data, maar richt zich op controle-informatie, die nodig is om de datatransfer plaats te laten vinden op een vertrouwde en souvereine wijze. Het functioneert min of meer als een soort ‘brein’ van de data space en geeft opdrachten aan de data plane voor de data transfer. Daarmee bepaalt de control plane wat er moet gebeuren en hoe het moet gebeuren (het verzorgt de voorbereiding van de datatransfer), terwijl de data plane de uitvoering verzorgt en daadwerkelijk data transporteert. De data plane is dus verantwoordelijk voor het fysieke transport van de data  tussen aanbieder en consument. De data plane voert daadwerkelijk de datatransfer (data overdracht) uit volgens de instructies van de control plane en het verwerkt en transporteert de werkelijke data  (bijvoorbeeld een videostream, datasets, bestanden). Er zijn daarvoor diverse mogelijkheden om data transfer te laten plaatsvinden, zoals via API-verzoeken, event-streams, bulkdownloads, et cetera. De data plane schrijft voor data spaces dus niet één standaard procedure voor om data transfer te laten plaatsvinden. De controle plane bij data spaces werkt (bij voorkeur) wel volgens gestandaardiseerde protocollen en afspraken (één standaard procedure).<br/>
@@ -98,14 +99,14 @@ Het Dataspace Protocol is een reeks van afspraken, standaarden en technologieën
 <li>Veiligheid en naleving: Dankzij ingebouwde privacybescherming en security-mechanismen wordt voldaan aan de strengste normen, waaronder de Europese privacyregelgeving (AVG).</li>
 </ul>
 <br/>
-De onderstaande figuur 6 [[DSCC-BP]] geeft een gedetailleerd overzicht van de belangrijke concepten, componenten en protocollen voor een data space, te weten ‘Identity Governance Scope’ (bovenaan), ‘Control Plane’ (midden) en ‘Data Plane’ (onderaan). Daarbinnen zijn data connectors (links en rechts) en is het data space prototol gepositioneerd (midden). De ondersteunende componenten, zoals de ‘Vocabulary Hub’ en de ‘Catalog’ zijn aan de onderzijde weergegeven. Deze twee intermediaire en ondersteunende diensten zorgen voor het gebruik van datamodellen en formaten (de ‘vocabulary hub’) en voor de publicatie en het vinden van data (de catalogus). Op rol en functies van deze laatste twee componenten gaan we hier niet verder in.
+De onderstaande figuur 6 [[DSSC-BP]] geeft een gedetailleerd overzicht van de belangrijke concepten, componenten en protocollen voor een data space, te weten ‘Identity Governance Scope’ (bovenaan), ‘Control Plane’ (midden) en ‘Data Plane’ (onderaan). Daarbinnen zijn data connectors (links en rechts) en is het data space prototol gepositioneerd (midden). De ondersteunende componenten, zoals de ‘Vocabulary Hub’ en de ‘Catalog’ zijn aan de onderzijde weergegeven. Deze twee intermediaire en ondersteunende diensten zorgen voor het gebruik van datamodellen en formaten (de ‘vocabulary hub’) en voor de publicatie en het vinden van data (de catalogus). Op rol en functies van deze laatste twee componenten gaan we hier niet verder in.
 
 <figure id="Figuur_x">
 <a href="media/DSP systeemarchitectuur.png" target="_blank"><img src="media/DSP systeemarchitectuur.png" alt=""></a>
-<figcaption>De globale systeemarchitectuur van het Dataspace Prototol [[DSCC-BP]]<figcaption>
+<figcaption>De globale systeemarchitectuur van het Dataspace Prototol [[DSSC-BP]]<figcaption>
 </figure>
 
-De figuur 6 toont een systeemarchitectuur met drie hoofdlagen [[DSCC-BP]]:
+De figuur 6 toont een systeemarchitectuur met drie hoofdlagen [[DSSC-BP]]:
 1. ‘Identity governance scope’ met drie kerncomponenten:
     - Identity register voor identiteitbeheer;
     - Identity provider, die de identity management diensten levert; 
@@ -119,7 +120,7 @@ De figuur 6 toont een systeemarchitectuur met drie hoofdlagen [[DSCC-BP]]:
 <br/>
 
 <aside class='note' title="Making the Dataspace Protocol an international standard">
-De specificatie werkzaamheden voor het Dataspace Protocol zijn eind 2022 gestart als subwerkgroep van WG Architectuur van IDSA [[IDS-DSP-S]]. De werkgroep heeft in februari 2024 de Dataspace Protocol-specificatie 2024-1 uitgebracht. Deze versie van de Dataspace Protocol-specificatie is de releasekandidaat en wordt als stabiel beschouwd. De leden van IDSA zijn in 2017 in werkgroepen en commissies begonnen met het ontwerpen van technologie voor data spaces, zodat het Dataspace Protocol in 2024 klaar zou kunnen zijn om een standaardisatieproces te starten (zie verder [[IDS-DSP-S]]). Het Dataspace-protocol op zich is vrij licht, maar het is de essentie van het werk van IDSA. Naast het DSP vormen het IDSA Reference Architecture Model [[IDS-RAM4]], [[IDSRAM5]] en het IDSA Rulebook [[IDS-PPRB]] de kern van het werk van International Data Spaces (IDS).
+De specificatie werkzaamheden voor het Dataspace Protocol zijn eind 2022 gestart als subwerkgroep van WG Architectuur van IDSA [[IDS-DSP-S]]. De werkgroep heeft in februari 2024 de Dataspace Protocol-specificatie 2024-1 uitgebracht. Deze versie van de Dataspace Protocol-specificatie is de releasekandidaat en wordt als stabiel beschouwd. De leden van IDSA zijn in 2017 in werkgroepen en commissies begonnen met het ontwerpen van technologie voor data spaces, zodat het Dataspace Protocol in 2024 klaar zou kunnen zijn om een standaardisatieproces te starten (zie verder [[IDS-DSP-S]]). Het Dataspace-protocol op zich is vrij licht, maar het is de essentie van het werk van IDSA. Naast het DSP vormen het IDSA Reference Architecture Model [[IDS-RAM4]] en het IDSA Rulebook [[IDS-PPRB]] de kern van het werk van International Data Spaces (IDS).
 
 Eind 2023 heeft IDSA de samenwerking gezocht met de Eclipse Foundation om het Data Space Protocol richting een internationale standaard te krijgen. Daarvoor is een gezamenlijke Eclipse Dataspace Working Group (EDWG), opgericht, die het protocol in een Eclipse Dataspace Protocol Specification-project heeft ondergebracht. Dit project zorgt voor de realisatie en oprichting van de Dataspace Technology Compatibility Kit om interoperabiliteit en naleving te kunnen garanderen. Van hieruit wordt het DSP ingediend bij ISO/IEC als een internationale norm. Het normalisatieproces door het Joint Technical Committee (JTC1) is inmiddels in gang gezet.  
 </aside>
