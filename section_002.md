@@ -267,57 +267,30 @@ De beleidsregels zijn ontworpen om machinaal leesbaar en interpreteerbaar te zij
 ODRL policies worden uitgedrukt in machine-leesbare taal zoals JSON-LD of RDF/XML (zie noot met twee voorbeelden) en zijn geschikt voor automatische afhandeling van gebruiksbeleid door dataportals, data connectoren en policy engines en registers. Met ODRL kunnen contractvoorwaarden geautomatiseerd worden afgedwongen, hetgeen essentieel is in data spaces waar veel organisaties op een gestandaardiseerde manier data delen.
 
 <aside class='note' title="Voorbeeld ODRL code in JSON-LD">
+<br>
 
 **Voorbeeld 1: ODRL code van dataset met CCO-licentie**
-
+<br>
 Een dataset met een CC0-licentie (Creative Commons Zero) is volledig vrijgegeven voor publiek gebruik, zonder enige beperkingen. Iedereen mag deze dataset gebruiken, delen, wijzigen en verspreiden, voor elk doeleinde, zonder attributieplicht of andere beperkingen. In ODRL termen zijn alleen permissies nodig en gelden geen beperkingen of verplichtingen. Hier is een voorbeeld van een ODRL-policy voor een dataset onder een CC0-licentie, uitgedrukt in JSON-LD:
 
 ODRL-beleid voor een CC0-gelicentieerde dataset in een machine-leesbare ODRL policy (JSON-LD). De ‘target’ is de URI van de dataset waarop deze policy van toepassing is en de ‘action’ beschrijft welke handelingen zijn toegestaan: gebruik, distributie, reproductie en aanpassing. Er zijn geen constraints, geen duties, en geen prohibitions, omdat CC0 geen beperkingen oplegt.
 
-{
-  "@context": "http://www.w3.org/ns/odrl.jsonld",
-  "uid": "http://example.org/policy/cc0-dataset",
-  "type": "Policy",
-  "profile": "http://www.w3.org/ns/odrl/2/",
-  "permission": [
-    {
-      "target": "http://example.org/dataset/12345",
-      "action": [
-        "use",
-        "distribute",
-        "reproduce",
-        "modify"
-      ]
-    }
-  ]
-}
-<br>
+<figure id="Figuur_x">
+<a href="media/ODRL code voorbeeld 1"><img src="media/ODRL code voorbeeld 1.png" alt=""></a>
+<figcaption>IDS Zoeken naar datasets in de centrale catalog [[IDS-RAM4]]<figcaption>
+</figure>
+<br/>
 
 **Voorbeeld 2: in JSON-LD**
+<br>
 In dit voorbeeld is een policy opgenomen, waarin een organisatie A data mag gebruiken voor onderzoek, maar moet wel verwijzen naar de bron en de data niet commercieel mag inzetten. 
 
-{
-  "@context": "http://www.w3.org/ns/odrl.jsonld",
-  "uid": "http://example.com/policy:001",
-  "type": "Policy",
-  "permission": [{
-    "target": "http://example.com/data/dataset123",
-    "action": "use",
-    "constraint": [{
-      "leftOperand": "purpose",
-      "operator": "eq",
-      "rightOperand": "research"
-    }]
-  }],
-  "prohibition": [{
-    "target": "http://example.com/data/dataset123",
-    "action": "commercialize"
-  }],
-  "duty": [{
-    "action": "attribution",
-    "target": "http://example.com/data/dataset123"
-  }]
-}
+<figure id="Figuur_x">
+<a href="media/ODRL code voorbeeld 2.png" target="_blank"><img src="media/ODRL code voorbeeld 2.png" alt=""></a>
+<figcaption>IDS Zoeken naar datasets in de centrale catalog [[IDS-RAM4]]<figcaption>
+</figure>
+<br/>
+
 
 </aside>
 
