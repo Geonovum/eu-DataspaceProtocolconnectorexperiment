@@ -144,7 +144,7 @@ var documentConfig =
       ],
       date: "27 February 2025",
       status: "Draft"
-    }
+    },
     "FE20":
     {
       title: "OGC 09-026r2: OGC Filter Encoding 2.0 Encoding Standard - With Corrigendum, Version 2.0.3",
@@ -300,7 +300,7 @@ var documentConfig =
       href: "https://docs.internationaldataspaces.org/ids-knowledgebase/dataspace-protocol",
       publisher: "International Data Spaces Association",
       date: "2024-01"
-    }
+    },
     "IDS-CH":
     {
       title: "IDS Specification: Clearing House",
