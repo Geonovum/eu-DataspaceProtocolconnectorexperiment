@@ -40,6 +40,7 @@ In het figuur 3 van IDSA is de data aanbieder en data consument gedefinieerd als
   <li>Zorgt voor het beheer van het ‘deelnemersregister’ van de data space;</li>
   <li>Is geen partij in de daadwerkelijk data-uitwisseling; data aanbieders en data gebruikers wisselen onderling data uit zonder tussenkomst van de data space beheerder.</li>
 </ol>
+
 Alle typen deelnemers in een data space vervullen daarmee een bepaalde rol (zie figuur 4).
 <br/>
 
@@ -49,18 +50,19 @@ Alle typen deelnemers in een data space vervullen daarmee een bepaalde rol (zie 
 </figure>
 
 <br/>
+
 In dit Dataspace Protocol experiment gaan we kennismaken met de wijze waarop een data aanbieders en data gebruikers data kunnen uitwisselen. Dat doen we in een minimale data space setting. De data space beheerder speelt ook een rol als beheerder van het deelnemersregister. Data space dienstverleners worden vooralsnog buiten beschouwing gelaten.  
-<br/>
 <br/>
 <b>De data connector</b>
 <br/>
-De data connector is de centrale technische component voor veilige en vertrouwde data-uitwisseling. De connector verzendt data rechtstreeks naar de consument in een vertrouwde, gecertificeerde data space, zodat de oorspronkelijke data aanbieder altijd de controle over de data behoudt en de voorwaarden voor het gebruik ervan bepaalt. De data connector maakt gebruik van technologie, die data in een soort virtuele "container" plaatst, en zorgt dat deze alleen worden gebruikt zoals overeengekomen volgens de gebruiksvoorwaarden van de data aanbieder en zijn overeengekomen tussen de betrokken partijen. In de onderstaande figuur ? is de rol van  de data connector expliciet weergeven in uitwisseling van data (producten). Daarbij kan de data connector ook worden gezien als ‘container’ als een verzameling van (meta)data en functies over de diverse aspecten, die van belang zijn voor de data-transfer tussen de data aanbieder en data consument:
-1.	De data connector heeft een functie bij het beheer van deelnemers identiteiten en het deelnemersregister;
-2.	De data connector bevat het data aanbod in een catalogus;
-3.	De data connector kan de ‘offers’ en contracten uitonderhandelen tussen aanbieder en consument op basis van de gebruiksvoorwaarden (‘policy engine’);
-4.	De data connector heeft een configuratie en monitoringsfunctie;
-5.	De data connector zorgt er dat de datatransfer kan plaatsvinden tussen data aanbieder en data consument. 
-<br/>
+De data connector is de centrale technische component voor veilige en vertrouwde data-uitwisseling. De connector verzendt data rechtstreeks naar de consument in een vertrouwde, gecertificeerde data space, zodat de oorspronkelijke data aanbieder altijd de controle over de data behoudt en de voorwaarden voor het gebruik ervan bepaalt. De data connector maakt gebruik van technologie, die data in een soort virtuele "container" plaatst, en zorgt dat deze alleen worden gebruikt zoals overeengekomen volgens de gebruiksvoorwaarden van de data aanbieder en zijn overeengekomen tussen de betrokken partijen. In de onderstaande figuur 5 is de rol van  de data connector expliciet weergeven in uitwisseling van data (producten). Daarbij kan de data connector ook worden gezien als ‘container’ als een verzameling van (meta)data en functies over de diverse aspecten, die van belang zijn voor de data-transfer tussen de data aanbieder en data consument:
+<ol>
+  <li>De data connector heeft een functie bij het beheer van deelnemers identiteiten en het deelnemersregister;</li>
+  <li>De data connector bevat het data aanbod in een catalogus;</li>
+  <li>De data connector kan de ‘offers’ en contracten uitonderhandelen tussen aanbieder en consument op basis van de gebruiksvoorwaarden (‘policy engine’);</li>
+  <li>De data connector heeft een configuratie en monitoringsfunctie;</li>
+  <li>De data connector zorgt er dat de datatransfer kan plaatsvinden tussen data aanbieder en data consument.</li>
+</ol>
 <br/>
 <b>Control plane en data plane</b>
 <br/>
@@ -79,24 +81,25 @@ De IDS data connector in dit experiment werkt vervolgens met gestandaardiseerde 
 
 ## Het Dataspace Protocol
 
-Het Dataspace Protocol is een cruciale stap in de richting van een nieuwe manier van data-uitwisseling, waarbij controle, veiligheid en interoperabiliteit centraal staan. Het biedt een gestandaardiseerde manier voor organisaties om data te delen zonder dat ze hun soevereiniteit over die data verliezen [[IDS-DSP]]. Vooral in sectoren waar vertrouwelijkheid en veiligheid van groot belang zijn, zoals gezondheidszorg, productie en logistiek, biedt dit protocol grote voordelen. De implementatie van het Dataspace Protocol heeft in de afgelopen jaren een behoorlijke vlucht genomen. Het Dataspace Protocol is een technische standaard en raamwerk dat bedoeld is om veilige en soepele data-uitwisseling mogelijk te maken tussen verschillende partijen en systemen. Dit protocol speelt een cruciale rol in het opzetten van een <b>dataspace</b> — een gedeelde digitale ruimte waarin organisaties data kunnen delen op een gecontroleerde, veilige en privacy vriendelijke manier.  
+Het Dataspace Protocol is een cruciale stap in de richting van een nieuwe manier van data-uitwisseling, waarbij controle, veiligheid en interoperabiliteit centraal staan. Het biedt een gestandaardiseerde manier voor organisaties om data te delen zonder dat ze hun soevereiniteit over die data verliezen [[IDS-DSP]]. Vooral in sectoren waar vertrouwelijkheid en veiligheid van groot belang zijn, zoals gezondheidszorg, productie en logistiek, biedt dit protocol grote voordelen. De implementatie van het Dataspace Protocol heeft in de afgelopen jaren een behoorlijke vlucht genomen. Het Dataspace Protocol is een technische standaard en raamwerk dat bedoeld is om veilige en soepele data-uitwisseling mogelijk te maken tussen verschillende partijen en systemen. Dit protocol speelt een cruciale rol in het opzetten van een dataspace — een gedeelde digitale ruimte waarin organisaties data kunnen delen op een gecontroleerde, veilige en privacy vriendelijke manier.  
 <br/>
 Het Dataspace Protocol is ontworpen om een aantal belangrijke uitdagingen rond data-uitwisseling op te lossen:
-<ul><li><b>Interoperabiliteit</b>: Het stelt verschillende systemen in staat om op een uniforme manier gegevens uit te wisselen, onafhankelijk van de technologie of het platform dat ze gebruiken.</li>
-<li><b>Data-soevereiniteit</b>: Elke data-eigenaar houdt controle over wie toegang heeft tot hun data en onder welke voorwaarden.</li>
-<li><b>Privacy en veiligheid</b>: Het protocol waarborgt dat data op een veilige manier wordt gedeeld, waarbij privacyrichtlijnen worden nageleefd, zoals de AVG (GDPR).</li>
-<li><b>Transparantie</b>: Deelnemers aan een data space kunnen altijd zien wie hun data gebruikt en waarvoor deze wordt gebruikt.</li>
+<ul>
+<li>Interoperabiliteit stelt verschillende systemen in staat om op een uniforme manier gegevens uit te wisselen, onafhankelijk van de technologie of het platform dat ze gebruiken.</li>
+<li>Data-soevereiniteit zodat elke data-eigenaar  controle houdtover wie toegang heeft tot hun data en onder welke voorwaarden.</li>
+<li>Privacy en veiligheid zodat is gewaarborgd, dat data op een veilige manier wordt gedeeld, waarbij privacyrichtlijnen worden nageleefd, zoals de AVG (GDPR).</li>
+<li>Transparantie, zodat deelnemers aan een data space kunnen altijd zien wie hun data gebruikt en waarvoor deze wordt gebruikt.</li>
 <br/>
+
 Het Dataspace Protocol is een reeks van afspraken, standaarden en technologieën die worden gebruikt om veilige, gecontroleerde en interoperabele datadelen tussen de deelnemers in een data space mogelijk te maken. Het is een essentieel onderdeel van Europese data spaces, zoals die gepromoot worden door initiatieven zoals de International Data Spaces, Gaia-X en het EU Data Space Support Centre. Het Dataspace Protocol is gedefinieerd als:
 <br/>
 “a set of specifications designed to facilitate interoperable data sharing between entities governed by usage control and based on Web technologies. These specifications define the schemas and protocols required for entities to publish data, negotiate Agreements, and access data as part of a federation of technical systems termed a Dataspace.” [[IDS-DSP]].
 <br/>
-<br/>
 </ul>
 <b>Voordelen van het Dataspace Protocol</b>
-<li>Controle en soevereiniteit: Organisaties behouden de controle over hun eigen data, zelfs als ze deze delen met andere partijen;</li>
-<li>Verhoogde samenwerking: Door een standaard zoals DSP kunnen organisaties makkelijker samenwerken en data delen, wat leidt tot nieuwe kansen en innovatie;</li>
-<li>Veiligheid en naleving: Dankzij ingebouwde privacybescherming en security-mechanismen wordt voldaan aan de strengste normen, waaronder de Europese privacyregelgeving (AVG).</li>
+<li>Controle en soevereiniteit, zodat organisaties  de controle over hun eigen data behouden, zelfs als ze deze delen met andere partijen;</li>
+<li>Verhoogde samenwerking door een standaard zoals DSP zorgt ervoor dat organisaties makkelijker samenwerken en data delen, wat leidt tot nieuwe kansen en innovatie;</li>
+<li>Dankzij ingebouwde privacybescherming en security-mechanismen wordt voldaan aan regelgeving, waaronder de Europese privacyregelgeving (AVG).</li>
 </ul>
 <br/>
 De onderstaande figuur 6 [[DSSC-BP]] geeft een gedetailleerd overzicht van de belangrijke concepten, componenten en protocollen voor een data space, te weten ‘Identity Governance Scope’ (bovenaan), ‘Control Plane’ (midden) en ‘Data Plane’ (onderaan). Daarbinnen zijn data connectors (links en rechts) en is het data space prototol gepositioneerd (midden). De ondersteunende componenten, zoals de ‘Vocabulary Hub’ en de ‘Catalog’ zijn aan de onderzijde weergegeven. Deze twee intermediaire en ondersteunende diensten zorgen voor het gebruik van datamodellen en formaten (de ‘vocabulary hub’) en voor de publicatie en het vinden van data (de catalogus). Op rol en functies van deze laatste twee componenten gaan we hier niet verder in.
@@ -158,11 +161,11 @@ Samengevat zijn de belangrijkste relaties tussen de entiteiten in het Dataspace 
 2.	Een dataset heeft één of meerdere aanbiedingen (ODRL Offer) met haar gebruiksvoorwaarden;
 3.	Een connector faciliteert de onderhandeling en produceert een overeenkomst conform ODRL (ODRL Agreement) tussen producent en consument, die specifiek betrekking heeft op één dataset.
 
-## De catalog
+## Catalog
 
 ### DCAT metadata
 De catalogus in de dataspace voorziet in de vindbaarheid van datasets van de deelnemers en zijn de basis om een datatransfer een transactie te starten. In een dataspace biedt de catalogus een overzicht van alle beschikbare datasets en diensten, die in het dataspace worden aangeboden door de aanbieders. De catalogus kan volledig publiek toegankelijk of alleen voor de deelnemers in de dataspace. Het catalog protocol definieert hoe een catalogus door een consument wordt bevraagd bij een catalogusdienst met behulp van een beschrijving van de data (producten en diensten). Deze beschrijving wordt in de vorm het metadata formaat DCAT beschikbaar opgeslagen en uitgewisseld. De Data Catalog Vocabulary (DCAT) is een vocabulaire ontwikkeld door het World Wide Web Consortium (W3C) om datasets en datacatalogi te beschrijven en met elkaar te verbinden ([[vocab-dcat-3]]). De dataset metadata in een DCAT Catalog is met de DCAT standaard beschreven en vastgelegd en wordt ook gebruikt om specifieke DCAT profielen te maken (zie ook onderstaande noot). Door het beschrijven van deze  informatie-elementen wordt voldaan aan de vereisten van het beschrijven van datasets in het Dataspace Protocol. De onderstaande tabel 1 zijn de DCAT elementen opgenomen conform DCAT, die toegepast kunnen worden om het Dataspace Protocol te implementeren ([[IDS-DSP]]). 
-<br>
+<br/>
 
 Tabel 1 - Overzicht van Dataspace Protocol DCAT metadata elementen
 
@@ -214,15 +217,15 @@ Tabel 1 - Overzicht van Dataspace Protocol DCAT metadata elementen
 
 <aside class='note' title="Data Catalog Vocabulary (DCAT)">
 Het doel van DCAT is om metadata interoperabel te maken, zodat datasets gemakkelijk kunnen worden gevonden, gedeeld en hergebruikt tussen verschillende platforms en organisaties. Het biedt een gestandaardiseerde structuur voor metadata-elementen zoals titel, beschrijving, licentie, distributies, en toegangspunten.
-De eerste versie werd in 2014 gepubliceerd, met een verbeterde en uitgebreidere DCAT versie 2 in 2020 en versie 3.0 . Deze versie legt een sterkere nadruk op interoperabiliteit, ondersteuning voor API's en uitbreiding naar bredere gebruikscontexten. Een DCAT-profiel is een specifieke afgeleide set regels en richtlijnen die een subset van DCAT beschrijft en aanpast aan een bepaalde context of toepassing. Profielen bouwen voort op de standaard DCAT-specificatie, maar voegen specifieke eisen of beperkingen toe die nodig zijn voor een bepaald domein, sector, of land. Profielen kunnen verplicht stellen welke metadata-elementen moeten worden gebruikt en hoe deze moeten worden toegepast. Belangrijke Europese en Nederlandse DCAT-profielen zijn:
-1. DCAT-AP (Application Profile) is het Europese applicatieprofiel van DCAT, dat is ontwikkeld om interoperabiliteit tussen Europese open data-portalen te bevorderen [[DCAT-AP]]. DCAT-AP specificeert verplichte en optionele metadata-elementen, die nodig zijn om datasets en catalogi op EU-niveau uitwisselbaar te maken, zoals het Europese dataportaal;
-2. DCAT-AP-NL is de Nederlandse variant van DCAT-AP, aangepast aan de Nederlandse context en specifiek gericht op de behoeften van Nederlandse organisaties en datasets [[DCAT-AP-NL]];
-3. GeoDCAT is een extensie van de DCAT-standaard die is ontwikkeld om metadata van  geografische data en diensten te integreren in datacatalogi die DCAT gebruiken [[GeoDCAT-AP]]. GeoDCAT vormt ook de brug tussen de ISO 19115 metadata standaard voor geografische datasets en DCAT, zodat geografische datasets en services naadloos kunnen worden opgenomen in open data-portalen en catalogi.
-<br>
-
+De eerste versie werd in 2014 gepubliceerd, met een verbeterde en uitgebreidere DCAT versie 2 in 2020 en versie 3.0 . Deze versie legt een sterkere nadruk op interoperabiliteit, ondersteuning voor API's en uitbreiding naar bredere gebruikscontexten. Een DCAT profiel is een specifieke afgeleide set regels en richtlijnen die een subset van DCAT beschrijft en aanpast aan een bepaalde context of toepassing. Profielen bouwen voort op de standaard DCAT specificatie, maar voegen specifieke eisen of beperkingen toe die nodig zijn voor een bepaald domein, sector, of land. Profielen kunnen verplicht stellen welke metadata-elementen moeten worden gebruikt en hoe deze moeten worden toegepast. Belangrijke Europese en Nederlandse DCAT-profielen zijn:
+1. DCAT-AP (Application Profile) is het Europese applicatieprofiel van DCAT, dat is ontwikkeld om interoperabiliteit tussen Europese open data-portalen te bevorderen [[dcat-ap]]. DCAT-AP specificeert verplichte en optionele metadata-elementen, die nodig zijn om datasets en catalogi op EU-niveau uitwisselbaar te maken, zoals het Europese dataportaal;
+2. DCAT-AP-NL is de Nederlandse variant van DCAT-AP, aangepast aan de Nederlandse context en specifiek gericht op de behoeften van Nederlandse organisaties en datasets [[dcat-ap-nl]];
+3. GeoDCAT is een extensie van de DCAT-standaard die is ontwikkeld om metadata van  geografische data en diensten te integreren in datacatalogi die DCAT gebruiken [[Geodcat-ap]]. GeoDCAT vormt ook de brug tussen de ISO 19115 metadata standaard voor geografische datasets en DCAT, zodat geografische datasets en services naadloos kunnen worden opgenomen in open data-portalen en catalogi.
+<br/>
+<br/>
 **Metadata standaarden voor geografische datasets en diensten**
 
-Het Nederlands metadata profiel op ISO 19115 voor geografie versie 2.1.0 ([[NLISO19115]])is de Nederlandse standaard die richtlijnen biedt voor het beschrijven van geografische datasets en diensten, gebaseerd op de internationale ISO 19115-norm. Het profiel is specifiek afgestemd op de Nederlandse en Europese  geo-informatie infrastructuur en is bedoeld om consistentie en interoperabiliteit te bevorderen bij het documenteren en delen van geografische informatie / geodatasets. Het beschrijft welke metadata-elementen verplicht, aanbevolen, of optioneel zijn, en hoe deze moeten worden toegepast, inclusief specifieke aanpassingen voor Nederland. Het Nederlands metadata profiel op ISO 19115 voor geografie definieert verplichte, aanbevolen en optionele metadata-elementen voor geografische datasets. Voor geografische diensten bestaat een equivalent, de Nederlands metadata profiel op ISO 19115 voor geografie. De metadata beschreven volgens het Nederlands profiel kunnen worden opgeslagen en uitgewisseld in XML en in JSON formaat. De XML-encoding is gebaseerd op het ISO 19139-schema, dat een gestructureerd formaat biedt voor interoperabele uitwisseling van metadata tussen catalogi en geografische informatiesystemen. JSON-encoding biedt een lichtere optie die beter geschikt is voor webtoepassingen en API's. Beide formaten ondersteunen gestandaardiseerde elementen die aansluiten bij het profiel.
+Het Nederlands metadata profiel op ISO 19115 voor geografie versie 2.1.0 ([[NLISO19115]]) is de Nederlandse standaard die richtlijnen biedt voor het beschrijven van geografische datasets en diensten, gebaseerd op de internationale ISO 19115-norm. Het profiel is specifiek afgestemd op de Nederlandse en Europese  geo-informatie infrastructuur en is bedoeld om consistentie en interoperabiliteit te bevorderen bij het documenteren en delen van geografische informatie / geodatasets. Het beschrijft welke metadata-elementen verplicht, aanbevolen, of optioneel zijn, en hoe deze moeten worden toegepast, inclusief specifieke aanpassingen voor Nederland. Het Nederlands metadata profiel op ISO 19115 voor geografie definieert verplichte, aanbevolen en optionele metadata-elementen voor geografische datasets. Voor geografische diensten bestaat een equivalent, de Nederlands metadata profiel op ISO 19115 voor geografie. De metadata beschreven volgens het Nederlands profiel kunnen worden opgeslagen en uitgewisseld in XML en in JSON formaat. De XML-encoding is gebaseerd op het ISO 19139-schema, dat een gestructureerd formaat biedt voor interoperabele uitwisseling van metadata tussen catalogi en geografische informatiesystemen. JSON-encoding biedt een lichtere optie die beter geschikt is voor webtoepassingen en API's. Beide formaten ondersteunen gestandaardiseerde elementen die aansluiten bij het profiel.
 </aside>
 
 <br/>
@@ -233,34 +236,35 @@ Naast de inhoud van de catalogus, die bestaat uit de beschrijvingen van datasets
 Een dataproducent, die datasets wil aanbieden aan een dataspace, zal verschillende stappen uitvoeren om datasets beschikbaar te maken voor de potentiële consumenten. Op de meest simplistische manier kent de dataproducent de dataconsument vanaf het begin en geeft hij direct informatie over beschikbare datasets, de geselecteerde eindpunten en de toegangsmechanismen. 
 De eerste stap in een typisch proces voor het publiceren van datasets is het op de juiste manier maken van een beschrijving van een dataset. Daarbij kan de data provider de beschrijvingen van datasets op twee wijzen publiceren: 1. publiceren in de catalog service of 2. publiceren in een centrale catalog broker van de data space. Beiden worden hieronder kort toegelicht. 
 <br/>
-
+<br/>
 **Publicatie van metadata in de catalog service**
 <br/>
 Meestal bieden data connectoren de technische manieren om dataset beschrijvingen in de catalog service te maken en te onderhouden, bijvoorbeeld door middel van geschikte GUI's. Na het bereiken van een syntactisch en semantisch correcte beschrijving, worden ze vervolgens geïmplementeerd bij de data connector van de dataprovider en zijn ze toegankelijk voor andere  data connectoren via de eindpunten. Afhankelijk van de vragende data connector kan de geretourneerde beschrijving van de dataset verschillen. De data connector kan dus verschillende dataset beschrijvingen aanbieden onder verschillende voorwaarden voor verschillende consumenten in een data space. De beschrijvingen van datasets worden in de data connector instantie opgenomen of gepubliceerd. 
 Het kan zijn dat dataproducenten en -providers de gemaakte metadata willen publiceren op een centrale catalog component in een dataspace in plaats van deze alleen aan te bieden in zijn eigen data connector instantie.
 <br/>
-
+<br/>
 **Catalog broker**
 <br/>
 De centrale catalog component wordt dan een ‘catalog broker’ (een intermediaire dienst). De data provider stuurt de metadata beschrijving van de dataset naar de centrale centrale catalog. De centrale catalog is een onderdeel van een dataspace, die de publicatie van metadata voor datasets (en ook data connectoren) in de dataspace mogelijk maakt. Dataconsumenten kunnen in de centrale catalog geschikte aanbiedingen van datasets vinden zonder het bestaan of de locatie van de aanbieder te kennen. De catalog slaat de geplaatste metadata beschrijvingen op en stelt deze ook beschikbaar voor zoekopdrachten van gebruikers en andere data connectors. Potentiële dataconsumenten kunnen de opgeslagen metadata beschrijvingen doorzoeken, filteren op relevante aanbiedingen, onderhandelen met de dataprovider en de dataset aanvragen bij de data connector. 
 
 Het is echter niet verplicht voor een data provider om datasets te publiceren bij een catalog. Ook een dataconsument wordt niet gedwongen om zijn zoekproces te starten bij een catalog, als de consument ook andere opties heeft om zijn dataset partners te vinden en te lokaliseren. Toch hebben beide de mogelijkheid om te communiceren met een centrale catalogus. Daarvoor zijn drie functies van belang:  
-1.	Het registeren van metadata in de centrale catalog door de dataprovider;
-2.	Het zoeken naar datasets door consument in de centrale catalog;
-3.	Onderhouden en updaten van metadata en data connectors in de centrale catalog. 
-
+<ol>
+  <li>Het registeren van metadata in de centrale catalog door de dataprovider;</li>
+  <li>Het zoeken naar datasets door consument in de centrale catalog;</li>
+  <li>Onderhouden en updaten van metadata en data connectors in de centrale catalog.</li>
+</ol>
 <br/>
 
-**Het registeren van metadata bij de catalog broker**
+**Het registeren van metadata bij de catalog broker**  
 De dataprovider kan metadata beschrijvingen naar een catalog broker sturen en publiceren (zie figuur 8). De metadata beschrijving van een dataset moet op zichzelf staan en voldoen aan de specificaties van het informatiemodel. De catalog controleert vervolgens de syntactische juistheid van de aangeleverde metadata en bewaart deze in zijn lokale database. Het controleert niet de semantische correctheid of de plausibiliteit van de verstrekte informatie. Een catalog zoekt niet actief naar metadata of zoekt het niet naar updates. De catalog vertrouwt op de metadata beschrijvingen, die is aangeleverd door de dataprovider. De dataprovider is verantwoordelijk voor de metadata in de catalog en de centrale catalog kan dus niet verantwoordelijk worden gesteld voor verouderde of verkeerde informatie. 
 
 <figure id="Figuur_x">
-<a href="media/IDS Registratie van metadata bij de catalog broker.png" target="_blank"><img src="media/Registratie van metadata bij de catalog broker.png" alt=""></a>
+<a href="media/IDS Registratie van metadata bij de catalog broker.png" target="_blank"><img src="media/IDS Registratie van metadata bij de catalog broker.png" alt=""></a>
 <figcaption>Registratie van metadata bij de catalog broker [[IDS-RAM4]]<figcaption>
 </figure>
 <br/>
 
-**Het zoeken naar datasets in de catalog**
+**Het zoeken naar datasets in de catalog**  
 Om een dataprovider te vinden, kan de dataconsument zoeken in de catalog van een centrale catalog in de dataspace (zie figuur 9). Daarvoor moet de dataconsument een geschikte centrale catalog  selecteren en de zoekmogelijkheden bepalen grafische zoekinterfaces of domeinspecifieke zoektalen. De centrale catalog retourneert vervolgens het resultaat van de zoekopdracht naar de dataconsument. Het zoekresultaat kan verschillen afhankelijk van de bevraagde data connector als gevolg van het filteren van de weergegeven data volgens het gebruiksbeleid dat is gedefinieerd door de dataprovider. 
 
 De dataconsument moet het resultaat interpreteren om meer te weten te komen over de verschillende beschikbare datasets. Elk zoekresultaat moet informatie bevatten over elke data connector, die de gewenste datasets kan leveren, zodat de dataconsument toegang heeft tot de zelfbeschrijving van elke data connector voor meer informatie over het ontvangen van de gewenste dataset. 
@@ -271,7 +275,7 @@ De dataconsument moet het resultaat interpreteren om meer te weten te komen over
 </figure>
 <br/>
 
-**Onderhouden en updaten van metadata en data connectors in de catalogus**
+**Onderhouden en updaten van metadata en data connectors in de catalog**  
 De dataprovider heeft er belang bij om de metadata in de catalog goed te onderhouden. Daarvoor is het mogelijk om updateverzoeken te sturen naar de catalogus. Dit kan worden gedaan door de nieuwe metadata te verzenden, die dezelfde identifier gebruikt als de eerder verzonden metadata. De catalogus werkt vervolgens de opgeslagen metadata bij. Ook een data connector heeft de mogelijkheid zijn metadata bij de catalog te updaten.
 
 ## Contract onderhandelingen
@@ -292,9 +296,7 @@ Toegangsbeheer op basis van attributen of kenmerken wordt ook wel op ‘policies
 Hoe evalueer je het beleid en handhaaf je het? Stel je voor dat een gebruiker toegang zoekt tot een document. Gebruiksbeheer is een uitbreiding van toegangscontrole [[IDS-PPUC]], die is ontworpen om de deelnemers te ondersteunen bij het beschermen van hun datasets. Het voert verplichtingen uit en handhaaft de ingestelde gebruiksbeperkingen nadat de toegang is verleend. De beperkingen kunnen gelaagd zijn. Het kan bijvoorbeeld zeggen: Ja, je hebt toegang, maar slechts voor drie dagen. Of ja, maar informeer de eigenaar. 
 <br/>
 
-**Hoe specificeer je gebruiksbeleid?** 
-<br/>
-
+**Hoe specificeer je gebruiksbeleid?**  
 Om het gebruiksbeleid op datasets vast te leggen is het raadzaam een beleidsspecificatie op te stellen. Beleidsspecificatie is een ander woord voor een ‘policy contract’. Wat is een ‘policy contract’. Binnen het data space protocol wordt een beleidsspecificatie beschouwd als een “als een abstracte set regels voor het gebruik van een resource” [[IDS-RAM4]] Dit contract, dat kan worden gezien als het gebruiksbeleid, is onderverdeeld in twee onderdelen: 
 1.	Contract metadata, zoals de datum waarop het contact is uitgegeven; en 
 2.	Regels voor gebruiksbeheer, zoals toepassingen, toestemming-, verbod- en verplichtingsverklaringen. 
@@ -343,14 +345,16 @@ In dit voorbeeld is een policy opgenomen, waarin een organisatie A data mag gebr
 Is het nodig om te weten hoe ODRL technisch werkt om een policy voor data te specificeren? Nee, in principe niet. Wanneer een producent of provider van plan is data aan te bieden, gebruiken ze een policy editor om een policy te specificeren, wat resulteert in een contractaanbod. In een zogenaamde beleidseditor en een bijbehorend registers worden beleidsspecificaties gemaakt en bewaard. Deze beleidsspecificaties zijn beschikbaar om producten en consumenten met verschillende achtergronden en expertises in staat te stellen om met sjablonen hun beleidsspecificaties te maken en te hergebruiken. 
 <br>
 
-**ODRL Policies in DCAT metadata**
-<br>
+**ODRL Policies in DCAT metadata**  
 Het opnemen van een ODRL policy verloopt via de metadata beschrijving van de data(set) in DCAT formaat. De policy metadata wordt in DCAT opgenomen een DCAT-element odrl:hasPolicy. Een policy kan op verschillende wijzen in het DCAT-element odrl:hasPolicy opgenomen worden:   
-1.	Via een externe verwijzing via een URL. De URL verwijst naar een ODRL-policy, die op het web beschikbaar is als een afzonderlijk resource (bijv. een RDF-bestand). Het voordeel is de bron daardoor herbruikbaar is en is losgekoppeld van de dataset (makkelijker versiebeheer);
-2.	De policy wordt direct in hetzelfde document (RDF) inline gedefinieerd als de dataset.Inline opnemen in hetzelfde RDF-document;
-3.	Er wordt een verwijzing opgenomen naar een gestandaardiseerde URI voor bekende licenties, bijvoorbeeld naar een machine-leesbare versie van Creative Commons. Daarvoor dient de betreffende licentiepagina wel een ODRL RDF te bevatten;
-4.	Er wordt een verwijzing naar een geregistreerd policy in een policyregister opgenomen;
-5.	Er wordt verwijzing naar een API, een PID of dereferenceable URI opgenomen. Deze URI kan worden opgehaald en levert een ODRL Policy op in RDF.
+<ol>
+  <li>Via een externe verwijzing via een URL. De URL verwijst naar een ODRL-policy, die op het web beschikbaar is als een afzonderlijk resource (bijv. een RDF-bestand). Het voordeel is de bron daardoor herbruikbaar is en is losgekoppeld van de dataset (makkelijker versiebeheer);</li>
+  <li>De policy wordt direct in hetzelfde document (RDF) inline gedefinieerd als de dataset.Inline opnemen in hetzelfde RDF-document;</li>
+  <li>Er wordt een verwijzing opgenomen naar een gestandaardiseerde URI voor bekende licenties, bijvoorbeeld naar een machine-leesbare versie van Creative Commons. Daarvoor dient de betreffende licentiepagina wel een ODRL RDF te bevatten;</li>
+  <li>Er wordt een verwijzing naar een geregistreerd policy in een policyregister opgenomen;</li>
+  <li>Er wordt verwijzing naar een API, een PID of dereferenceable URI opgenomen. Deze URI kan worden opgehaald en levert een ODRL Policy op in RDF.</li>
+  </ol>
+
 DCAT en ODRL zijn aldus verbonden via dit gezamenlijke DCAT-element odrl:hasPolicy. 
 
 ### Het uitvoeren van contractonderhandelingen
@@ -376,8 +380,7 @@ Zodra er een contractovereenkomst is bereikt, wordt deze geïnstantieerd en geï
 Als een deelnemer op enig moment tijdens de onderhandelingsprocedure niet akkoord gaat met de gedeelde inhoud, kan het contract worden afgewezen. In het geval van een afwijzing van een contract wordt de onderhandelingsprocedure afgebroken. De aangesloten systemen en gebruikers worden op de hoogte gebracht en eerder opgeslagen contractovereenkomsten worden ingetrokken. 
 <br>
 
-**Contractonderhandeling gestart door de producent**
-<br>
+**Contractonderhandeling gestart door de producent**  
 De contractonderhandeling kan echter ook door de producent worden gestart. In figuur 10 start niet de consument, maar de producent de contractonderhandeling. Daarbij wordt opgemerkt dat, aangezien de producent degene is die het contract aanbiedt, de producent ook dan degene is die de contractovereenkomst als laatste ondertekent.  
 
 <figure id="Figuur_x">
@@ -399,26 +402,25 @@ Het uitvoeren van de data transfer begint met het aanroepen van een Data Operati
 </figure>
 <br>
 
-**Communicatiepatroon**
-<br>
+**Communicatiepatroon**  
 De communicatie tussen de data connectoren kan synchroon of asynchroon zijn. In het laatste geval hoeft de consument niet te wachten op het resultaat, maar wordt de consument door de provider op de hoogte wordt gebracht zodra het resultaat beschikbaar is. Bovendien kan er in plaats van een pull-request een push-request worden verstuurd. In het geval van een abonnement kan de consument vragen om updates met betrekking tot de gevraagde data. De bijgewerkte data kunnen worden verstrekt na bepaalde gebeurtenissen (bijv. nadat de data door de dataverstrekker zijn bijgewerkt) of binnen bepaalde tijdsintervallen (bijv. elke vijf minuten). Als er een dergelijk verzoek wordt gedaan, ontvangt de dataconsument herhaaldelijk bijgewerkte queryresultaten van de dataproducent. In het geval van een pull-request kan de dataconsument het laatste deel van het proces herhalen om data opnieuw op te vragen (met dezelfde of een andere query).
 De beschrijving van het communicatiepatroon tijdens de data uitwisseling maakt geen deel uit van het Dataspace Protocol. Communicatie patronen, zoals het gebruik van downloadservices en API’s worden door vastgesteld door afspraken in de betreffende informatiedomeinen. De data-uitwisseling en het overdrachtsproces is dus niet beperkt tot een specifiek protocol. 
 
 ## Dataspace Protocol specificatie en data connector software
 
 Het Dataspace Protocol is een technische specificatie, die de implementatie van het Dataspace Protocol in een data connector mogelijk maakt. Het Dataspace Protocol is een reeks van technische specificaties ontworpen om interoperabele data-uitwisseling mogelijk te maken gebaseerd op webtechnologieën. Deze specificaties definiëren de schema's (JSON) en het berichtenverkeer, die nodig zijn om de datasets te publiceren, overeenkomsten te onderhandelen en toegang te krijgen tot datasets binnen een dataspace. De huidige versie van de Dataspace Protocol specificatie wordt beschouwd als stabiel, en verdere wijzigingen zullen de conformiteit niet beïnvloeden ([[ECLPS-DSP]]). De specificaties zijn georganiseerd in verschillende onderdelen, waaronder:
-1. Dataspace Model en Dataspace terminologie; 
+1. Dataspace model en dataspace terminologie; 
 2. Catalog protocol en catalog; 
 3. Contractonderhandelingsprotocol en contractonderhandeling;
 4. Data transfer protocol en data transfer proces.
 We gaan hier niet verder in op de technische specificatie daarvoor verwijzen we naar ([[ECLPS-DSP]]).
-<br>
+<br/>
 
-**Data connector software**
-<br>
+**Data connector software**  
 Data connectors zijn softwaretools waarmee data(sets) vertrouwd kunnen worden gedeeld en geïntegreerd tussen verschillende systemen, applicaties en databronnen. In de context van data spaces spelen data connectoren een sleutelrol in de communicatie en gegevensuitwisseling tussen verschillende platforms, systemen en applicaties. Data connectoren zullen daarbij moeten voldoen aan de vooraf gedefinieerde normen en uitwisselingsbeleidslijnen van het Dataspace Protocol. In het data connectors overview report van IDSA [[IDS-DCR]] zijn inmiddels zo’n 40 verschillende implementaties van data connector software beschikbaar. implementaties van data connector software worden door IDSA gecertificeerd. Sinds 2022 hanteert IDSA het IDS-certificeringsschema dat gericht is op het certificeren van de interoperabiliteit, compatibiliteit en betrouwbaarheid van data connectoren. Met de voltooiing van de standaardisatie van het Dataspace Protocol zal het IDS-certificeringsschema evolueren om data connector software te beoordelen door  geautomatiseerde testen.
+<br/>
 
-**TNO Security Gateway data connector software**
+**TNO Security Gateway data connector software**  
 In dit experiment hebben we gekozen te werken met de data connector software van TNO, de TNO Security Gateway (TSG). De volgende overwegingen hebben daarbij een rol gespeeld:
 1.	TSG is een IDSA-gecertificeerde implementatie (zie [[IDS-DCR]];
 2.	TGS is open source software;
