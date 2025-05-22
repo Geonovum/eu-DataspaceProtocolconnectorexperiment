@@ -223,12 +223,11 @@ De eerste versie werd in 2014 gepubliceerd, met een verbeterde en uitgebreidere 
 3. GeoDCAT is een extensie van de DCAT-standaard die is ontwikkeld om metadata van  geografische data en diensten te integreren in datacatalogi die DCAT gebruiken [[Geodcat-ap]]. GeoDCAT vormt ook de brug tussen de ISO 19115 metadata standaard voor geografische datasets en DCAT, zodat geografische datasets en services naadloos kunnen worden opgenomen in open data-portalen en catalogi.
 <br/>
 <br/>
-**Metadata standaarden voor geografische datasets en diensten**
+
+<b>Metadata standaarden voor geografische datasets en diensten</b>
 
 Het Nederlands metadata profiel op ISO 19115 voor geografie versie 2.1.0 ([[NLISO19115]]) is de Nederlandse standaard die richtlijnen biedt voor het beschrijven van geografische datasets en diensten, gebaseerd op de internationale ISO 19115-norm. Het profiel is specifiek afgestemd op de Nederlandse en Europese  geo-informatie infrastructuur en is bedoeld om consistentie en interoperabiliteit te bevorderen bij het documenteren en delen van geografische informatie / geodatasets. Het beschrijft welke metadata-elementen verplicht, aanbevolen, of optioneel zijn, en hoe deze moeten worden toegepast, inclusief specifieke aanpassingen voor Nederland. Het Nederlands metadata profiel op ISO 19115 voor geografie definieert verplichte, aanbevolen en optionele metadata-elementen voor geografische datasets. Voor geografische diensten bestaat een equivalent, de Nederlands metadata profiel op ISO 19115 voor geografie. De metadata beschreven volgens het Nederlands profiel kunnen worden opgeslagen en uitgewisseld in XML en in JSON formaat. De XML-encoding is gebaseerd op het ISO 19139-schema, dat een gestructureerd formaat biedt voor interoperabele uitwisseling van metadata tussen catalogi en geografische informatiesystemen. JSON-encoding biedt een lichtere optie die beter geschikt is voor webtoepassingen en API's. Beide formaten ondersteunen gestandaardiseerde elementen die aansluiten bij het profiel.
 </aside>
-
-<br/>
 
 ### Gebruiksfuncties voor de DCAT catalog
 Naast de inhoud van de catalogus, die bestaat uit de beschrijvingen van datasets en datadiensten conform DCAT, is het ook van belang om de functies van de catalogus te bezien. De gebruiksfuncties van de catalogus maken het mogelijk voor de mens en voor machines om de catalogus ook te gebruiken en te bevragen.  
@@ -338,12 +337,12 @@ In dit voorbeeld is een policy opgenomen, waarin een organisatie A data mag gebr
 </figure>
 
 </aside>
-<br>
+<br/>
 
-**Policies aanmaken en het register met beleidspecificaties**
-<br>
+**Policies aanmaken en het register met beleidspecificaties**  
+
 Is het nodig om te weten hoe ODRL technisch werkt om een policy voor data te specificeren? Nee, in principe niet. Wanneer een producent of provider van plan is data aan te bieden, gebruiken ze een policy editor om een policy te specificeren, wat resulteert in een contractaanbod. In een zogenaamde beleidseditor en een bijbehorend registers worden beleidsspecificaties gemaakt en bewaard. Deze beleidsspecificaties zijn beschikbaar om producten en consumenten met verschillende achtergronden en expertises in staat te stellen om met sjablonen hun beleidsspecificaties te maken en te hergebruiken. 
-<br>
+<br/>
 
 **ODRL Policies in DCAT metadata**  
 Het opnemen van een ODRL policy verloopt via de metadata beschrijving van de data(set) in DCAT formaat. De policy metadata wordt in DCAT opgenomen een DCAT-element odrl:hasPolicy. Een policy kan op verschillende wijzen in het DCAT-element odrl:hasPolicy opgenomen worden:   
@@ -378,7 +377,7 @@ Zodra er een contractovereenkomst is bereikt, wordt deze geïnstantieerd en geï
 </figure>
 
 Als een deelnemer op enig moment tijdens de onderhandelingsprocedure niet akkoord gaat met de gedeelde inhoud, kan het contract worden afgewezen. In het geval van een afwijzing van een contract wordt de onderhandelingsprocedure afgebroken. De aangesloten systemen en gebruikers worden op de hoogte gebracht en eerder opgeslagen contractovereenkomsten worden ingetrokken. 
-<br>
+<br/>
 
 **Contractonderhandeling gestart door de producent**  
 De contractonderhandeling kan echter ook door de producent worden gestart. In figuur 10 start niet de consument, maar de producent de contractonderhandeling. Daarbij wordt opgemerkt dat, aangezien de producent degene is die het contract aanbiedt, de producent ook dan degene is die de contractovereenkomst als laatste ondertekent.  
