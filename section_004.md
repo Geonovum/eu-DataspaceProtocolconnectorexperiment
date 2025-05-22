@@ -348,5 +348,3 @@ Setup experiment
 Resultaten uitvoering
 ## Bevindingen    {#4041334C}
 pm
-## Open data en de Dataspace Protocol connector {#7EC41110}
-pm
