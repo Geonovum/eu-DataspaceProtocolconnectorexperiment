@@ -137,6 +137,15 @@ var documentConfig =
       date: "27 February 2025",
       status: "Draft"
     },
+    "dcat-ap":
+      {
+        title:        "DCAT AP 3.0",
+        href:         "https://semiceu.github.io/DCAT-AP/releases/3.0.0/",
+        //status:       ["Adopted specification"],
+        //authors:      ["Drafting Team Metadata and European Commission Joint Research Centre"],
+        publisher:    "European Commission",
+        date:         "14 June 2024",
+    },
     "dcat-ap-nl":
     {
         title:        "DCAT-AP-NL 3.0",
@@ -145,6 +154,15 @@ var documentConfig =
         authors:      ["Ine de Visser", "Jan Skornsek"],
         publisher:    "Geonovum",
         date:         "12 december 2024",
+    },
+    "geodcat-ap":
+    {
+        title:        "GeoDCAT-AP 3.0.0",
+        href:         "https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0/",
+        //status:       "",
+        //authors:      "",
+        publisher:    "European Commission",
+        date:         "04 October 2024",
     },
     "EUSD":
     {
