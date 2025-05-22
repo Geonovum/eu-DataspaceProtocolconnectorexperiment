@@ -64,6 +64,7 @@ De data connector is de centrale technische component voor veilige en vertrouwde
   <li>De data connector zorgt er dat de datatransfer kan plaatsvinden tussen data aanbieder en data consument.</li>
 </ol>
 <br/>
+
 <b>Control plane en data plane</b>
 <br/>
 De data connector werkt vervolgens met gestandaardiseerde protocollen en afspraken. Een relevant concept voor het gebruik van de data connector is daarbij het onderscheid tussen control plane en data plane (zie figuur 5). Het onderscheid wordt gemaakt om aan te geven dat afspraken en standaarden voor een data space betrekking hebben op de control plane.  
@@ -95,11 +96,13 @@ Het Dataspace Protocol is een reeks van afspraken, standaarden en technologieën
 <br/>
 “a set of specifications designed to facilitate interoperable data sharing between entities governed by usage control and based on Web technologies. These specifications define the schemas and protocols required for entities to publish data, negotiate Agreements, and access data as part of a federation of technical systems termed a Dataspace.” [[IDS-DSP]].
 <br/>
-</ul>
+
 <b>Voordelen van het Dataspace Protocol</b>
-<li>Controle en soevereiniteit, zodat organisaties  de controle over hun eigen data behouden, zelfs als ze deze delen met andere partijen;</li>
-<li>Verhoogde samenwerking door een standaard zoals DSP zorgt ervoor dat organisaties makkelijker samenwerken en data delen, wat leidt tot nieuwe kansen en innovatie;</li>
-<li>Dankzij ingebouwde privacybescherming en security-mechanismen wordt voldaan aan regelgeving, waaronder de Europese privacyregelgeving (AVG).</li>
+<br/>
+</ul>
+  <li>Controle en soevereiniteit, zodat organisaties  de controle over hun eigen data behouden, zelfs als ze deze delen met andere partijen;</li>
+  <li>Verhoogde samenwerking door een standaard zoals DSP zorgt ervoor dat organisaties makkelijker samenwerken en data delen, wat leidt tot nieuwe kansen en innovatie;</li>
+  <li>Dankzij ingebouwde privacybescherming en security-mechanismen wordt voldaan aan regelgeving, waaronder de Europese privacyregelgeving (AVG).</li>
 </ul>
 <br/>
 De onderstaande figuur 6 [[DSSC-BP]] geeft een gedetailleerd overzicht van de belangrijke concepten, componenten en protocollen voor een data space, te weten ‘Identity Governance Scope’ (bovenaan), ‘Control Plane’ (midden) en ‘Data Plane’ (onderaan). Daarbinnen zijn data connectors (links en rechts) en is het data space prototol gepositioneerd (midden). De ondersteunende componenten, zoals de ‘Vocabulary Hub’ en de ‘Catalog’ zijn aan de onderzijde weergegeven. Deze twee intermediaire en ondersteunende diensten zorgen voor het gebruik van datamodellen en formaten (de ‘vocabulary hub’) en voor de publicatie en het vinden van data (de catalogus). Op rol en functies van deze laatste twee componenten gaan we hier niet verder in.
@@ -296,7 +299,8 @@ Toegangsbeheer op basis van attributen of kenmerken wordt ook wel op ‘policies
 Hoe evalueer je het beleid en handhaaf je het? Stel je voor dat een gebruiker toegang zoekt tot een document. Gebruiksbeheer is een uitbreiding van toegangscontrole [[IDS-PPUC]], die is ontworpen om de deelnemers te ondersteunen bij het beschermen van hun datasets. Het voert verplichtingen uit en handhaaft de ingestelde gebruiksbeperkingen nadat de toegang is verleend. De beperkingen kunnen gelaagd zijn. Het kan bijvoorbeeld zeggen: Ja, je hebt toegang, maar slechts voor drie dagen. Of ja, maar informeer de eigenaar. 
 <br/>
 
-**Hoe specificeer je gebruiksbeleid?**  
+<b>Hoe specificeer je gebruiksbeleid?<b>
+<br/>
 Om het gebruiksbeleid op datasets vast te leggen is het raadzaam een beleidsspecificatie op te stellen. Beleidsspecificatie is een ander woord voor een ‘policy contract’. Wat is een ‘policy contract’. Binnen het data space protocol wordt een beleidsspecificatie beschouwd als een “als een abstracte set regels voor het gebruik van een resource” [[IDS-RAM4]] Dit contract, dat kan worden gezien als het gebruiksbeleid, is onderverdeeld in twee onderdelen: 
 1.	Contract metadata, zoals de datum waarop het contact is uitgegeven; en 
 2.	Regels voor gebruiksbeheer, zoals toepassingen, toestemming-, verbod- en verplichtingsverklaringen. 
@@ -345,7 +349,8 @@ In dit voorbeeld is een policy opgenomen, waarin een organisatie A data mag gebr
 Is het nodig om te weten hoe ODRL technisch werkt om een policy voor data te specificeren? Nee, in principe niet. Wanneer een producent of provider van plan is data aan te bieden, gebruiken ze een policy editor om een policy te specificeren, wat resulteert in een contractaanbod. In een zogenaamde beleidseditor en een bijbehorend registers worden beleidsspecificaties gemaakt en bewaard. Deze beleidsspecificaties zijn beschikbaar om producten en consumenten met verschillende achtergronden en expertises in staat te stellen om met sjablonen hun beleidsspecificaties te maken en te hergebruiken. 
 <br/>
 
-**ODRL Policies in DCAT metadata**  
+<b>ODRL Policies in DCAT metadata<b>
+<br/>
 Het opnemen van een ODRL policy verloopt via de metadata beschrijving van de data(set) in DCAT formaat. De policy metadata wordt in DCAT opgenomen een DCAT-element odrl:hasPolicy. Een policy kan op verschillende wijzen in het DCAT-element odrl:hasPolicy opgenomen worden:   
 <ol>
   <li>Via een externe verwijzing via een URL. De URL verwijst naar een ODRL-policy, die op het web beschikbaar is als een afzonderlijk resource (bijv. een RDF-bestand). Het voordeel is de bron daardoor herbruikbaar is en is losgekoppeld van de dataset (makkelijker versiebeheer);</li>
@@ -380,7 +385,8 @@ Zodra er een contractovereenkomst is bereikt, wordt deze geïnstantieerd en geï
 Als een deelnemer op enig moment tijdens de onderhandelingsprocedure niet akkoord gaat met de gedeelde inhoud, kan het contract worden afgewezen. In het geval van een afwijzing van een contract wordt de onderhandelingsprocedure afgebroken. De aangesloten systemen en gebruikers worden op de hoogte gebracht en eerder opgeslagen contractovereenkomsten worden ingetrokken. 
 <br/>
 
-**Contractonderhandeling gestart door de producent**  
+<b>Contractonderhandeling gestart door de producent<b>
+<br/>
 De contractonderhandeling kan echter ook door de producent worden gestart. In figuur 10 start niet de consument, maar de producent de contractonderhandeling. Daarbij wordt opgemerkt dat, aangezien de producent degene is die het contract aanbiedt, de producent ook dan degene is die de contractovereenkomst als laatste ondertekent.  
 
 <figure id="Figuur_x">
@@ -400,7 +406,8 @@ Het uitvoeren van de data transfer begint met het aanroepen van een Data Operati
 </figure>
 <br>
 
-**Communicatiepatroon**  
+<b>Communicatiepatroon<b>
+<br/>
 De communicatie tussen de data connectoren kan synchroon of asynchroon zijn. In het laatste geval hoeft de consument niet te wachten op het resultaat, maar wordt de consument door de provider op de hoogte wordt gebracht zodra het resultaat beschikbaar is. Bovendien kan er in plaats van een pull-request een push-request worden verstuurd. In het geval van een abonnement kan de consument vragen om updates met betrekking tot de gevraagde data. De bijgewerkte data kunnen worden verstrekt na bepaalde gebeurtenissen (bijv. nadat de data door de dataverstrekker zijn bijgewerkt) of binnen bepaalde tijdsintervallen (bijv. elke vijf minuten). Als er een dergelijk verzoek wordt gedaan, ontvangt de dataconsument herhaaldelijk bijgewerkte queryresultaten van de dataproducent. In het geval van een pull-request kan de dataconsument het laatste deel van het proces herhalen om data opnieuw op te vragen (met dezelfde of een andere query).
 De beschrijving van het communicatiepatroon tijdens de data uitwisseling maakt geen deel uit van het Dataspace Protocol. Communicatie patronen, zoals het gebruik van downloadservices en API’s worden door vastgesteld door afspraken in de betreffende informatiedomeinen. De data-uitwisseling en het overdrachtsproces is dus niet beperkt tot een specifiek protocol. 
 
@@ -414,11 +421,13 @@ Het Dataspace Protocol is een technische specificatie, die de implementatie van 
 We gaan hier niet verder in op de technische specificatie daarvoor verwijzen we naar ([[ECLPS-DSP]]).
 <br/>
 
-**Data connector software**  
+<b>Data connector software<b>
+<br/>
 Data connectors zijn softwaretools waarmee data(sets) vertrouwd kunnen worden gedeeld en geïntegreerd tussen verschillende systemen, applicaties en databronnen. In de context van data spaces spelen data connectoren een sleutelrol in de communicatie en gegevensuitwisseling tussen verschillende platforms, systemen en applicaties. Data connectoren zullen daarbij moeten voldoen aan de vooraf gedefinieerde normen en uitwisselingsbeleidslijnen van het Dataspace Protocol. In het data connectors overview report van IDSA [[IDS-DCR]] zijn inmiddels zo’n 40 verschillende implementaties van data connector software beschikbaar. implementaties van data connector software worden door IDSA gecertificeerd. Sinds 2022 hanteert IDSA het IDS-certificeringsschema dat gericht is op het certificeren van de interoperabiliteit, compatibiliteit en betrouwbaarheid van data connectoren. Met de voltooiing van de standaardisatie van het Dataspace Protocol zal het IDS-certificeringsschema evolueren om data connector software te beoordelen door  geautomatiseerde testen.
 <br/>
 
-**TNO Security Gateway data connector software**  
+<b>TNO Security Gateway data connector software<b>
+<br/>
 In dit experiment hebben we gekozen te werken met de data connector software van TNO, de TNO Security Gateway (TSG). De volgende overwegingen hebben daarbij een rol gespeeld:
 1.	TSG is een IDSA-gecertificeerde implementatie (zie [[IDS-DCR]];
 2.	TGS is open source software;
