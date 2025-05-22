@@ -12,7 +12,7 @@ IDSA is verantwoordelijk voor het bijhouden van het regelboek en voor het onders
 
 <figure id="Figuur_x">
 <a href="media/IDSA data space bouwstenen (zwart).png" target="_blank"><img src="media/IDSA data space bouwstenen (zwart).png" alt=""></a>
-<figcaption>IDS bouwstenen voor een data space (bron: IDSA)</figcaption>
+<figcaption>IDS bouwstenen voor een data space (bron: IDSA)<figcaption>
 </figure>
 <br/>
 
@@ -46,7 +46,7 @@ Alle typen deelnemers in een data space vervullen daarmee een bepaalde rol (zie 
 
 <figure id="Figuur_x">
 <a href="media/Rollen in de dataspace (figuur TNO).png" target="_blank"><img src="media/Rollen in de dataspace (figuur TNO).png" alt=""></a>
-<figcaption>Typen deelnemers (en rollen) in een data space (vrij naar TNO)</figcaption>
+<figcaption>Typen deelnemers (en rollen) in een data space (vrij naar TNO)<figcaption>
 </figure>
 
 <br/>
@@ -72,7 +72,7 @@ De control plane (controlelaag) is verantwoordelijk voor beheer en beslissingen 
 
 <figure id="Figuur_x">
 <a href="media/De rol van de IDS data connector in een Dataspace IDSA.png" target="_blank"><img src="media/De rol van de IDS data connector in een Dataspace IDSA.png" alt=""></a>
-<figcaption>De rol van de IDS data connector in een dataspace (vrij naar IDSA)</figcaption>
+<figcaption>De rol van de IDS data connector in een dataspace (vrij naar IDSA)<figcaption>
 </figure>
 
 <br/>
@@ -165,6 +165,7 @@ Samengevat zijn de belangrijkste relaties tussen de entiteiten in het Dataspace 
 
 ### DCAT metadata
 De catalogus in de dataspace voorziet in de vindbaarheid van datasets van de deelnemers en zijn de basis om een datatransfer een transactie te starten. In een dataspace biedt de catalogus een overzicht van alle beschikbare datasets en diensten, die in het dataspace worden aangeboden door de aanbieders. De catalogus kan volledig publiek toegankelijk of alleen voor de deelnemers in de dataspace. Het catalog protocol definieert hoe een catalogus door een consument wordt bevraagd bij een catalogusdienst met behulp van een beschrijving van de data (producten en diensten). Deze beschrijving wordt in de vorm het metadata formaat DCAT beschikbaar opgeslagen en uitgewisseld. De Data Catalog Vocabulary (DCAT) is een vocabulaire ontwikkeld door het World Wide Web Consortium (W3C) om datasets en datacatalogi te beschrijven en met elkaar te verbinden ([[vocab-dcat-3]]). De dataset metadata in een DCAT Catalog is met de DCAT standaard beschreven en vastgelegd en wordt ook gebruikt om specifieke DCAT profielen te maken (zie ook onderstaande noot). Door het beschrijven van deze  informatie-elementen wordt voldaan aan de vereisten van het beschrijven van datasets in het Dataspace Protocol. De onderstaande tabel 1 zijn de DCAT elementen opgenomen conform DCAT, die toegepast kunnen worden om het Dataspace Protocol te implementeren ([[IDS-DSP]]). 
+<br/>
 <br/>
 
 Tabel 1 - Overzicht van Dataspace Protocol DCAT metadata elementen
@@ -384,8 +385,7 @@ De contractonderhandeling kan echter ook door de producent worden gestart. In fi
 
 <figure id="Figuur_x">
 <a href="media/IDS Contractonderhandeling gestart door de producent.png" target="_blank"><img src="media/IDS Contractonderhandeling gestart door de producent.png" alt=""></a>
-<figcaption>Contractonderhandeling gestart door de producent [[IDS-RAM4]]
-  <figcaption>
+<figcaption>Contractonderhandeling gestart door de producent [[IDS-RAM4]]<figcaption>
 </figure>
 
 ## Datatransfer
@@ -396,8 +396,7 @@ Het uitvoeren van de data transfer begint met het aanroepen van een Data Operati
 
  <figure id="Figuur_x">
 <a href="media/IDS Globale procesbeschrijving data transfer.png" target="_blank"><img src="media/IDS Globale procesbeschrijving data transfer.png" alt=""></a>
-<figcaption>Globale procesbeschrijving data transfer [[IDS-RAM4]]
-  <figcaption>
+<figcaption>Globale procesbeschrijving data transfer [[IDS-RAM4]]<figcaption>
 </figure>
 <br>
 
