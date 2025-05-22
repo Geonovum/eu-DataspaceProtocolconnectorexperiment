@@ -1,7 +1,7 @@
 # Inleiding {#12DAD25F}
 Vanuit Europa is de afgelopen jaren een uitdagende nieuwe digitaliserings- en data strategie opgesteld. De Europese digitale strategie en data strategie is bedoeld als de grote aanjager van de Europese data-economie. Via regulering en projecten wil de EU meer grip krijgen op haar eigen data via de realisatie van een ‘common EU data space’. Een ‘data space’ is gericht is op het veilig, vertrouwd en soeverein delen van data binnen domeinen en over domeinen heen.  
 <br/>
-<b>Controle over data</b>
+<b>Controle over data</b>  
 Datasoevereiniteit zorgt ervoor dat organisaties, overheden en individuen controle hebben over hun data. Met deze controle kunnen ze zelf bepalen hoe hun gegevens worden verzameld, opgeslagen, gedeeld en gebruikt door anderen. Datasoevereiniteit is een spectrum; Het gaat erom de juiste balans te vinden tussen het veilig houden van gegevens en het delen ervan om toegevoegde waarde te krijgen.  
 <br/>
 <b>Innovatie en vertrouwen</b>  
@@ -26,7 +26,7 @@ Deze pan-Europese data space wordt opgebouwd met meerdere sectorale data spaces 
 <a href="media/Europese sectorale data spaces - Geonovum.png" target="_blank"><img src="media/Europese sectorale data spaces - Geonovum.png" alt=""></a>
 <figcaption>Europese sectorale data spaces</figcaption>
 </figure>
-<br/>
+
 De manier waarop de EC de eenheidsmarkt voor data wil vormen, is middels sectorale data spaces, die vervolgens onderling interoperabel zijn. Binnen sectoren en thema's zijn er vaak meer al geldende afspraken t.a.v. standaarden en professionele normen t.a.v. omgang met data, die telkens gebaseerd zijn op de context van die sector. Een dataspace bouwt daar dan op voort, zowel om dubbel werk te voorkomen als om de vorming van dataspaces te versnellen.  
 <br/>
 Op Europees niveau worden de volgende thema's genoemd als sectorale dataspaces, waarop ook acties zijn ingezet: Gezondheid, Mobiliteit, Industrie, Financiële diensten, Energie, Landbouw, Green Deal (waaronder circulaire economie en smart communities), Overheid, Agricultuur, Vaardigheden (onderwijs en arbeidsmarkt), Wetenschap, Cultureel erfgoed, Toerisme, Media en Taal voor meer informatie over de sectorale dataspaces zie[[GNVM-HEUI]].  
@@ -38,6 +38,7 @@ Om de EU common dataspaces te realiseren, heeft de Europese commissie het Data S
 <figcaption>Technische bouwblokken van een data space ([[DSSC-BP]])</figcaption>
 </figure>
 <br/>
+
 De bouwstenen voor datasoevereiniteit en -vertrouwen bieden technische enablers de mogelijkheid om de betrouwbaarheid en authenticiteit van de informatie van deelnemers te garanderen, terwijl deelnemers soevereiniteit kunnen uitoefenen over de data die ze delen. Dit is essentieel voor het opbouwen van vertrouwen tussen deelnemers bij interacties en het uitvoeren van datatransacties. De pijler “Data Sovereignty and Trust" bestaat uit de volgende drie bouwstenen:  
 <ol>
   <li>Identiteits- en attestatiebeheer: Het beheer van identiteiten en attesten binnen een gegevensruimte om de betrouwbaarheid en integriteit van de informatie van de deelnemers te waarborgen.</li>
@@ -45,11 +46,12 @@ De bouwstenen voor datasoevereiniteit en -vertrouwen bieden technische enablers 
   <li>Afdwingen van toegangs- en gebruiksbeleid: de mogelijkheid om beleid en regels binnen een bepaalde gegevensruimte te specificeren door de autoriteit voor de gegevensruimte en de individuele deelnemers.</li>
 </ol>
 <br/>
+
 Voor de realisatie van de EU sectorale dataspaces heeft de DSSC een blauwdruk of ‘Blueprint’ uitgebracht [[DSSC-BP]]. In de DSSC Blueprint zijn overigens niet alleen de technische bouwstenen, maar ook de besturingsbouwstenen voor de EU sectorale data spaces (‘governance’ bouwstenen’) uitgewerkt. In de blauwdruk is het Dataspace Protocol voor souvereine data delen in EU sectorale data spaces de ‘Foundational Technical Standards’ benoemt en is het IDS Dataspace Protocol een implementatie van de ‘Foundational Technical Standards’  voor de EU sectorale data spaces. Daarbij wordt aangetekend, dat “this protocol only specifies the generic elements. The APIs/technical interfaces for the actual data exchange are data space-specific” [[DSSC-BP]]. Wat dat betekent is onderdeel van deze verkenning.  
 <br/>
 
 <aside class='note' title="Anticiperen op de Green Deal Data Space">
-    Met dit experiment wordt tevens geanticipeerd om (mogelijke) deelname aan het Europese implementatieproject, waarin in de periode 2025-2028 gewerkt wordt aan de implementatie en realisatie van de Green Deal Data Space. De use casus “Circulaire grondstromen data space” is door enkele Nederlandse partijen (Sogelink, CBS en Geonovum) ingebracht in de realisatie van de GDDS. Vandaar dat in dit experiment enkele data-deel use cases zijn opgenomen, die onderdeel uitmaken van Circulaire grondstromen.
+    Met dit experiment wordt tevens geanticipeerd om de deelname aan het Europese implementatieproject SAGE, waarin in de periode 2025-2028 gewerkt wordt aan de implementatie en realisatie van de Green Deal Data Space. De use casus “Circulaire grondstromen data space” is door enkele Nederlandse partijen (Sogelink en Geonovum) ingebracht in de realisatie van de GDDS. Vandaar dat in dit experiment enkele data-deel use cases zijn opgenomen, die onderdeel uitmaken van Circulaire grondstromen.
 </aside>
 
 ## Doel
