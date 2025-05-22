@@ -51,7 +51,7 @@ Voor de realisatie van de EU sectorale dataspaces heeft de DSSC een blauwdruk of
 <br/>
 
 <aside class='note' title="Anticiperen op de Green Deal Data Space">
-    Met dit experiment wordt tevens geanticipeerd om de deelname aan het Europese implementatieproject SAGE, waarin in de periode 2025-2028 gewerkt wordt aan de implementatie en realisatie van de Green Deal Data Space. De use casus “Circulaire grondstromen data space” is door enkele Nederlandse partijen (Sogelink en Geonovum) ingebracht in de realisatie van de GDDS. Vandaar dat in dit experiment enkele data-deel use cases zijn opgenomen, die onderdeel uitmaken van Circulaire grondstromen.
+    Met dit experiment wordt tevens geanticipeerd op deelname aan het Europese implementatieproject SAGE, waarin in de periode 2025-2028 gewerkt wordt aan de implementatie en realisatie van de Green Deal Data Space. De use casus “Circulaire grondstromen data space” is door enkele Nederlandse partijen (Sogelink en Geonovum) ingebracht in de realisatie van de GDDS. Vandaar dat in dit experiment enkele data deel use cases zijn opgenomen, die onderdeel uitmaken van Circulaire grondstromen.
 </aside>
 
 ## Doel
@@ -67,7 +67,6 @@ Het is een leerexperiment dat is vastgelegd in dit verslag met daarin een onderb
 Het “Dataspace Protocol connector experiment” is geschreven voor iedereen die betrokken is bij het uitwisselen van data en het toepassen van standaarden voor data-uitwisseling in de context van dataspaces. Dit zijn bijvoorbeeld informatiemanagers, stuurgroepleden, beleidsmedewerkers, projectleiders, adviseurs, architecten, IT-leveranciers, en voor personen die dataproducten, standaarden en specificaties implementeren in hun organisatie en deze data producten willen delen met andere organisaties en dataspace initiatieven in Nederland en Europa.  
 <br/>
 In het bijzonder richten we ons op iedereen die betrokken is bij het uitwisselen van geo-informatie (of locatie-gebonden informatie), het toepassen van standaarden voor geo-informatie en de Nationale en Europese geo-informatie infrastructuur. Daarvoor worden in het experiment geografische datasets en diensten (API’s) gebruikt.  
-<br/>
 
 ## Aanpak experiment
 
