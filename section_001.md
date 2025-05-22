@@ -24,7 +24,7 @@ Deze pan-Europese data space wordt opgebouwd met meerdere sectorale data spaces 
 
 <figure id="Figuur_x">
 <a href="media/Europese sectorale data spaces - Geonovum.png" target="_blank"><img src="media/Europese sectorale data spaces - Geonovum.png" alt=""></a>
-<figcaption>Europese sectorale data spaces</figcaption>
+<figcaption>Europese sectorale data spaces<figcaption>
 </figure>
 
 De manier waarop de EC de eenheidsmarkt voor data wil vormen, is middels sectorale data spaces, die vervolgens onderling interoperabel zijn. Binnen sectoren en thema's zijn er vaak meer al geldende afspraken t.a.v. standaarden en professionele normen t.a.v. omgang met data, die telkens gebaseerd zijn op de context van die sector. Een dataspace bouwt daar dan op voort, zowel om dubbel werk te voorkomen als om de vorming van dataspaces te versnellen.  
@@ -35,7 +35,7 @@ Om de EU common dataspaces te realiseren, heeft de Europese commissie het Data S
 
 <figure id="Figuur_x">
 <a href="media/Technische bouwstenenmodel data spaces - DSCC.png" target="_blank"><img src="media/Technische bouwstenenmodel data spaces - DSCC.png" alt=""></a>
-<figcaption>Technische bouwblokken van een data space ([[DSSC-BP]])</figcaption>
+<figcaption>Technische bouwblokken van een data space ([[DSSC-BP]])<figcaption>
 </figure>
 <br/>
 
