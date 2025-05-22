@@ -240,7 +240,7 @@ Een dataproducent, die datasets wil aanbieden aan een dataspace, zal verschillen
 De eerste stap in een typisch proces voor het publiceren van datasets is het op de juiste manier maken van een beschrijving van een dataset. Daarbij kan de data provider de beschrijvingen van datasets op twee wijzen publiceren: 1. publiceren in de catalog service of 2. publiceren in een centrale catalog broker van de data space. Beiden worden hieronder kort toegelicht. 
 <br/>
 <br/>
-**Publicatie van metadata in de catalog service**
+<b>Publicatie van metadata in de catalog service</b>
 <br/>
 Meestal bieden data connectoren de technische manieren om dataset beschrijvingen in de catalog service te maken en te onderhouden, bijvoorbeeld door middel van geschikte GUI's. Na het bereiken van een syntactisch en semantisch correcte beschrijving, worden ze vervolgens geïmplementeerd bij de data connector van de dataprovider en zijn ze toegankelijk voor andere  data connectoren via de eindpunten. Afhankelijk van de vragende data connector kan de geretourneerde beschrijving van de dataset verschillen. De data connector kan dus verschillende dataset beschrijvingen aanbieden onder verschillende voorwaarden voor verschillende consumenten in een data space. De beschrijvingen van datasets worden in de data connector instantie opgenomen of gepubliceerd. 
 Het kan zijn dat dataproducenten en -providers de gemaakte metadata willen publiceren op een centrale catalog component in een dataspace in plaats van deze alleen aan te bieden in zijn eigen data connector instantie.
@@ -258,7 +258,8 @@ Het is echter niet verplicht voor een data provider om datasets te publiceren bi
 </ol>
 <br/>
 
-**Het registeren van metadata bij de catalog broker**  
+<b>>Het registeren van metadata bij de catalog broker</b>
+</br>
 De dataprovider kan metadata beschrijvingen naar een catalog broker sturen en publiceren (zie figuur 8). De metadata beschrijving van een dataset moet op zichzelf staan en voldoen aan de specificaties van het informatiemodel. De catalog controleert vervolgens de syntactische juistheid van de aangeleverde metadata en bewaart deze in zijn lokale database. Het controleert niet de semantische correctheid of de plausibiliteit van de verstrekte informatie. Een catalog zoekt niet actief naar metadata of zoekt het niet naar updates. De catalog vertrouwt op de metadata beschrijvingen, die is aangeleverd door de dataprovider. De dataprovider is verantwoordelijk voor de metadata in de catalog en de centrale catalog kan dus niet verantwoordelijk worden gesteld voor verouderde of verkeerde informatie. 
 
 <figure id="Figuur_x">
@@ -267,7 +268,8 @@ De dataprovider kan metadata beschrijvingen naar een catalog broker sturen en pu
 </figure>
 <br/>
 
-**Het zoeken naar datasets in de catalog**  
+<b>>Het zoeken naar datasets in de catalog</b>  
+<br/>
 Om een dataprovider te vinden, kan de dataconsument zoeken in de catalog van een centrale catalog in de dataspace (zie figuur 9). Daarvoor moet de dataconsument een geschikte centrale catalog  selecteren en de zoekmogelijkheden bepalen grafische zoekinterfaces of domeinspecifieke zoektalen. De centrale catalog retourneert vervolgens het resultaat van de zoekopdracht naar de dataconsument. Het zoekresultaat kan verschillen afhankelijk van de bevraagde data connector als gevolg van het filteren van de weergegeven data volgens het gebruiksbeleid dat is gedefinieerd door de dataprovider. 
 
 De dataconsument moet het resultaat interpreteren om meer te weten te komen over de verschillende beschikbare datasets. Elk zoekresultaat moet informatie bevatten over elke data connector, die de gewenste datasets kan leveren, zodat de dataconsument toegang heeft tot de zelfbeschrijving van elke data connector voor meer informatie over het ontvangen van de gewenste dataset. 
@@ -299,7 +301,7 @@ Toegangsbeheer op basis van attributen of kenmerken wordt ook wel op ‘policies
 Hoe evalueer je het beleid en handhaaf je het? Stel je voor dat een gebruiker toegang zoekt tot een document. Gebruiksbeheer is een uitbreiding van toegangscontrole [[IDS-PPUC]], die is ontworpen om de deelnemers te ondersteunen bij het beschermen van hun datasets. Het voert verplichtingen uit en handhaaft de ingestelde gebruiksbeperkingen nadat de toegang is verleend. De beperkingen kunnen gelaagd zijn. Het kan bijvoorbeeld zeggen: Ja, je hebt toegang, maar slechts voor drie dagen. Of ja, maar informeer de eigenaar. 
 <br/>
 
-<b>Hoe specificeer je gebruiksbeleid?<b>
+<b>Hoe specificeer je gebruiksbeleid?</b>
 <br/>
 Om het gebruiksbeleid op datasets vast te leggen is het raadzaam een beleidsspecificatie op te stellen. Beleidsspecificatie is een ander woord voor een ‘policy contract’. Wat is een ‘policy contract’. Binnen het data space protocol wordt een beleidsspecificatie beschouwd als een “als een abstracte set regels voor het gebruik van een resource” [[IDS-RAM4]] Dit contract, dat kan worden gezien als het gebruiksbeleid, is onderverdeeld in twee onderdelen: 
 1.	Contract metadata, zoals de datum waarop het contact is uitgegeven; en 
@@ -344,12 +346,12 @@ In dit voorbeeld is een policy opgenomen, waarin een organisatie A data mag gebr
 </aside>
 <br/>
 
-**Policies aanmaken en het register met beleidspecificaties**  
-
+<b>>Policies aanmaken en het register met beleidspecificaties</b>
+<br/>
 Is het nodig om te weten hoe ODRL technisch werkt om een policy voor data te specificeren? Nee, in principe niet. Wanneer een producent of provider van plan is data aan te bieden, gebruiken ze een policy editor om een policy te specificeren, wat resulteert in een contractaanbod. In een zogenaamde beleidseditor en een bijbehorend registers worden beleidsspecificaties gemaakt en bewaard. Deze beleidsspecificaties zijn beschikbaar om producten en consumenten met verschillende achtergronden en expertises in staat te stellen om met sjablonen hun beleidsspecificaties te maken en te hergebruiken. 
 <br/>
 
-<b>ODRL Policies in DCAT metadata<b>
+<b>ODRL Policies in DCAT metadata</b>
 <br/>
 Het opnemen van een ODRL policy verloopt via de metadata beschrijving van de data(set) in DCAT formaat. De policy metadata wordt in DCAT opgenomen een DCAT-element odrl:hasPolicy. Een policy kan op verschillende wijzen in het DCAT-element odrl:hasPolicy opgenomen worden:   
 <ol>
@@ -385,7 +387,7 @@ Zodra er een contractovereenkomst is bereikt, wordt deze geïnstantieerd en geï
 Als een deelnemer op enig moment tijdens de onderhandelingsprocedure niet akkoord gaat met de gedeelde inhoud, kan het contract worden afgewezen. In het geval van een afwijzing van een contract wordt de onderhandelingsprocedure afgebroken. De aangesloten systemen en gebruikers worden op de hoogte gebracht en eerder opgeslagen contractovereenkomsten worden ingetrokken. 
 <br/>
 
-<b>Contractonderhandeling gestart door de producent<b>
+<b>Contractonderhandeling gestart door de producent</b>
 <br/>
 De contractonderhandeling kan echter ook door de producent worden gestart. In figuur 10 start niet de consument, maar de producent de contractonderhandeling. Daarbij wordt opgemerkt dat, aangezien de producent degene is die het contract aanbiedt, de producent ook dan degene is die de contractovereenkomst als laatste ondertekent.  
 
@@ -406,7 +408,7 @@ Het uitvoeren van de data transfer begint met het aanroepen van een Data Operati
 </figure>
 <br>
 
-<b>Communicatiepatroon<b>
+<b>Communicatiepatroon</b>
 <br/>
 De communicatie tussen de data connectoren kan synchroon of asynchroon zijn. In het laatste geval hoeft de consument niet te wachten op het resultaat, maar wordt de consument door de provider op de hoogte wordt gebracht zodra het resultaat beschikbaar is. Bovendien kan er in plaats van een pull-request een push-request worden verstuurd. In het geval van een abonnement kan de consument vragen om updates met betrekking tot de gevraagde data. De bijgewerkte data kunnen worden verstrekt na bepaalde gebeurtenissen (bijv. nadat de data door de dataverstrekker zijn bijgewerkt) of binnen bepaalde tijdsintervallen (bijv. elke vijf minuten). Als er een dergelijk verzoek wordt gedaan, ontvangt de dataconsument herhaaldelijk bijgewerkte queryresultaten van de dataproducent. In het geval van een pull-request kan de dataconsument het laatste deel van het proces herhalen om data opnieuw op te vragen (met dezelfde of een andere query).
 De beschrijving van het communicatiepatroon tijdens de data uitwisseling maakt geen deel uit van het Dataspace Protocol. Communicatie patronen, zoals het gebruik van downloadservices en API’s worden door vastgesteld door afspraken in de betreffende informatiedomeinen. De data-uitwisseling en het overdrachtsproces is dus niet beperkt tot een specifiek protocol. 
@@ -421,12 +423,12 @@ Het Dataspace Protocol is een technische specificatie, die de implementatie van 
 We gaan hier niet verder in op de technische specificatie daarvoor verwijzen we naar ([[ECLPS-DSP]]).
 <br/>
 
-<b>Data connector software<b>
+<b>Data connector software</b>
 <br/>
 Data connectors zijn softwaretools waarmee data(sets) vertrouwd kunnen worden gedeeld en geïntegreerd tussen verschillende systemen, applicaties en databronnen. In de context van data spaces spelen data connectoren een sleutelrol in de communicatie en gegevensuitwisseling tussen verschillende platforms, systemen en applicaties. Data connectoren zullen daarbij moeten voldoen aan de vooraf gedefinieerde normen en uitwisselingsbeleidslijnen van het Dataspace Protocol. In het data connectors overview report van IDSA [[IDS-DCR]] zijn inmiddels zo’n 40 verschillende implementaties van data connector software beschikbaar. implementaties van data connector software worden door IDSA gecertificeerd. Sinds 2022 hanteert IDSA het IDS-certificeringsschema dat gericht is op het certificeren van de interoperabiliteit, compatibiliteit en betrouwbaarheid van data connectoren. Met de voltooiing van de standaardisatie van het Dataspace Protocol zal het IDS-certificeringsschema evolueren om data connector software te beoordelen door  geautomatiseerde testen.
 <br/>
 
-<b>TNO Security Gateway data connector software<b>
+<b>TNO Security Gateway data connector software</b>
 <br/>
 In dit experiment hebben we gekozen te werken met de data connector software van TNO, de TNO Security Gateway (TSG). De volgende overwegingen hebben daarbij een rol gespeeld:
 1.	TSG is een IDSA-gecertificeerde implementatie (zie [[IDS-DCR]];
