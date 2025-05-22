@@ -92,14 +92,14 @@ Het Dataspace Protocol is een reeks van afspraken, standaarden en technologieën
 <li>Veiligheid en naleving: Dankzij ingebouwde privacybescherming en security-mechanismen wordt voldaan aan de strengste normen, waaronder de Europese privacyregelgeving (AVG).</li>
 </ul>
 <br/>
-De onderstaande figuur ? [[DSCC-BP]] geeft een gedetailleerd overzicht van de belangrijke concepten, componenten en protocollen voor een data space, te weten ‘Identity Governance Scope’ (bovenaan), ‘Control Plane’ (midden) en ‘Data Plane’ (onderaan). Daarbinnen zijn data connectors (links en rechts) en is het data space prototol gepositioneerd (midden). De ondersteunende componenten, zoals de ‘Vocabulary Hub’ en de ‘Catalog’ zijn aan de onderzijde weergegeven. Deze twee intermediaire en ondersteunende diensten zorgen voor het gebruik van datamodellen en formaten (de ‘vocabulary hub’) en voor de publicatie en het vinden van data (de catalogus). Op rol en functies van deze laatste twee componenten gaan we hier niet verder in.
+De onderstaande figuur ? [[DSSC-BP]] geeft een gedetailleerd overzicht van de belangrijke concepten, componenten en protocollen voor een data space, te weten ‘Identity Governance Scope’ (bovenaan), ‘Control Plane’ (midden) en ‘Data Plane’ (onderaan). Daarbinnen zijn data connectors (links en rechts) en is het data space prototol gepositioneerd (midden). De ondersteunende componenten, zoals de ‘Vocabulary Hub’ en de ‘Catalog’ zijn aan de onderzijde weergegeven. Deze twee intermediaire en ondersteunende diensten zorgen voor het gebruik van datamodellen en formaten (de ‘vocabulary hub’) en voor de publicatie en het vinden van data (de catalogus). Op rol en functies van deze laatste twee componenten gaan we hier niet verder in.
 
 <figure id="Figuur_x">
 <a href="media/DSP systeemarchitectuur.png" target="_blank"><img src="media/DSP systeemarchitectuur.png" alt=""></a>
-<figcaption>De globale systeemarchitectuur van het Dataspace Prototol [[DSCC-BP]]<figcaption>
+<figcaption>De globale systeemarchitectuur van het Dataspace Prototol [[DSSC-BP]]<figcaption>
 </figure>
 
-De figuur ? toont een systeemarchitectuur met drie hoofdlagen [[DSCC-BP]]:
+De figuur ? toont een systeemarchitectuur met drie hoofdlagen [[DSSC-BP]]:
 1. ‘Identity governance scope’ met drie kerncomponenten:
     - Identity register voor identiteitbeheer;
     - Identity provider, die de identity management diensten levert; 
