@@ -9,6 +9,7 @@ Doel van experiment 2 is te kijken in hoeverre DCAT3 metadata volgens DCAT AP NL
 1.	Het nationaal georegister (Geonetwork met DCAT formatter) en de IDS data connector (TNO TSG);
 2.	Het nationaal georegister (Geonetwork met DCAT formatter) en Catalog van Circulaire grondstromen (CKAN met CKANext-DCAT);
 3.	Catalog van Circulaire grondstromen (CKAN met CKANext-DCAT); met CKAN en de IDS data connector (TNO TSG).
+<br/>
 
 In onderstaande Figuur ? is een eerste opzet van het experiment weergegeven.
 
@@ -19,6 +20,7 @@ In onderstaande Figuur ? is een eerste opzet van het experiment weergegeven.
 <br/>
 
 Vanuit dit perspectief werken we aan we aan twee use cases (zie gebruiksfuncties in paragraaf 2.4.2) om te gaan met metadata in catalogi:
+<br/>
 1.	Het perspectief van de data provider, die metadata publiceert in de catalog service van de IDS data connector en gebruik maakt van een andere catalogus; 
 2.	Het perspectief van de consument, die een dataset zoekt, vindt en evalueert in de catalog service van de IDS data connector.  
 
@@ -41,5 +43,5 @@ Use case 1
 <br/>
 <br/>
 
-## Bevindingen    {#4041334C}
+## Opgedane bevindingen    {#4041334C}
 pm
