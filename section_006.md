@@ -1,84 +1,45 @@
-# Gehanteerde begrippen {#770CD133}
+# Experiment 2: Data connector catalogus & DCAT AP NL metadata
 
-In deze sectie worden de kernconcepten, entiteiten en relaties gedefinieerd, die ten grondslag liggen aan een dataspace en het Dataspace Protocol [[IDS-DSP]]. De [DSP terminologie](https://github.com/International-Data-Spaces-Association/ids-specification/blob/main/model/terminology.md) is hieronder vertaald naar het Nederlands (met de Engelse vertaling van de begrippen tussen quotes) en in alfabetische volgorde weergegeven. 
+## DCAT AP NL metadata
+In de IDS data connector speelt de DCAT standaard een belangrijke rol om metadata van de aangeboden datasets te beschrijven. Het doel van het experiment is om DCAT metadata uitwisseling tussen de IDS data connector (TSG) te testen met andere catalogi die DCAT ondersteunen: het Nationaal georegister (NGR) en de catalogus circulaire grondstromen. We werken daarbij verder aan de bestaande praktijk casus uitgaande van een minimal viable data space met een ‘vertrouwde’ dataset van het Kadaster (‘eigendomskaart’).  
+Het idee daarbij is dat de catalog, die gebruikt wordt voor de specifieke use case binnen de dataspace een subset van metadata uit het NGR overneemt en in de ‘eigen’ catalogus van de dataspace publiceert. De catalogus die daarvoor gebruikt wordt binnen deze use case is een CKAN catalogus. Daarnaast moet de metadata ook opgenomen worden in de TSG Connector (als onderdeel van het ‘control plane’), zodat de relevante metadata gevonden kan worden als onderdeel van de ‘data plane’ API interactie.
+
+## Doel experiment
+Doel van experiment 2 is te kijken in hoeverre DCAT3 metadata volgens DCAT AP NL van een ‘vertrouwde’ dataset kan worden uitgewisseld vanuit enkele bestaande catalogi volgens het DCAT AP NL profiel met de TSG data connector.  Om dit doel te bereiken onderzoeken we in dit experiment of DCAT3 metadata van één ‘vertrouwde’ dataset kan worden uitgewisseld tussen:
+1.	Het nationaal georegister (Geonetwork met DCAT formatter) en de IDS data connector (TNO TSG);
+2.	Het nationaal georegister (Geonetwork met DCAT formatter) en Catalog van Circulaire grondstromen (CKAN met CKANext-DCAT);
+3.	Catalog van Circulaire grondstromen (CKAN met CKANext-DCAT); met CKAN en de IDS data connector (TNO TSG).
+
+In onderstaande Figuur ? is een eerste opzet van het experiment weergegeven.
+
+<figure id="Figuur_x">
+<a href="media/experiment2_opzet.png" target="_blank"><img src="media/IDSA data space bouwstenen (zwart).png" alt=""></a>
+<figcaption>Opzet Data catalogs en IDS data connector experiment<figcaption>
+</figure>
+<br/>
+
+Vanuit dit perspectief werken we aan we aan twee use cases (zie gebruiksfuncties in paragraaf 2.4.2) om te gaan met metadata in catalogi:
+1.	Het perspectief van de data provider, die metadata publiceert in de catalog service van de IDS data connector en gebruik maakt van een andere catalogus; 
+2.	Het perspectief van de consument, die een dataset zoekt, vindt en evalueert in de catalog service van de IDS data connector.  
+
+## Relevantie van het experiment
+De relevantie van het experiment is meervoudig, omdat: 
+1.	Het aantoont hoe DCAT-AP-NL 3 effectief kan worden ingezet voor consistente metadata-uitwisseling binnen een data space;
+2.	Het versterkt de interoperabiliteit tussen de IDS data connector catalogus en bestaande broncatalogi, zoals NGR (Geonetwork) en CKAN, die in veel overheidsdomeinen worden gebruikt;
+3.	Het experiment laat zien hoe een data space een eigen catalogus kan opbouwen op basis van een gecontroleerde subset uit een broncatalogus;
+4.	De integratie van metadata in de TSG Connector toont hoe het control-plane en data-plane elkaar versterken binnen een IDS-gebaseerde architectuur;
+5.	Organisaties krijgen inzicht in hoe zij bestaande DCAT metadata standaarden (profielen) optimaal kunnen benutten bij het vormgeven van data-uitwisselingsketens;
+6.	Het experiment verkleint technische risico’s rondom adoptie van DCAT en DCAT-AP-NL in operationele data space implementaties.
+
+## Opstelling experiment
+pm
+
+## Uitvoering
+Pm
+
+Use case 1
 <br/>
 <br/>
-<table style='width: 100%;'><caption></caption>
-<colgroup><col id='col1' style='width: 30.78895233655751%;'>
-<col id='col2' style='width: 69.2110476634425%;'>
-</colgroup>
-<thead valign='top'><tr><th align='left' style='border-top: 0pt none #000000; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #005A9C;'><p id='11350A7E'>Begrip</th>
-<th align='left' style='border-top: 0pt none #000000; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #005A9C;'><p id='3AE04064'>Uitleg</th>
-</tr>
-</thead>
-<tbody valign='top'><tr><td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: none;'><p id='1EF8A4C9'>Aanbieder (‘Provider’)</td>
-<td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: none;'><p id='43D68896'>Een ‘Deelnemer’, die een ‘Dataset’ aanbiedt.</td>
-</tr>
-<tr><td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p class='space-after' id='55BDFDD7'>Aanbieding (‘Offer’)</td>
-<td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='04D9DE47'>Een Aanbieding is het concreet gebruiksbeleid, dat is gekoppeld aan een specifieke ‘Dataset’.</td>
-</tr>
-<tr><td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: none;'><p class='space-after' id='34EC80AB'>Beleid (‘Policy’)</td>
-<td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: none;'><p id='553870B6'>Een reeks regels, taken en verplichtingen die de gebruiksvoorwaarden voor een ‘Dataset’ bepalen. Ook wel ‘gebruiksbeleid’ genoemd.</td>
-</tr>
-<tr><td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='14559989'>Bericht (‘Message’)</td>
-<td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='32EFE886'>Een instantiatie van een ‘Berichttype’</td>
-</tr>
-<tr><td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: none;'><p id='0BFC95EB'>Berichttype (‘Message Type’)</td>
-<td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: none;'><p id='74100686'>Een definitie van de structuur van een ‘Bericht’.</td>
-</tr>
-<tr><td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='4D8CB117'>Deelnemer (‘Participant’)</td>
-<td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='2972A050'>Een lid van een dataspace, dat ‘Datasets’ aanbiedt en/of gebruikt.</td>
-</tr>
-<tr><td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: none;'><p id='2E580ABF'>Deelnemende Agent (‘Participant Agent’) </td>
-<td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: none;'><p id='02A10CD8'>Een technologiesysteem, dat namens een ‘Deelnemer’ bewerkingen uitvoert en een ‘Dataset’ aanbiedt.</td>
-</tr>
-<tr><td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='14E35469'>Catalogus (‘Catalog’)</td>
-<td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='702A03CD'>Een verzameling vermeldingen die ‘Datasets’ en hun ‘Aanbiedingen’ vertegenwoordigen en die wordt geadverteerd door een ‘Aanbieder’. </td>
-</tr>
-<tr><td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: none;'><p id='49AB903F'>Catalogus Protocol (‘Catalog Protocol’)</td>
-<td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: none;'><p id='55C9A13E'>Een set van toegestane ‘Berichttypen’ die worden gebruikt om een catalogus te bevragen bij een ‘Catalogus Service’.</td>
-</tr>
-<tr><td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='150E5767'>Catalogus Service (‘Catalog Service’)</td>
-<td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='623BD2DF'>De Catalogus Service is een ‘Deelnemende Agent', die een 'Catalogus’ toegankelijk maakt voor de ‘Deelnemers’ aan de data space.</td>
-</tr>
-<tr><td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='150E5767'>Connector (‘Connector’ of ‘Data Service’)</td>
-<td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='623BD2DF'>Een Connector is ‘Deelnemende Agent’, die een ‘Overeenkomst’ tot stand brengt en het delen van ‘Datasets’ verzorgt en beheert.</td>
-</tr>
-<tr><td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='150E5767'>Consument (‘Consumer’)</td>
-<td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='623BD2DF'>Een Consument is een ‘Deelnemende Agent’, die toegang vraagt tot een aangeboden ‘Dataset’.</td>
-</tr>
-<tr><td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='150E5767'>Contractonderhandelingen (‘Contract Negotiation’)</td>
-<td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='623BD2DF'>Een reeks interacties tussen een ’Aanbieder’ en een ’Consument’, die een ‘Overeenkomst’ tot stand brengen. Het is een instantiatie van de status-machine van een ‘Protocol voor contractonderhandelingen’</td>
-</tr>
-<tr><td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='150E5767'>Dataset (‘Dataset’)</td>
-<td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='623BD2DF'>Data of een technische service, die door ‘Deelnemers’ kunnen worden gedeeld.</td>
-</tr>
-<tr><td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='150E5767'>Dataspace (‘Dataspace’)</td>
-<td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='623BD2DF'>Een reeks technische services, die het interoperabel delen van ‘Datasets’ tussen entiteiten mogelijk maken.</td>
-</tr>
-<tr><td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='150E5767'>Dataspace Autoriteit (‘Dataspace Authority’)</td>
-<td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='623BD2DF'>Een Dataspace Autoriteit is een entiteit die een ‘Dataspace’ beheert. De vorm en activiteiten van een ‘Dataspace Authoriteit’ vallen niet onder de Dataspace Protocol specificaties.</td>
-</tr>
-<tr><td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='150E5767'>Dataspace registratiedienst (‘Dataspace Registration Service’ of ‘Dataspace Registry’)</td>
-<td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='623BD2DF'>Een technologiesysteem, dat de status van de ‘Deelnemers’ in een dataspace bijhoudt. De vorm en mogelijkheden van een ‘Dataspace Registratiedienst’ vallen niet onder de Dataspace Protocol specificaties.</td>
-</tr>
-<tr><td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='150E5767'>Identiteit Provider (‘Identity Provider’)</td>
-<td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='623BD2DF'>Een vertrouwd technologiesysteem, dat identiteits-informatie maakt, onderhoudt en beheert voor een ‘Deelnemer’ en ‘Deelnemende Agenten’.</td>
-</tr>
-<tr><td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='150E5767'>Overeenkomst (‘Agreement’)</td>
-<td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='623BD2DF'>Een Overeenkomst is een concreet ‘Beleid’ gekoppeld aan een specifieke ‘Dataset’, dat is ondertekend door zowel de ‘Aanbieder’ als de ‘Consument’. Een Overeenkomst is het resultaat van een ‘Contractonderhandeling’ en is gekoppeld aan precies één ‘Dataset’.</td>
-</tr>
-<tr><td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='150E5767'>Protocol voor contractonderhandelingen (‘Contract Negotiation Protocol’)</td>
-<td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='623BD2DF'>Een set van toegestane reeksen ‘Berichttypen’, die zijn gedefinieerd als een status-machine.</td>
-</tr>
-<tr><td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='150E5767'>Protocol voor transferproces (‘Transfer Process Protocol’)</td>
-<td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='623BD2DF'>Een set toegestane  berichttypereeksen, die zijn gedefinieerd als een status-machine.</td>
-</tr>
-<tr><td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='150E5767'>Transferproces (‘Transfer process’)</td>
-<td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='623BD2DF'>Een reeks interacties tussen een ‘Aanbieder’ en een ‘Consument’ die toegang geven tot een ‘Dataset’ onder de voorwaarden van een ‘Overeenkomst’. Het is een instantiatie van de status-machine van een ‘Protocol voor transferproces’.</td>
-</tr>
-<tr><td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='150E5767'>Verstrekker van inloggegevens (‘Credential Issuer’)</td>
-<td align='left' style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; background-color: #F0F6FF;'><p id='623BD2DF'>Een ‘Verstrekker van inloggegevens’ is een vertrouwd technologiesysteem, dat verifieerbare referenties uitgeeft voor een ‘Deelnemer’ en ‘Deelnemende Agenten’.</td>
-</tr>
-</tbody>
-</table>
+
+## Bevindingen    {#4041334C}
+pm
