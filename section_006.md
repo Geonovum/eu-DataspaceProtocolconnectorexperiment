@@ -13,7 +13,7 @@ Doel van experiment 2 is te kijken in hoeverre DCAT3 metadata volgens DCAT AP NL
 In onderstaande Figuur ? is een eerste opzet van het experiment weergegeven.
 
 <figure id="Figuur_x">
-<a href="media/experiment2_opzet.png" target="_blank"><img src="media/IDSA data space bouwstenen (zwart).png" alt=""></a>
+<a href="media/Use case DCAT catalogs en TSG met pull-push.jpg" target="_blank"><img src="media/Use case DCAT catalogs en TSG met pull-push.jpg" alt=""></a>
 <figcaption>Opzet Data catalogs en IDS data connector experiment<figcaption>
 </figure>
 <br/>
