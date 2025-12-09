@@ -1,6 +1,6 @@
 # Experiment 2: Data connector catalogus & DCAT AP NL metadata
 
-## DCAT AP NL metadata
+## Inleiding 
 In de IDS data connector speelt de DCAT standaard een belangrijke rol om metadata van de aangeboden datasets te beschrijven. Het doel van het experiment is om DCAT metadata uitwisseling tussen de IDS data connector (TSG) te testen met andere catalogi die DCAT ondersteunen: het Nationaal georegister (NGR) en de catalogus circulaire grondstromen. We werken daarbij verder aan de bestaande praktijk casus uitgaande van een minimal viable data space met een ‘vertrouwde’ dataset van het Kadaster (‘eigendomskaart’).  
 Het idee daarbij is dat de catalog, die gebruikt wordt voor de specifieke use case binnen de dataspace een subset van metadata uit het NGR overneemt en in de ‘eigen’ catalogus van de dataspace publiceert. De catalogus die daarvoor gebruikt wordt binnen deze use case is een CKAN catalogus. Daarnaast moet de metadata ook opgenomen worden in de TSG Connector (als onderdeel van het ‘control plane’), zodat de relevante metadata gevonden kan worden als onderdeel van de ‘data plane’ API interactie.
 
