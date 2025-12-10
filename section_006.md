@@ -6,32 +6,35 @@ Het idee daarbij is dat de catalog, die gebruikt wordt voor de specifieke use ca
 
 ## Doel experiment
 Doel van experiment 2 is te kijken in hoeverre DCAT3 metadata volgens DCAT AP NL van een ‘vertrouwde’ dataset kan worden uitgewisseld vanuit enkele bestaande catalogi volgens het DCAT AP NL profiel met de TSG data connector.  Om dit doel te bereiken onderzoeken we in dit experiment of DCAT3 metadata van één ‘vertrouwde’ dataset kan worden uitgewisseld tussen:
-1.	Het nationaal georegister (Geonetwork met DCAT formatter) en de IDS data connector (TNO TSG);
-2.	Het nationaal georegister (Geonetwork met DCAT formatter) en Catalog van Circulaire grondstromen (CKAN met CKANext-DCAT);
-3.	Catalog van Circulaire grondstromen (CKAN met CKANext-DCAT); met CKAN en de IDS data connector (TNO TSG).
+<ol>
+  <li>Het nationaal georegister (Geonetwork met DCAT formatter) en de IDS data connector (TNO TSG);</li>
+  <li>Het nationaal georegister (Geonetwork met DCAT formatter) en Catalog van Circulaire grondstromen (CKAN met CKANext-DCAT);</li>
+  <li>Catalog van Circulaire grondstromen (CKAN met CKANext-DCAT); met CKAN en de IDS data connector (TNO TSG).</li>
+</ol>
 <br/>
-
 In onderstaande Figuur ? is een eerste opzet van het experiment weergegeven.
 
 <figure id="Figuur_x">
 <a href="media/Use case DCAT catalogs en TSG met pull-push.jpg" target="_blank"><img src="media/Use case DCAT catalogs en TSG met pull-push.jpg" alt=""></a>
 <figcaption>Opzet Data catalogs en IDS data connector experiment<figcaption>
 </figure>
-<br/>
 
 Vanuit dit perspectief werken we aan we aan twee use cases (zie gebruiksfuncties in paragraaf 2.4.2) om te gaan met metadata in catalogi:
-<br/>
-1.	Het perspectief van de data provider, die metadata publiceert in de catalog service van de IDS data connector en gebruik maakt van een andere catalogus; 
-2.	Het perspectief van de consument, die een dataset zoekt, vindt en evalueert in de catalog service van de IDS data connector.  
+<ol>
+  <li>Het perspectief van de data provider, die metadata publiceert in de catalog service van de IDS data connector en gebruik maakt van een andere catalogus;</li>
+  <li>HHet perspectief van de consument, die een dataset zoekt, vindt en evalueert in de catalog service van de IDS data connector.</li>
+</ol>
 
 ## Relevantie van het experiment
 De relevantie van het experiment is meervoudig, omdat: 
-1.	Het aantoont hoe DCAT-AP-NL 3 effectief kan worden ingezet voor consistente metadata-uitwisseling binnen een data space;
-2.	Het versterkt de interoperabiliteit tussen de IDS data connector catalogus en bestaande broncatalogi, zoals NGR (Geonetwork) en CKAN, die in veel overheidsdomeinen worden gebruikt;
-3.	Het experiment laat zien hoe een data space een eigen catalogus kan opbouwen op basis van een gecontroleerde subset uit een broncatalogus;
-4.	De integratie van metadata in de TSG Connector toont hoe het control-plane en data-plane elkaar versterken binnen een IDS-gebaseerde architectuur;
-5.	Organisaties krijgen inzicht in hoe zij bestaande DCAT metadata standaarden (profielen) optimaal kunnen benutten bij het vormgeven van data-uitwisselingsketens;
-6.	Het experiment verkleint technische risico’s rondom adoptie van DCAT en DCAT-AP-NL in operationele data space implementaties.
+<ol>
+  <li>Het aantoont hoe DCAT-AP-NL 3 effectief kan worden ingezet voor consistente metadata-uitwisseling binnen een data space;</li>
+  <li>Het versterkt de interoperabiliteit tussen de IDS data connector catalogus en bestaande broncatalogi, zoals NGR (Geonetwork) en CKAN, die in veel overheidsdomeinen worden gebruikt;</li>
+  <li>Het experiment laat zien hoe een data space een eigen catalogus kan opbouwen op basis van een gecontroleerde subset uit een broncatalogus;</li>
+  <li>De integratie van metadata in de TSG Connector toont hoe het control-plane en data-plane elkaar versterken binnen een IDS-gebaseerde architectuur;</li>
+  <li>Organisaties krijgen inzicht in hoe zij bestaande DCAT metadata standaarden (profielen) optimaal kunnen benutten bij het vormgeven van data-uitwisselingsketens;</li>
+  <li>Het experiment verkleint technische risico’s rondom adoptie van DCAT en DCAT-AP-NL in operationele data space implementaties.</li>
+</ol>
 
 ## Opstelling experiment
 pm
