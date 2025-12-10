@@ -67,7 +67,7 @@ In onderstaande Figuur 17 is de viewer te zien welke de data van de Kadaster dee
 
 <figure id="Figuur_x">
 <a href="media/experiment2_viewer.jpg" target="_blank"><img src="media/experiment2_viewer.jpg" alt=""></a>
-<figcaption>Data viewer<figcaption>
+<figcaption>data transfer van de eigendommenkaart zichtbaar gemaakt in data viewer<figcaption>
 </figure>
 
 
