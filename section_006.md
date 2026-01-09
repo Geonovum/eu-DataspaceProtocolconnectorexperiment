@@ -25,7 +25,17 @@ De relevantie van het experiment is meervoudig, omdat:
 </ol>
 
 ## Opstelling experiment
-In onderstaande Figuur ? is een eerste opzet van het experiment weergegeven.
+
+De volgende vijf use cases over het (her)gebruik en de uitwisseling van DCAT metadata zijn in deze paragraaf verder beschreven als use case beschrijving (precondities, actormodel, uit te voeren stappen en postcondities) en de technische implementatie en uitwerking:
+<ol>
+  <li>Use case 1 – Publiceren van een ’vertrouwde’ dataset in het Nationaal Georegister  (GeoNetwork) en via DCAT3-endpoint beschikbaar stellen (M2M) en via file download (H2M);</li>
+  <li>Use case 2 – Metadata-uitwisseling (via DCAT3) tussen Nationaal Georegister (GeoNetwork) en Catalogus Circulaire Grondstromen (CKAN + CKANNext-DCAT) met variant 2.1 via file upload (human-to-machine) en variant 2.2 via harvesting DCAT3-endpoint (machine-to-machine);</li>
+  <li>Use case 3 – Metadata-uitwisseling tussen Catalogus Circulaire Grondstromen (CKAN + CKANNext-DCAT) en IDS Data Connector (TSG) met variant 3.1 via file upload (human-to-machine) en variant 3.2 via harvesting DCAT3-endpoint (machine-to-machine);</li>
+  <li>Use case 4 - Metadata-uitwisseling tussen het Nationaal Georegister  (GeoNetwork) en IDS Data Connector (TSG) met variant 4.1 via file upload (human-to-machine) en variant 4.2 via harvesting DCAT3-endpoint (machine-to-machine);</li>
+  <li>Use case 5 – Zoeken van de dataset in de IDS Data Connector (TSG) door de consumer via de consumer IDS data connector (ook TSG).</li>
+</ol>
+
+In onderstaande Figuur ? is de opzet van het experiment weergegeven.
 
 <figure id="Figuur_x">
 <a href="media/Use case DCAT catalogs en TSG met pull-push.jpg" target="_blank"><img src="media/Use case DCAT catalogs en TSG met pull-push.jpg" alt=""></a>
@@ -41,16 +51,7 @@ Vanuit dit perspectief werken we aan we aan vijf use cases (zie gebruiksfuncties
 ## Uitvoering
 Het gaat daarbij specifiek om te kijken of DCAT3 metadata conform DCAT AP NL van één of meerdere ‘vertrouwde’ datasets kan worden uitgewisseld tussen: 1. Geonetwork met DCAT Transformer (toegepast in het nationaal georegister), de TNO Security Gateway of TSG (data space protocol compliant connector) en CKAN met CKANNext-DCAT (de catalogus van circulaire grondstromen). 
 
-**Use cases**
-De volgende vijf use cases over het (her)gebruik en de uitwisseling van DCAT metadata zijn in deze paragraaf verder beschreven als use case beschrijving (precondities, actormodel, uit te voeren stappen en postcondities) en de technische implementatie en uitwerking:
-<ol>
-  <li>Use case 1 – Publiceren van een ’vertrouwde’ dataset in het Nationaal Georegister  (GeoNetwork) en via DCAT3-endpoint beschikbaar stellen (M2M) en via file download (H2M);</li>
-  <li>Use case 2 – Metadata-uitwisseling (via DCAT3) tussen Nationaal Georegister (GeoNetwork) en Catalogus Circulaire Grondstromen (CKAN + CKANNext-DCAT) met variant 2.1 via file upload (human-to-machine) en variant 2.2 via harvesting DCAT3-endpoint (machine-to-machine);</li>
-  <li>Use case 3 – Metadata-uitwisseling tussen Catalogus Circulaire Grondstromen (CKAN + CKANNext-DCAT) en IDS Data Connector (TSG) met variant 3.1 via file upload (human-to-machine) en variant 3.2 via harvesting DCAT3-endpoint (machine-to-machine);</li>
-  <li>Use case 4 - Metadata-uitwisseling tussen het Nationaal Georegister  (GeoNetwork) en IDS Data Connector (TSG) met variant 4.1 via file upload (human-to-machine) en variant 4.2 via harvesting DCAT3-endpoint (machine-to-machine);</li>
-  <li>Use case 5 – Zoeken van de dataset in de IDS Data Connector (TSG) door de consumer via de consumer IDS data connector (ook TSG).</li>
-</ol>
-<br/>
+
 <aside class='note' title="Generieke stappen in alle use cases">
 1. Publiceer dataset in broncatalogus  
    - Vul DCAT3-compatibele metadata volledig in volgens één standaard profiel, nl. DCAT AP NL.
@@ -77,28 +78,27 @@ De volgende vijf use cases over het (her)gebruik en de uitwisseling van DCAT met
    - Wijzigingen in de broncatalogus worden periodiek gesynchroniseerd via dezelfde DCAT3-mechanismen.
 
 </aside>
-<br/>
 
 ### Use case 1 – Publiceren van een ‘vertrouwde’ dataset in NGR en beschikbaar stellen via DCAT3-endpoint (M2M) en file download (H2M) ###
 
 Een provider publiceert een vertrouwde dataset in het Nationaal Georegister (NGR, GeoNetwork). De metadata voldoet aan het Nederlandse profiel en wordt DCAT AP NL. De metadata van de dataset is op twee wijzen beschikbaar:
 - via een DCAT3-endpoint (voor M2M interactie); en
 - als DCAT3-bestand (voor download door de mens).
-
-*Actormodel*
+<br/>
+*Actorenmodel*
 
 - Datapublisher (mens);
 - Nationaal Georegister (NGR) – GeoNetwork + DCAT Transformer;
 - Externe systemen (CKAN, IDS Data Connector) – consumer van de DCAT3-metadata;
 - Eindgebruiker (mens) downloadt DCAT3-file.
-
+<br/>
 *Precondities*
 
 - Datapublisher heeft rechten in NGR;
 - DCAT Transformer is geconfigureerd voor DCAT AP NL / DCAT3;
 - Mechanisme om datasets als ‘vertrouwd’ te markeren is ingericht (bijv. tag, extra veld, policy URI);
 - Dataset zelf (dataresource) is technisch ergens hostbaar (bijv. WMS/WFS/REST/API of file).
-
+<br/>
 *Uit te voeren stappen*
 
 1. Aanmaken en invullen metadata in NGR  
@@ -137,7 +137,7 @@ Een provider publiceert een vertrouwde dataset in het Nationaal Georegister (NGR
    - kiest exportformaat (bijv. Turtle of JSON-LD),
    - downloadt het bestand (bijv. `dataset-x-dcat-ap-nl.ttl`).  
    5.3 Dit bestand kan handmatig worden geüpload in andere systemen (CKAN, IDS). Zie use case 2.1 en 3.1.
-
+<br/>
 *Postcondities*
 
 - De dataset is gepubliceerd in NGR, gemarkeerd als ‘vertrouwd’.
@@ -145,33 +145,30 @@ Een provider publiceert een vertrouwde dataset in het Nationaal Georegister (NGR
   - machine-leesbaar via het DCAT3-endpoint (M2M);
   - als file downloadbaar (H2M).
 
-<br/>
-<br/>
-
 ### Use case 2 – Metadata-uitwisseling tussen NGR (GeoNetwork) en Catalogus Circulaire Grondstromen (CKAN) via DCAT3 ###
 
 **Use case variant 2.1 – Via file upload (H2M)**
 
 Een beheerder exporteert DCAT AP NL / DCAT3 metadata uit NGR als bestand, en importeert dit handmatig in CKAN (catalogus Circulaire Grondstromen).
-
+<br/>
 *Actorenmodel*
 
 - Beheerder / datapublisher (mens).
 - NGR (GeoNetwork).
 - Catalogus Circulaire Grondstromen – CKAN + CKANNext DCAT.
-
+<br/>
 *Precondities*
 
 - Use case 1 is technisch mogelijk (export/download DCAT AP NL-file uit NGR).
 - CKAN ondersteunt import van DCAT AP NL / RDF (via plugin of script).
 - Mapping NGR ↔ CKAN velden is gedefinieerd.
-
+<br/>
 *Uitgevoerde stappen*
 
 1. Selectie vertrouwde dataset(s) in NGR  
    1.1 Beheerder filtert in NGR op `trusted=true` / relevante tag.  
    1.2 Kiest één of meerdere datasets die in CKAN moeten komen.
-
+>
 2. Exporteren DCAT AP NL / DCAT3-bestand  
    2.1 Voor elke dataset (of een bundel) genereert NGR een DCAT AP NL RDF-bestand.  
    2.2 Beheerder downloadt de file(s) naar de eigen werkomgeving.
@@ -194,30 +191,28 @@ Een beheerder exporteert DCAT AP NL / DCAT3 metadata uit NGR als bestand, en imp
 5. Publicatie in Catalogus Circulaire Grondstromen  
    5.1 CKAN toont de nieuw aangemaakte dataset als onderdeel van de catalogus.  
    5.2 Gebruikers kunnen doorklikken naar de NGR-bron indien gewenst.
-
+<br/>
 *Postcondities*
 
 - De metadata uit NGR is in CKAN beschikbaar voor één of meer datasets.
 - Relatie met bron (NGR) is traceerbaar via URI.
 
----
-
 **Variant 2.2 – Via harvesting DCAT3-endpoint (M2M)**
 
 CKAN harvest automatisch DCAT AP NL / DCAT3-metadata van NGR via een endpoint.
-
+<br/>
 *Actorenmodel*
 
 - NGR (GeoNetwork + DCAT Transformer).
 - CKAN Catalogus Circulaire Grondstromen (CKANNext DCAT).
 - CKAN harvester (machineproces).
-
+<br/>
 *Precondities*
 
 - NGR heeft een DCAT AP NL endpoint zoals in use case 1.
 - CKANNext DCAT of een andere harvester kan van dat endpoint lezen.
 - Filtering op ‘vertrouwde’ datasets is mogelijk (bijv. query-parameter of inhoudelijke filter op tag/veld).
-
+<br/>
 *Uitgevoerde stappen*
 
 1. Configureren DCAT-harvester in CKAN  
@@ -238,31 +233,29 @@ CKAN harvest automatisch DCAT AP NL / DCAT3-metadata van NGR via een endpoint.
    3.3 Bij wijzigingen:
    - Past metadata in CKAN aan.
    - Eventuele verwijderde datasets worden gearchiveerd of gemarkeerd conform afspraken.
-
+<br/>
 *Postcondities*
 
 - CKAN heeft een altijd actuele subset van NGR metadata (vertrouwde datasets) via M2M harvesting.
-
-<br/>
 
 ### Use case 3 – Metadata-uitwisseling tussen CKAN (Circulaire Grondstromen) en IDS Data Connector (TSG) ###
 
 **Use case Variant 3.1 – Via file upload (H2M)**
 
 Beheerder exporteert DCAT AP NL / DCAT3-metadata uit CKAN als bestand en importeert die handmatig in de IDS Data Connector (TSG).
-
+<br/>
 *Actorenmodel*
 
 - Beheerder CKAN (mens).
 - Beheerder IDS Data Connector (TSG) (mens).
 - CKAN + CKANNext DCAT.
 - IDS Data Connector (TNO Security Gateway / TSG).
-
+<br/>
 *Precondities*
 
 - CKAN kan DCAT AP NL / DCAT3 metadata per dataset of collectie exporteren.
 - IDS Data Connector heeft een functie of script om DCAT AP NL / RDF in te lezen en te mappen naar IDS resources.
-
+<br/>
 *Uitgevoerde stappen*
 
 1. Selecteren vertrouwde datasets in CKAN  
@@ -288,28 +281,26 @@ Beheerder exporteert DCAT AP NL / DCAT3-metadata uit CKAN als bestand en importe
 5. Publiceren in IDS-catalogus  
    5.1 IDS Connector publiceert deze resources in zijn interne catalogus.  
    5.2 Andere IDS-partijen kunnen ze later ontdekken (zie use case 5).
-
+<br/>
 *Postcondities*
 
 - CKAN metadata is in IDS Connector beschikbaar als IDS Resources, met behoud van bronverwijzing.
 
----
-
 **Variant 3.2 – Via harvesting DCAT3-endpoint (M2M)**
 
 IDS Data Connector (TSG) harvest automatisch DCAT AP NL / DCAT3 metadata van CKAN via een DCAT endpoint.
-
+<br/>
 *Actorenmodel*
 
 - CKAN Catalogus Circulaire Grondstromen (met DCAT endpoint).
 - IDS Data Connector (TSG) – met een harvesting-/ingestfunctie.
-
+<br/>
 *Precondities*
 
 - CKANNext DCAT exposeert een DCAT AP NL endpoint met RDF.
 - IDS Connector kan een extern DCAT endpoint configureren en periodiek uitlezen.
 - Mechanisme om alleen ‘vertrouwde’ datasets te selecteren.
-
+<br/>
 *Uitgevoerde stappen*
 
 1. DCAT-endpoint configureren in IDS Connector  
@@ -325,7 +316,7 @@ IDS Data Connector (TSG) harvest automatisch DCAT AP NL / DCAT3 metadata van CKA
 3. Updates en lifecycle  
    3.1 Bij vervolgruns worden gewijzigde of nieuwe datasets gedetecteerd via `dct:modified` of versievelden.  
    3.2 IDS Connector werkt bestaande resources bij of markeert ze als inactief indien verwijderd.
-
+<br/>
 *Postcondities*
 
 - IDS Data Connector heeft een actuele set vertrouwde datasets uit de CKAN Catalogus als IDS Resources.
@@ -336,18 +327,18 @@ IDS Data Connector (TSG) harvest automatisch DCAT AP NL / DCAT3 metadata van CKA
 **4.1 Variant 4.1 – Via file upload (H2M)**
 
 Beheerder exporteert DCAT AP NL / DCAT3 metadata uit NGR en importeert dit handmatig in de IDS Data Connector.
-
+<br/>
 *Actorenmodel*
 
 - Beheerder NGR.
 - Beheerder IDS Data Connector.
 - NGR (GeoNetwork + DCAT Transformer).
 - IDS Data Connector (TSG).
-
+<br/>
 *Precondities*
 
 - Zie use case 1 en 3.1 (NGR export, IDS import).
-
+<br/>
 *Uitgevoerde stappen*
 
 1. Export DCAT AP NL uit NGR  
@@ -361,27 +352,25 @@ Beheerder exporteert DCAT AP NL / DCAT3 metadata uit NGR en importeert dit handm
 3. Mapping en aanmaak IDS-resources  
    3.1 IDS Connector parseert NGR’s DCAT AP NL.  
    3.2 Maakt per dataset een IDS resource/contract aan, zoals in use case 3.1 stap 4.
-
+<br/>
 *Postcondities*
 
 - NGR datasets zijn als IDS Resources geregistreerd.
 
----
-
 **4.2 Variant 4.2 – Via harvesting DCAT3-endpoint (M2M)**
 
 IDS Data Connector harvest metadata direct van het NGR DCAT AP NL / DCAT3-endpoint.
-
+<br/>
 *Actorenmodel*
 
 - GeoNetwork + DCAT Transformer.
 - TSG data space connector.
-
+<br/>
 *Precondities*
 
 - GeoNetwork DCAT AP NL endpoint is extern bereikbaar.
 - TSG connector kan dit endpoint periodiek bevragen.
-
+<br/>
 *Uitgevoerde stappen*
 
 1. Configuratie in IDS Connector  
@@ -396,30 +385,28 @@ IDS Data Connector harvest metadata direct van het NGR DCAT AP NL / DCAT3-endpoi
 3. Synchronisatie  
    3.1 Nieuwe en gewijzigde datasets worden bijgewerkt.  
    3.2 Verwijderde datasets worden in IDS gemarkeerd/afgemeld volgens beleidsafspraken.
-
+<br/>
 *Postcondities*
 
 - IDS Connector heeft een actuele set vertrouwde NGR datasets.
 
----
-
-## Use case 5 – Zoeken naar een dataset in IDS Data Connector door consumer (via eigen IDS Connector)
+### Use case 5 – Zoeken naar een dataset in IDS Data Connector door consumer (via eigen IDS Connector) ###
 
 Een consumer gebruikt zijn eigen IDS Data Connector (TSG) om in het IDS netwerk te zoeken naar beschikbare vertrouwde datasets die door één of meer producer IDS Connectors zijn gepubliceerd (o.a. datasets afkomstig uit NGR en CKAN).
-
+<br/>
 *Actoren*
 
 - Consumer gebruiker (mens; data steward, data scientist, applicatiebeheerder).
 - Consumer IDS Data Connector (TSG).
 - Producer IDS Data Connector(en) (TSG).
 - Optioneel: IDS Catalog/Broker (centrale zoekservice binnen het IDS-netwerk).
-
+<br/>
 *Precondities*
 
 - Producer IDS Connector heeft IDS Resources gepubliceerd op basis van DCAT AP NL / DCAT3 metadata (use cases 3 en 4).
 - Er is een werkende IDS infrastructuur (identiteiten, certificaten, vertrouwensrelaties).
 - Consumer IDS Connector is verbonden met (een) broker of direct met producer Connectors voor discovery.
-
+<br/>
 *Uitgevoerde stappen*
 
 1. Inloggen bij consumer IDS Connector  
@@ -459,12 +446,11 @@ Een consumer gebruikt zijn eigen IDS Data Connector (TSG) om in het IDS netwerk 
    6.1 Gebruiker kiest een dataset waarvoor hij toegang wil aanvragen.  
    6.2 In de UI kiest hij “Start onderhandeling / vraag toegang aan”.  
    6.3 Consumer IDS Connector start daarop het proces in use case 6.
-
+<br/>
 *Postcondities*
 
 - De consumer heeft één of meerdere geschikte datasets gevonden in het IDS netwerk.
 - Een specifieke resource is geselecteerd als kandidaat voor toegang/onderhandeling.
-
 
 ## Opgedane bevindingen    {#4041334C}
 pm
