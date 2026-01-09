@@ -89,15 +89,18 @@ De response van het verzoek ziet er dan als volgt uit:
 
 <img src='media/section_003/http-request-response.png' alt='Respons ontvangen van aanbieder' style='width: 100%;'></img>
 
-## Opstelling TNO Security Gateway (TSG) 
+## Opstelling TNO Security Gateway (TSG)
+
 Dit experiment toont de mogelijkheden van de TNO Security Gateway (TSG) als IDS data connector voor het opzetten van een minimale functionele dataspace in een gecontaineriseerde omgeving. Het laat zien hoe dataspace partijen data kunnen delen binnen een gecontroleerde en veilige omgeving. Dit is een essentiële stap in het realiseren van interoperabele en veilige dataspaces voor toekomstige dataspace toepassingen. We hebben hier gewerkt met de volgende componenten: 
 <br/>
 
-**Infrastructuur** 
+**Infrastructuur**
+
 Het dataspace-ecosysteem is opgezet binnen een Kubernetes-cluster op de omgeving van Sogelink. Dit cluster host zowel de autoriteit als de twee deelnemers.
 <br/>
 
-**TNO Security Gateway (TSG)** 
+**TNO Security Gateway (TSG)**
+
 Alle dataspace deelnemers maken gebruik van de TSG componenten om data-uitwisseling te faciliteren en beveiligingsmechanismen te handhaven: 
 - Autoriteit: Beheert de registratie van deelnemers, policies en data catalogus.
 - Deelnemer 1 (Alfa) fungeert als data aanbieder;
@@ -105,6 +108,7 @@ Alle dataspace deelnemers maken gebruik van de TSG componenten om data-uitwissel
 <br/>
 
 **Technologieën**
+
 - Kubernetes voor het beheer van containers en schaalbaarheid;
 - TSG voor dataspace-beveiliging en gegevensbeheer;
 - TSG CLI voor het creëren van een configuratie en de uitrol van de data space connector.
