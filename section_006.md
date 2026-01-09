@@ -85,18 +85,23 @@ Een provider publiceert een vertrouwde dataset in het Nationaal Georegister (NGR
 •	via een DCAT3-endpoint (voor M2M interactie); en
 •	als DCAT3-bestand (voor download door de mens).
 <br/>
+
 *Actormodel*
+
 •	Datapublisher (mens);
 •	Nationaal Georegister (NGR) – GeoNetwork + DCAT Transformer;
 •	Externe systemen (CKAN, IDS Data Connector) – consumer van de DCAT3-metadata.
 •	Eindgebruiker (mens) downloadt DCAT3-file.
 <br/>
+
 *Precondities*
+
 •	Datapublisher heeft rechten in NGR;
 •	DCAT Transformer is geconfigureerd voor DCAT AP NL / DCAT3;
 •	Mechanisme om datasets als ‘vertrouwd’ te markeren is ingericht (bijv. tag, extra veld, policy URI);
 •	Dataset zelf (dataresource) is technisch ergens hostbaar (bijv. WMS/WFS/REST/API of file).
 <br/>
+
 *Uit te voeren stappen*
 
 1. Aanmaken en invullen metadata in NGR 
@@ -132,7 +137,9 @@ Een provider publiceert een vertrouwde dataset in het Nationaal Georegister (NGR
 •	downloadt het bestand (bijv. dataset-x-dcat-ap-nl.ttl)
 5.3 Dit bestand kan handmatig worden geüpload in andere systemen (CKAN, IDS). Zie use case 2.1 en 3.1. 
 <br/>
-**Postcondities**
+
+*Postcondities*
+
 •	De dataset is gepubliceerd in NGR, gemarkeerd als ‘vertrouwd’;
 •	De DCAT AP NL / DCAT3 metadata is:
   •	machine-leesbaar via het DCAT3-endpoint (M2M).
@@ -146,17 +153,23 @@ Een provider publiceert een vertrouwde dataset in het Nationaal Georegister (NGR
 
 Een beheerder exporteert DCAT AP NL / DCAT3 metadata uit NGR als bestand, en importeert dit handmatig in CKAN (catalogus Circulaire Grondstromen).
 <br/>
+
 *Actorenmodel*
+
 •	Beheerder / datapublisher (mens).
 •	NGR (GeoNetwork).
 •	Catalogus Circulaire Grondstromen – CKAN + CKANNext DCAT.
 <br/>
+
 *Precondities*
+
 •	Use case 1 is technisch mogelijk (export/ download DCAT AP NL-file uit NGR;
 •	CKAN ondersteunt import van DCAT AP NL / RDF (via plugin of script);
 •	Mapping NGR ↔ CKAN velden is gedefinieerd.
 <br/>
+
 *Uitgevoerde stappen*
+
 1.	Selectie vertrouwde dataset(s) in NGR 1.1 Beheerder filtert in NGR op trusted=true / relevante tag.
 1.2 Kiest één of meerdere datasets die in CKAN moeten komen.
 2.	Exporteren DCAT AP NL / DCAT3-bestand 2.1 Voor elke dataset (of een bundel) genereert NGR een DCAT AP NL RDF-bestand.
@@ -175,40 +188,76 @@ Een beheerder exporteert DCAT AP NL / DCAT3 metadata uit NGR als bestand, en imp
 5.	Publicatie in Catalogus Circulaire Grondstromen 5.1 CKAN toont de nieuw aangemaakte dataset als onderdeel van de catalogus.
 5.2 Gebruikers kunnen doorklikken naar de NGR-bron indien gewenst.
 <br/>
-**Postcondities** 
+
+*Postcondities*
+
 •	De metadata uit NGR is in CKAN beschikbaar voor één of meer datasets;
 •	Relatie met bron (NGR) is traceerbaar via URI.
 <br/>
+
 **Variant 2.2 – Via harvesting DCAT3-endpoint (M2M)**
-<br/>
+
 CKAN harvest automatisch DCAT AP NL / DCAT3-metadata van NGR via een endpoint.
 <br/>
+
 *Actorenmodel*
+
 •	NGR (GeoNetwork + DCAT Transformer);
 •	CKAN Catalogus Circulaire Grondstromen (CKANNext DCAT);
 •	CKAN harvester (machineproces).
 <br/>
+
 *Precondities*
+
 •	NGR heeft een DCAT AP NL endpoint zoals in use case 1;
 •	CKANNext DCAT of een andere harvester kan van dat endpoint lezen;
 •	Filtering op ‘vertrouwde’ datasets is mogelijk (bijv. query parameter of inhoudelijke filter op tag/veld).
 <br/>
+
 *Uitgevoerde stappen*
+
 1.	Configureren DCAT-harvester in CKAN 1.1 CKAN-beheerder configureert een nieuwe “DCAT AP NL harvester”:
 •	Source URL: NGR DCAT endpoint (bijv. https://ngr.example.org/dcat-ap-nl?tag=trusted).
 •	Poll-interval (bijv. 1× per dag).
 •	Mappingprofiel: NGR → CKAN.
-2.	Initiële harvest 2.1 Harvester roept het NGR DCAT endpoint aan.
+2.	Initiële harvest 
+2.1 Harvester roept het NGR DCAT endpoint aan.
 2.2 Leest alle DCAT AP NL records.
 2.3 Past mapping toe (zoals in 2.1 stap 4).
 2.4 Maakt datasets in CKAN aan, met verwijzing naar NGR URI.
-3.	Periodieke updates 3.1 Harvester draait periodiek.
+3.	Periodieke updates 
+3.1 Harvester draait periodiek.
 3.2 Controleert dct:modified of andere versie-/timestamp velden.
 3.3 Bij wijzigingen:
 •	Past metadata in CKAN aan.
 •	Eventuele verwijderde datasets worden gearchiveerd of gemarkeerd conform afspraken.
 <br/>
-**Postcondities**
+
+1. Configureren DCAT-harvester in CKAN  
+
+   1.1 CKAN-beheerder configureert een nieuwe “DCAT AP NL harvester”:
+   - Source URL: NGR DCAT endpoint (bijv. `https://ngr.example.org/dcat-ap-nl?tag=trusted`).
+   - Poll-interval (bijv. 1× per dag).
+   - Mappingprofiel: NGR → CKAN.
+
+2. Initiële harvest  
+
+   2.1 Harvester roept het NGR DCAT endpoint aan.  
+   2.2 Leest alle DCAT AP NL records.  
+   2.3 Past mapping toe (zoals in 2.1 stap 4).  
+   2.4 Maakt datasets in CKAN aan, met verwijzing naar NGR URI.
+
+3. Periodieke updates  
+
+   3.1 Harvester draait periodiek.  
+   3.2 Controleert `dct:modified` of andere versie-/timestamp velden.  
+   3.3 Bij wijzigingen:
+   - Past metadata in CKAN aan.
+   - Eventuele verwijderde datasets worden gearchiveerd of gemarkeerd conform afspraken.
+
+
+*Postcondities*
+
 •	CKAN heeft een altijd actuele subset van NGR metadata (vertrouwde datasets) via M2M harvesting.
 <br/>
 
@@ -219,16 +268,19 @@ CKAN harvest automatisch DCAT AP NL / DCAT3-metadata van NGR via een endpoint.
 Beheerder exporteert DCAT AP NL / DCAT3-metadata uit CKAN als bestand en importeert die handmatig in de IDS Data Connector (TSG).
 
 *Actorenmodel*
+
 •	Beheerder CKAN (mens).
 •	Beheerder IDS Data Connector (TSG) (mens).
 •	CKAN + CKANNext DCAT.
 •	IDS Data Connector (TNO Security Gateway / TSG).
 
 *Precondities*
+
 •	CKAN kan DCAT AP NL / DCAT3 metadata per dataset of collectie exporteren;
 •	IDS Data Connector heeft een functie of script om DCAT AP NL / RDF in te lezen en te mappen naar IDS resources.
 
 *Uitgevoerde stappen*
+
 1.	Selecteren vertrouwde datasets in CKAN 1.1 CKAN-beheerder filtert op datasets met ids_trusted=true of vergelijkbare tag;
 2.	Exporteren DCAT AP NL-bestand 2.1 CKANNext DCAT genereert DCAT AP NL RDF voor de geselecteerde datasets; 
 2.2 Beheerder downloadt deze file (bijv. ckan-trusted-datasets.ttl).
@@ -245,6 +297,7 @@ Beheerder exporteert DCAT AP NL / DCAT3-metadata uit CKAN als bestand en importe
 5.2 Andere IDS-partijen kunnen ze later ontdekken (zie use case 5).
 
 *Postcondities*
+
 •	CKAN metadata is in IDS Connector beschikbaar als IDS Resources, met behoud van bronverwijzing.
 
 **Variant 3.2 – Via harvesting DCAT3-endpoint (M2M)**
