@@ -34,7 +34,8 @@ De volgende vijf use cases over het (her)gebruik en de uitwisseling van DCAT met
   <li>Use case 4 - Metadata-uitwisseling tussen het Nationaal Georegister  (GeoNetwork) en IDS Data Connector (TSG) met variant 4.1 via file upload (human-to-machine) en variant 4.2 via harvesting DCAT3-endpoint (machine-to-machine);</li>
   <li>Use case 5 – Zoeken van de dataset in de IDS Data Connector (TSG) door de consumer via de consumer IDS data connector (ook TSG).</li>
 </ol>
-
+<br/>
+<br/>
 In onderstaande Figuur 18 is de opzet van het experiment weergegeven.
 
 <figure id="Figuur_x">
