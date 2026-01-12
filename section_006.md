@@ -348,8 +348,7 @@ IDS Data Connector (TSG) harvest automatisch DCAT AP NL / DCAT3 metadata van CKA
 
 **4.1 Variant 4.1 – Via DCAT3 file upload (H2M)**
 
-Beheerder exporteert DCAT AP NL / DCAT3 metadata uit NGR en importeert dit handmatig in de IDS Data Connector.
-<br/>
+Beheerder exporteert DCAT AP NL / DCAT3 metadata uit NGR en importeert dit handmatig in de IDS Data Connector. 
 
 *Actorenmodel*
 
@@ -358,10 +357,12 @@ Beheerder exporteert DCAT AP NL / DCAT3 metadata uit NGR en importeert dit handm
 - NGR (GeoNetwork + DCAT Transformer).
 - IDS Data Connector (TSG).
 <br/>
+<br/>
 
 *Precondities*
 
 - Zie use case 1 en 3.1 (NGR export, IDS import).
+<br/>
 <br/>
 
 *Uitgevoerde stappen*
@@ -376,6 +377,7 @@ Beheerder exporteert DCAT AP NL / DCAT3 metadata uit NGR en importeert dit handm
    3.1 IDS Connector parseert NGR’s DCAT AP NL.  
    3.2 Maakt per dataset een IDS resource/contract aan, zoals in use case 3.1 stap 4.
 <br/>
+<br/>
 
 *Postcondities*
 
@@ -385,17 +387,20 @@ Beheerder exporteert DCAT AP NL / DCAT3 metadata uit NGR en importeert dit handm
 
 IDS Data Connector harvest metadata direct van het NGR DCAT AP NL / DCAT3-endpoint.
 <br/>
+<br/>
 
 *Actorenmodel*
 
 - GeoNetwork + DCAT Transformer.
 - TSG data space connector.
 <br/>
+<br/>
 
 *Precondities*
 
 - GeoNetwork DCAT AP NL endpoint is extern bereikbaar.
 - TSG connector kan dit endpoint periodiek bevragen.
+<br/>
 <br/>
 
 *Uitgevoerde stappen*
@@ -411,6 +416,7 @@ IDS Data Connector harvest metadata direct van het NGR DCAT AP NL / DCAT3-endpoi
    3.1 Nieuwe en gewijzigde datasets worden bijgewerkt.  
    3.2 Verwijderde datasets worden in IDS gemarkeerd/afgemeld volgens beleidsafspraken.
 <br/>
+<br/>
 
 *Postcondities*
 
@@ -420,6 +426,7 @@ IDS Data Connector harvest metadata direct van het NGR DCAT AP NL / DCAT3-endpoi
 
 Een consumer gebruikt zijn eigen IDS Data Connector (TSG) om in het IDS netwerk te zoeken naar beschikbare vertrouwde datasets die door één of meer producer IDS Connectors zijn gepubliceerd (o.a. datasets afkomstig uit NGR en CKAN).
 <br/>
+<br/>
 
 *Actorenmodel*
 
@@ -428,12 +435,14 @@ Een consumer gebruikt zijn eigen IDS Data Connector (TSG) om in het IDS netwerk 
 - Producer IDS Data Connector(en) (TSG).
 - Optioneel: IDS Catalog/Broker (centrale zoekservice binnen het IDS-netwerk).
 <br/>
+<br/>
 
 *Precondities*
 
 - Producer IDS Connector heeft IDS Resources gepubliceerd op basis van DCAT AP NL / DCAT3 metadata (use cases 3 en 4).
 - Er is een werkende IDS infrastructuur (identiteiten, certificaten, vertrouwensrelaties).
 - Consumer IDS Connector is verbonden met (een) broker of direct met producer Connectors voor discovery.
+<br/>
 <br/>
 
 *Uitgevoerde stappen*
@@ -470,6 +479,7 @@ Een consumer gebruikt zijn eigen IDS Data Connector (TSG) om in het IDS netwerk 
    6.1 Gebruiker kiest een dataset waarvoor hij toegang wil aanvragen.  
    6.2 In de UI kiest hij “Start onderhandeling / vraag toegang aan”.  
    6.3 Consumer IDS Connector start daarop het proces in use case 6.
+<br/>
 <br/>
 
 *Postcondities*
