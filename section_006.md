@@ -145,9 +145,9 @@ Een provider publiceert een vertrouwde dataset in het Nationaal Georegister (NGR
   - machine-leesbaar via het DCAT3-endpoint (M2M);
   - als file downloadbaar (H2M).
 
-### Use case 2 – Metadata-uitwisseling tussen NGR (GeoNetwork) en Catalogus Circulaire Grondstromen (CKAN) via DCAT3 ###
+### Use case 2 – Metadata-uitwisseling DCAT3 tussen GeoNetwork en CKAN ###
 
-**Use case variant 2.1 – Via file upload (H2M)**
+**Use case variant 2.1 – Via DCAT3 file upload (H2M)**
 
 Een beheerder exporteert DCAT AP NL / DCAT3 metadata uit NGR als bestand, en importeert dit handmatig in CKAN (catalogus Circulaire Grondstromen).
 <br/>
@@ -168,7 +168,7 @@ Een beheerder exporteert DCAT AP NL / DCAT3 metadata uit NGR als bestand, en imp
 1. Selectie vertrouwde dataset(s) in NGR  
    1.1 Beheerder filtert in NGR op `trusted=true` / relevante tag.  
    1.2 Kiest één of meerdere datasets die in CKAN moeten komen.
->
+
 2. Exporteren DCAT AP NL / DCAT3-bestand  
    2.1 Voor elke dataset (of een bundel) genereert NGR een DCAT AP NL RDF-bestand.  
    2.2 Beheerder downloadt de file(s) naar de eigen werkomgeving.
