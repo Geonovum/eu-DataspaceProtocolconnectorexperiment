@@ -293,11 +293,13 @@ Beheerder exporteert DCAT AP NL / DCAT3-metadata uit CKAN als bestand en importe
 
 IDS Data Connector (TSG) harvest automatisch DCAT AP NL / DCAT3 metadata van CKAN via een DCAT endpoint.
 <br/>
+<br/>
 
 *Actorenmodel*
 
 - CKAN Catalogus Circulaire Grondstromen (met DCAT endpoint).
 - IDS Data Connector (TSG) – met een harvesting-/ingestfunctie.
+<br/>
 <br/>
 
 *Precondities*
@@ -305,6 +307,7 @@ IDS Data Connector (TSG) harvest automatisch DCAT AP NL / DCAT3 metadata van CKA
 - CKANNext DCAT exposeert een DCAT AP NL endpoint met RDF.
 - IDS Connector kan een extern DCAT endpoint configureren en periodiek uitlezen.
 - Mechanisme om alleen ‘vertrouwde’ datasets te selecteren.
+<br/>
 <br/>
 
 *Uitgevoerde stappen*
@@ -320,6 +323,7 @@ IDS Data Connector (TSG) harvest automatisch DCAT AP NL / DCAT3 metadata van CKA
 3. Updates en lifecycle  
    3.1 Bij vervolgruns worden gewijzigde of nieuwe datasets gedetecteerd via `dct:modified` of versievelden.  
    3.2 IDS Connector werkt bestaande resources bij of markeert ze als inactief indien verwijderd.
+<br/>
 <br/>
 
 *Postcondities*
