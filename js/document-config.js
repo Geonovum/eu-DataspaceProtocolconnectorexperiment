@@ -21,28 +21,23 @@ var documentConfig =
   authors: [
     {
       name: "Anne Blankert",
-      company: "Sogelink",
-      companyURL: ""
+      company: "Sogelink Research",
+      companyURL: "https://www.sogelink.com/nl"
     },
     {
       name: "Emanual Buttacci",
-      company: "Sogelink",
-      companyURL: ""
+      company: "voorheen Sogelink Research (experiment 1)",
+      companyURL: "https://www.sogelink.com/nl"
     },
     {
       name: "Tim Ebben",
-      company: "Sogelink",
-      companyURL: ""
-    },
-    {
-      name: "Yvette van Turnhout-Elllenkamp",
-      company: "Geonovum",
-      companyURL: "https://www.geonovum.nl/"
+      company: "Sogelink Research (experiment 1)",
+      companyURL: "https://www.sogelink.com/nl"
     },
     {
       name: "Stefan de Graaf",
-      company: "Sogelink",
-      companyURL: ""
+      company: "Sogelink Research",
+      companyURL: "https://www.sogelink.com/nl"
     },
     {
       name: "Michel Grothe",
@@ -50,9 +45,9 @@ var documentConfig =
       companyURL: "https://www.geonovum.nl/"
     },
     {
-      name: "Kas Kroese",
-      company: "Sogelink",
-      companyURL: ""
+      name: "Niels Hoffmann",
+      company: "Geonovum",
+      companyURL: "https://www.geonovum.nl/"
     },
     {
       name: "Marcel Reuvers",
@@ -61,25 +56,20 @@ var documentConfig =
     },
     {
       name: "Henk J. Scholten",
-      company: "Sogelink",
-      companyURL: ""
+      company: "Sogelink Research",
+      companyURL: "https://www.sogelink.com/nl"
     },
     {
-      name: "Annita Vijverberg",
-      company: "Sogelink",
-      companyURL: ""
+      name: "Bert Temme",
+      company: "Sogelink Research (experiment 2)",
+      companyURL: "https://www.sogelink.com/nl"
     },
     {
       name: "Brian de Vogel",
-      company: "Sogelink",
+      company: "voorheen Sogelink Research (experiment 1)",
       companyURL: ""
     },
-    {
-      name: "Gineke van Putten",
-      company: "Geonovum",
-      companyURL: "https://www.geonovum.nl/"
-    }
-  ],
+    ],
   editors: [
     {
       name: "Michel Grothe",
