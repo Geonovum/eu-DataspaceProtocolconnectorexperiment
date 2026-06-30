@@ -1,8 +1,8 @@
 # Experiment 2: DCAT metadata catalogi & data space connector 
 
 ## Inleiding 
-In het data space protocol speelt de DCAT standaard een belangrijke rol om metadata van de aangeboden (geo)datasets te beschrijven. Het doel van experiment 2 is om DCAT metadata uitwisseling tussen de TSG data connector te testen met andere catalogi software, die DCAT ondersteunen: GeoNetwork en CKAN. 
-Het idee daarbij is dat de catalogus, die gebruikt wordt voor de specifieke use case binnen de data space een subset van metadata uit een GeoNetwork overneemt en in de catalogus van de data space publiceert. De catalogus, die daarvoor gebruikt wordt binnen deze use case is een CKAN catalogus. Daarnaast moet de metadata ook opgenomen worden in de TSG data space connector (als onderdeel van de data plane), zodat de relevante metadata gevonden kan worden als onderdeel van de data plane API interactie.
+In het data space protocol speelt de DCAT standaard een belangrijke rol om metadata van de aangeboden (geo)datasets te beschrijven. Het doel van experiment 2 is om DCAT metadata uitwisseling tussen de TSG data connector te testen met andere catalogus software, die DCAT ondersteunt: CKAN. 
+Het idee daarbij is dat de catalogus, die gebruikt wordt voor de specifieke use case binnen de data space een subset van metadata uit een CKAN overneemt en in de catalogus van de data space publiceert. De catalogus, die daarvoor gebruikt wordt binnen deze use case is een CKAN catalogus. Daarnaast moet de metadata ook opgenomen worden in de TSG data space connector (als onderdeel van de data plane), zodat de relevante metadata gevonden kan worden als onderdeel van de data plane API interactie.
 
 <aside class='note' title="Met dank aan het Kadaster">
 
@@ -13,7 +13,6 @@ Graag spreken de auteurs onze dank uit aan de Innovatieboard van het Kadaster vo
 ## Doel experiment
 Doel van experiment 2 is te kijken in hoeverre DCAT metadata kan worden uitgewisseld vanuit enkele bestaande catalogi met de TSG data space connector. Om dit doel te bereiken onderzoeken en beschrijven we in dit experiment of DCAT metadata kan worden uitgewisseld tussen:
 <ol>
-  <li>Geonetwork en CKAN met CKANext-DCAT;</li>
   <li>CKAN met de catalogus van de TSG data space connector;</li>
   <li>CKAN met de federatieve catalogus van de SAGE Green Deal Data Space;</li>
   <li>CKAN met de federatieve catalogus van de SAGE Green Deal Data Space. </li>
@@ -24,7 +23,7 @@ Doel van experiment 2 is te kijken in hoeverre DCAT metadata kan worden uitgewis
 De relevantie van het experiment is meervoudig, omdat: 
 <ol>
   <li>1.	Het aantoont hoe DCAT effectief kan worden ingezet voor consistente metadata-uitwisseling binnen een data space;</li>
-  <li>2.	Het versterkt de interoperabiliteit tussen de TSG data space connector catalogus en bestaande broncatalogi, zoals Geonetwork en CKAN, die in veel overheidsdomeinen worden gebruikt;</li>
+  <li>2.	Het versterkt de interoperabiliteit tussen de TSG data space connector catalogus en bestaande broncatalogi, zoals CKAN, dat in veel publieke open data portals worden gebruikt;</li>
   <li>3.	Het experiment laat zien hoe een data space een eigen catalogus kan opbouwen op basis van een gecontroleerde subset uit een broncatalogus;</li>
   <li>4.	De integratie van metadata in de TSG data space connector toont hoe het control plane en data plane elkaar versterken binnen een data space architectuur;</li>
   <li>5.	Organisaties krijgen inzicht in hoe zij bestaande DCAT metadata standaarden (profielen) optimaal kunnen benutten bij het vormgeven van data-uitwisselingsketens;</li>
@@ -33,19 +32,18 @@ De relevantie van het experiment is meervoudig, omdat:
 
 ## Opstelling experiment
 
-De volgende vijf use cases over het (her)gebruik en de uitwisseling van DCAT metadata zijn in deze paragraaf verder beschreven als use case beschrijving (precondities, actormodel, uit te voeren stappen en postcondities) en de technische implementatie en uitwerking:
+De volgende vier use cases over het (her)gebruik en de uitwisseling van DCAT metadata zijn in deze paragraaf verder beschreven als use case beschrijving (precondities, actormodel, uit te voeren stappen en postcondities) en de technische implementatie en uitwerking:
 <ol>
-  <li>Use case 1 – DCAT metadata uitwisseling tussen CKAN (CKANNext-DCAT) en TSG data space connector;</li>
+  <li>Use case 1 – DCAT metadata uitwisseling tussen CKAN en TSG data space connector;</li>
   <li>Use case 2 – Zoeken van de dataset in de TSG data space connector;</li>
   <li>Use case 3 – Harvesten van de CKAN vanuit de SAGE federated catalogus en publiceren van de metadata in de SAGE federated catalogus;</li>
   <li>Use case 4 – Het publiceren van de TSG data space connector in de SAGE participant Agent registry.</li>
 </ol>
-<br/>
-<br/>
+
 In onderstaande Figuur 18 is de opzet van het experiment weergegeven.
 
 <figure id="Figuur_x">
-<a href="media/Use case DCAT catalogs en TSG met pull-push v5.jpg" target="_blank"><img src="media/Use case DCAT catalogs en TSG met pull-push.jpg" alt=""></a>
+<a href="media/Use case DCAT catalogs en TSG met pull-push v5.jpg" target="_blank"><img src="media/Use case DCAT catalogs en TSG met pull-push v5.jpg" alt=""></a>
 <figcaption>Use cases DCAT catalogi en TSG data connector experiment<figcaption>
 </figure>
 
@@ -59,18 +57,16 @@ Het gaat daarbij specifiek om te beproeven hoe DCAT metadata van één of meerde
 
 Voor het uitvoeren van de zes use cases zijn bestaande metadata catalogi ingezet: 
 <ol>
-  <li>GeoNetwork instantie: <a href='https://www.nationaalgeoregister.nl' target='_blank'>het nationaal georegister</a>;</li>
   <li>CKAN catalogus: <a href='https://sage.beta.geodan.nl/' target='_blank'>SAGE circulaire grondstromen</a></li>
   <li>Een lokale TSG data space connector setup specifiek voor dit experiment;</li>
-  <li>De SAGE federated catalogus. URL: pm;</li>
-  <li>De SAGE participant Agent registry. URL: pm.</li>
+  <li>De SAGE Federated Catalog. URL: pm;</li>
+  <li>De SAGE Participant Agent registry. URL: pm.</li>
 </ol>
 
 Voor het uitvoeren van de use cases is gewerkt met de volgende software configuraties (zie onderstaande tabel).
 
 <table>
   <colgroup>+
-  
     <col style="width: 20%;">
     <col style="width: 40%;">
     <col style="width: 40%;">
@@ -83,11 +79,6 @@ Voor het uitvoeren van de use cases is gewerkt met de volgende software configur
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>GeoNetwork</td>
-      <td>Geodata-catalogus met specifieke componenten voor DCAT metadata-uitwisseling</td>
-      <td>https://github.com/geonetwork/docker-geonetwork</td>
-    </tr>
     <tr>
       <td>CKAN</td>
       <td>Open data-catalogus met specifieke componenten voor geoDCAT metadata-uitwisseling</td>
@@ -127,7 +118,7 @@ Voor het uitvoeren van de use cases worden minimaal de volgende stappen doorlope
 <ol>
   <li>Kiezen en zorgen voor relevante de endpoints voor het harvesten van metadata uit broncatalogi naar doelsysteem;</li>
   <li>Daarvoor configureren van het harvesting doelsysteem (andere catalogus of data space connector) met bron-URL (endpoint), filters (tags/thema’s), interval of event-trigger en evt. beveiliging (authenticatie/authorisatie);</li>
-</li>Voer mapping uit naar het doelsysteem; map DCAT-velden naar intern metadatamodel van bron- en doelsystemen (GeoNetwork, CKAN, TSG).
+</li>Voer mapping uit naar het doelsysteem; map DCAT-velden naar intern metadatamodel van bron- en doelsystemen (CKAN, TSG).
 </li>
 </ol>
 
@@ -142,35 +133,27 @@ Binnen de experimenten met de DCAT catalogi en de data space connector is geblek
 In use case 3 is beproefd hoe DCAT metadata uitwisseling kan plaatsvinden tussen CKAN (CKANNext-DCAT) en TSG data space connector. Daarvoor is de TSG data space connector aangepast om aanvullende metadata elementen uit [[DCAT-AP]], [[DCAT-AP-NL]] en [[geoDCAT-AP]] te ondersteunen. Aanleiding hiervoor was dat de TSG bij het publiceren van datasets oorspronkelijk alleen een beperkt aantal standaardattributen toestond, namelijk `@id`, `title`, `version` en `backendUrl` (zie onder). Daardoor was het niet mogelijk om rijkere beschrijvende metadata op te nemen, terwijl die juist nodig zijn om (geo)datasets goed vindbaar, interpreteerbaar en herbruikbaar te maken binnen een data space connector. 
 
 Bij het publiceren van de metadata beschrijvingen van (geo)datasets in de TSG waren aanvankelijk alleen de volgende metadata attributen opvraagbaar:
-
-<code>
+<br/>
+```json
 {
   "@id": "123456",
   "title": "Test Dataset X",
   "version": "1.0.1",
   "backendUrl": "https://soilhub.beta.geodan.nl/gelderland/api/marketplace"
 }
-<code>
-
+```
+<br/>
 De TSG data space connector hanteert een hiërarchische DCAT-structuur waarin een `Catalog` datasets en dataservices groepeert, en waarin onder een `Dataset` onder meer informatie over conformiteit, distributies en services kan worden vastgelegd (zie onder). In die opzet is ruimte voor verwijzingen naar standaarden, schema’s, media types en endpoint beschrijvingen, maar in de oorspronkelijke implementatie konden deze aanvullende DCAT-elementen niet daadwerkelijk via de connector worden opgeslagen. Daarmee vormde de beperkte metadata-ondersteuning een belemmering voor toepassing van DCAT-profielen, zoals [[DCAT-AP-NL]] en [[geoDCAT-AP]].
 
-`Catalog
-├── `DataService` (DSP API endpoint)
-└── `Dataset`
-    ├── `dct:conformsTo` → Ontology, legislation, standards
-    │   └── (e.g., HealthDCAT-AP, CSVW, domain ontologies)
-    └── `Distribution`
-        ├── `dct:conformsTo` → Distribution schema (JSON Schema, XSD, etc.)
-        ├── `dcat:mediaType` → Media type of source data
-        └── DataService
-            ├── `endpointURL` → DSP API endpoint
-            ├── `endpointDescription` → dspace:connector
-            ├── `dspace:dataPlaneType` → IRI indicating data plane type
-
+<figure id="Figuur_x">
+<a href="media/TSG Metadata (hierachie).png" target="_blank"><img src="media/TSG Metadata (hierachie).png" alt=""></a>
+<figcaption>DCAT metadata elementen TSG dataspace connector<figcaption>
+</figure>
 
 Er was geen mogelijkheid om aanvullende metadata mee te geven, wat de toepassing van DCAT profielen binnen de TSG data space connector in de weg staat. Om dit op te lossen is vanaf versie 0.19.0 van de TSG software een nieuw veld toegevoegd: extraProps. Dit veld heeft het type object en maakt het mogelijk om bij het aanmaken of bijwerken van een dataset via de HTTP data plane aanvullende DCAT properties mee te geven. De uitbreiding maakt het mogelijk om naast de vaste basisattributen ook extra metadata op te slaan die relevant zijn voor nationale en domeinspecifieke DCAT profielen.
-
+<br/>
 Met deze aanpassing is de TSG data space connector beter bruikbaar geworden als catalogus component voor geodatasets binnen een DCAT-georiënteerde data space. De introductie van extraProps biedt een generiek uitbreidingsmechanisme waarmee aanvullende elementen uit DCAT AP-NL en geoDCAT kunnen worden opgenomen zonder dat voor ieder nieuw attribuut afzonderlijk aanpassingen in het datamodel nodig zijn. Daarmee is een belangrijke stap gezet richting rijkere metadata registratie en een betere aansluiting op gangbare interoperabiliteitsprofielen voor metadata afgestemd op de Nederlandse ([[DCAT-AP-NL]]) en Europese ([[geoDCAT-AP]]) situatie.
+<br/>
 Voor documentatie over de DCAT 'custom properties' en <code>extraProps<code> en de toegepaste API informatie van de TSG data space connector zie de onderstaande tabel. 
 
 <table>
@@ -207,8 +190,8 @@ Voor documentatie over de DCAT 'custom properties' en <code>extraProps<code> en 
 **JSON voorbeeld: metadata aanmaken met `extraProps` (conform [[DCAT-AP-NL]])**
 
 Onderstaand JSON-voorbeeld laat zien hoe metadata bij het aanmaken van een dataset kan worden uitgebreid met het veld extraProps. Hiermee kunnen aanvullende eigenschappen worden meegegeven die aansluiten op [[DCAT-AP-NL]] v3.0, zodat naast de standaard datasetvelden ook rijkere en profielspecifieke metadata in de TSG data space connector kunnen worden opgeslagen.
-
-<code>
+<br/>
+```json
 {
   "@id": "dataset-bodemkaart-gelderland",
   "title": "Bodemkaart Gelderland",
@@ -251,50 +234,47 @@ Onderstaand JSON-voorbeeld laat zien hoe metadata bij het aanmaken van een datas
     }
   }
 }
-<code>
-
+```
+<br/>
 Het experiment demonstreert hoe metadata records uit een CKAN catalogus geoogst kunnen worden voor opname en ontsluiting in de catalogus van de TSG data space connector. Hiervoor zijn metadata beschrijvingen van datasets uit de CKAN catalogus van de Gemeente Amsterdam als uitgangspunt gebruikt. Daarvoor zijn metadata records van een set (geo)datasets van een CKAN catalogus van de Gemeente Amsterdam (www.) eerst is geïmporteerd in een voor dit experiment ingerichte CKAN instantie. 
-
+<br/>
 Met het onderstaande commando wordt vanuit CKAN  metadata records naar de catalogus van de  TSG overgestuurd. 
-
-<code>npm run add:ckan<code>
-
+<br/>
+npm run add:ckan
+<br/>
 Na het uitvoeren van de CKAN-TSG harvester zijn de metadata records van de CKAN instantie via een pull- en push-mechanisme overgehaald. De volgende stappen zijn daarbij doorlopen voor de export naar metadata records van CKAN naar de TSG data space connector: 
 <ol>
-  <li>1.	Via een pull-mechanisme is de `.jsonld`-extensie (de standaard CKAN-exportfunctie voor linked data) is de metadata geëxporteerd uit CKAN in DCAT-AP-NL 3.0-formaat (https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/);</li>
-  <li>2.	Het JSON-LD-bestand is vervolgens gebruikt om de metadata van datasets aan te maken in de data space connector via het `extraProps`-veld van de TSG HTTP data plane API;</li>
-</li>3.	Via het data plane management van de TSG data space connector zijn de JSON-LD-bestanden vervolgens bijgewerkt via de beschikbare TSG API’s voor data plane management (controller-create-dataset of controller controller-update-dataset).
+  <li>Via een pull-mechanisme is de `.jsonld`-extensie (de standaard CKAN-exportfunctie voor linked data) is de metadata geëxporteerd uit CKAN in DCAT-AP-NL 3.0-formaat (https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/);</li>
+  <li>Het JSON-LD-bestand is vervolgens gebruikt om de metadata van datasets aan te maken in de data space connector via het `extraProps`-veld van de TSG HTTP data plane API;</li>
+</li>Via het data plane management van de TSG data space connector zijn de JSON-LD-bestanden vervolgens bijgewerkt via de beschikbare TSG API’s voor data plane management (controller-create-dataset of controller controller-update-dataset).
 </li>
 </ol>
-
+<br/>
 Tijdens het uitvoeren van de CKAN-TSG harvester laat de command line interface (CLI) zien, dat de metadata records (in totaal 347 records) van uiteenlopende (geo)datasets daadwerkelijk uit de CKAN broncatalogus van de gemeente Amsterdam worden opgehaald en verwerkt (zie figuren onder). In de uitvoer is per dataset zichtbaar dat de metadata wordt ingelezen en doorgezet naar de TSG-omgeving. Deze CLI-meldingen bevestigen daarmee dat het harvestproces actief is en dat de overdracht van datasets tussen CKAN en TSG technisch functioneert zoals bedoeld.
-
 <br/>
 <figure id="Figuur_x">
 <a href="media/Harvesting CKAN-TSG-CLI_1.png" target="_blank"><img src="media/Harvesting CKAN-TSG-CLI_1.png" alt=""></a>
 <figcaption>Start run CKAN-TSG harvester<figcaption>
 </figure>
-
 <br/>
 <figure id="Figuur_x">
 <a href="media/Harvesting CKAN-TSG-CLI_2.png" target="_blank"><img src="media/Harvesting CKAN-TSG-CLI_2.png" alt=""></a>
 <figcaption>Einde run van de CKAN-TSG harvester<figcaption>
 </figure>
 
-<aside class='note' title="ndere Ckan instantie gebruiken?">
+<aside class='note' title="Andere Ckan instantie gebruiken?">
 
 In de programmatuur is nu een Ckan instantie van de gemeente Amsterdam opgenomen. Met deze programmatuur kunnen ook andere Ckan instanties worden bevraagd en metadata uitwisselen met de TSG data space connector. Maar daarvoor dient een URL aanpassing plaats te vinden. Als de URL wordt aangepast, dan wordt een andere CKAN-instantie bevraagd. Maar om goed te werken, moet de CKAN-instantie wel zijn geconfigureerd om JSON-LD te leveren. Voor de remote CKAN instantie is minimaal nodig:
 <ol>
-  <li><code>ckanext-dcat</code> inschakelen</li>
+  <li>ckanext-dcat inschakelen</li>
   <li>
-    Een DCAT/GeoDCAT-endpoint publiceren dat JSON-LD retourneert.<br>
-    Dit is de URL die in de CKAN-TSG connector moet worden ingesteld.
+    Een DCAT/GeoDCAT-endpoint publiceren dat JSON-LD retourneert. Dit is de URL die in de CKAN-TSG connector moet worden ingesteld.
   </li>
   <li>
     Sterk aanbevolen voor metadata met geografische kenmerken en bevragingen:
     <ul>
-      <li><code>ckanext-spatial</code><br>Voor ruimtelijke velden zoals <code>bbox</code> en <code>centroid</code></li>
-      <li><code>ckanext-scheming</code><br>Voor extra geo-metadata via een custom schema</li>
+      <li><code>ckanext-spatial.</code>Voor ruimtelijke velden zoals <code>bbox</code> en <code>centroid</code></li>
+      <li><code>ckanext-scheming.</code>Voor extra geo-metadata via een custom schema</li>
     </ul>
   </li>
 </ol>
@@ -303,16 +283,14 @@ Een voorbeeld van zo'n CKAN configuratie voor docker staat op https://github.com
 
 ### Use case 2 – Zoeken in de TSG data space connector catalogus ###
 
-We hebben in de vorige twee use cases metadata toegevoegd vanuit de catalogi Geonetwork en CKAN aan de catalogus van de TSG data space connector. Hoe kunnen we nu de metadata doorzoeken in de TSG data space connector? De TSG data space connector heeft een mogelijkheid om de metadata records te bekijken via de TSG GUI (zie onderstaande figuren). 
+We hebben in de vorige twee use cases metadata toegevoegd vanuit de metdata catalogus CKAN aan de catalogus van de TSG data space connector. Hoe kunnen we nu de metadata doorzoeken in de TSG data space connector? De TSG data space connector heeft een mogelijkheid om de metadata records te bekijken via de TSG GUI (zie onderstaande figuren). 
 
-De TSG UI voor het zoeken raadplegen van de aanwezige metadata records in vrij beperkt (daar is de TSG ook niet voor ontwikkeld).  Hieronder het scherm om de metadata in te zien; de Versions (metadata elementen `Indentifier`, `Version`, <code>Message model URL<code> en <code>Authorisation<code>). Daaronder het Policy veld (uitgedrukt in ODRL JSON-LD). 
+De TSG user interface (UI) voor het zoeken raadplegen van de aanwezige metadata records in vrij beperkt (daar is de TSG ook niet voor ontwikkeld).  Hieronder het scherm om de metadata in te zien; de Versions (metadata elementen `Indentifier`, `Version`, <code>Message model URL<code> en <code>Authorisation<code>). Daaronder het Policy veld (uitgedrukt in ODRL JSON-LD). 
 
-<br/>
 <figure id="Figuur_x">
 <a href="media/TSG HTTP Data Plane.png" target="_blank"><img src="media/TSG HTTP Data Plane.png" alt=""></a>
 <figcaption>DCAT metadata elementen in TSG data space connector<figcaption>
 </figure>
-<br/>
 
 Het doorzoeken van de metadata is in de TSG UI gaat via de Tester en het laden van de reload catalog. Deze geeft een overzicht van de Participants Agents (beschikbare data space connectors) en vervolgens wordt een overzicht gegeven van de datasets (‘http datasets’). Dat levert een lijst op van de (geo)datasets.
 
@@ -324,11 +302,11 @@ Het doorzoeken van de metadata is in de TSG UI gaat via de Tester en het laden v
 <br/>
 
 Binnen het experiment met de DCAT data space connector is naast het opslaan van aanvullende metadata ook gekeken naar het doorzoekbaar maken van de beschikbare metadata in de TSG data space connector. Het doel hiervan was om niet alleen datasets en bijbehorende metadata in de TSG catalogus op te nemen, maar deze ook op een toegankelijke manier te kunnen zoeken, vinden en bekijken. Hiervoor is een zoekinterface gemaakt, die de TSG data space connector bevraagd. Met deze zoekinterface kunnen metadata van (geo)datasets, die eerder via harvesting of publicatie in de TSG data space connector catalogus zijn opgenomen, worden geraadpleegd. Daarmee is een praktische voorziening gerealiseerd om de inhoud van de catalogus beter te ontsluiten en de bruikbaarheid van de opgeslagen DCAT-metadata te vergroten. 
-
+<br/>
 Na het harvesten van de metadata kan vervolgens de search engine portal worden gestart: 
-
+<br/>
 <code>npm run portal<code>
-
+<br/>
 De TSG data space ‘portal’ geeft inzicht in de metadata van alle datasets, zoals ze opgenomen in de lokale instantie van de TSG. In onderstaande figuur gaat het om 374 metadata records die zijn opgehaald. Met de portal kan via de zoekinterface gerichter gezocht worden naar datasets en de meegekomen metadata kan daarbij worden opgevraagd.  
 Daarmee ontstaat een eenvoudige gebruikersinterface waarmee de in de TSG-catalogus beschikbare datasets en hun metadata kunnen worden doorzocht en ingezien. Deze laat zien dat de TSG data space connector niet alleen kan functioneren als opslag- en uitwisselcomponent voor DCAT-metadata, maar ook als basis voor een doorzoekbare catalogusvoorziening. Dat is relevant voor dataspaces waarin het niet voldoende is om metadata alleen te registreren, maar waarin deze ook snel vindbaar en inspecteerbaar moeten zijn voor gebruikers en applicaties.
 
@@ -347,14 +325,14 @@ Daarmee ontstaat een eenvoudige gebruikersinterface waarmee de in de TSG-catalog
 <br/>
 
 In deze use case is onderzocht hoe DCAT metadata van datasets kan worden gebruikt binnen de TSG data space connector. De centrale vraag was: in hoeverre is het mogelijk om rijke DCAT-metadata te koppelen aan datasets, die worden gepubliceerd in de catalogus van een TSG data space connector. En vervolgens ook deze metadata te kunnen bekijken. Het zoeken in de catalogus van de data space connector is geïmplementeerd via een specifieke zoekclient, die op basis van de DCAT metadata die is opgeslagen in het `extraProps` veld, de datasets in catalogus van de data space connector kan vinden en tonen. 
-
+<br/>
 Er zijn twee beperkingen aan het zoeken met deze zoekclient: 
 <ol>
   <li>Beperkt zoekbereik. bij het zoeken wordt geen zoekactie gestart bij álle participanten in de dataspace; het zoeken is beperkt tot één participant tegelijk;</li>
   <li>Alleen tekstueel zoeken. Er is geen ondersteuning voor ruimtelijke zoekopdrachten, zoals het filteren van datasets op basis van een geografisch gebied (bounding box).
   </li>
 </ol>
-
+<br/>
 Deze zoekclient is ontwikkeld door Sogelink Research en is gedocumenteerd op github: https://github.com/sogelink-research/ckan-dataspace.
 
 ### Use case 3; Harvesten van de CKAN vanuit de SAGE federated catalogus en publiceren van de metadata in de SAGE federated catalogus ###
