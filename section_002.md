@@ -20,7 +20,7 @@ De dataprovider is een apparaat, dat de data van de eigenaar overdraagt via de I
 <br/>
 De dataconsument is een apparaat, dat de data van de eigenaar via de IDS connector opvraagt en gebruikt vanuit de data space.  
 <br/>
-IDS Connectors zijn de ‘data gateways’. De IDS connector is een speciale softwarecomponent waarmee de deelnemers gebruiksbeleid kunnen koppelen aan hun data in een data space, het gebruiksbeleid kunnen afdwingen en naadloos de herkomst van de data kunnen volgen. De IDS connector fungeert als gateway voor data en diensten en als vertrouwde omgeving voor apps en software.  
+IDS Connectors zijn de 'data gateways'. De IDS connector is een speciale softwarecomponent waarmee de deelnemers gebruiksbeleid kunnen koppelen aan hun data in een data space, het gebruiksbeleid kunnen afdwingen en naadloos de herkomst van de data kunnen volgen. De IDS connector fungeert als gateway voor data en diensten en als vertrouwde omgeving voor apps en software.  
 <br/>
 Apps worden uitgevoerd vanuit de App Store in de vertrouwde omgeving van de IDS connector. Apps voeren taken uit zoals transacties, aggregaties of analyse van de data.  
 <br/>
@@ -135,6 +135,54 @@ Eind 2023 heeft IDSA de samenwerking gezocht met de Eclipse Foundation om het Da
 
 In dit experiment staat de werking en het gebruik van het Dataspace Protocol en de data connectors centraal. Voor het delen van data met een data connector worden aldus drie stadia doorlopen, waarvoor elk verschillende protocollen zijn overeengekomen. Alvorens de werking van het data space protocol connectors in meer detail toe te lichten gaan we eerst in op het informatiemodel achter het data space protocol toe. 
 <br/>
+
+## Functies en processen in een minimum viable data space {#01C8311E}
+Elke module heeft fundamentele functies en kan niet worden weggelaten in de context van een minimale functionele data space. In deze sectie beschrijven we de kernstappen, die nodig zijn voor een gegevensoverdracht tussen twee connectors die afzonderlijk optreden als consument en aanbieder.
+
+### Onboarding door aanbieder en consument {#4D30B938}
+pm
+### Dataproducten aanbieden {#32BDC7C7}
+pm
+### Bekijken en wijzigen van condities (‘policies’) {#143AA289}
+We laten zien hoe regels kunnen worden gewijzigd voor de dataset `BravoHTTPBin` van `Bravo`. Je kunt vrijelijk toestemmingen en verboden toevoegen.
+
+<img src='media/section_003/change-rules-dataset.png' alt='Verander regels voor dataset' style='width: 100%;'></img>
+
+### Zoeken van catalogi van andere aanbieders ('participants') {#59F4CA7D}
+pm
+
+### Zoek dataproducten in de catalogus {#79E15E32}
+In de `Registry` binnen de control plane van een connector kunnen we de lijst vinden van gegevensbronnen die worden aangeboden door de huidige connector en de externe connectors waarvan onze connector op de hoogte is.
+
+<img src='media/section_003/browsing-catalog.png' alt='Catalogus doorzoeken vanaf consument' style='width: 100%;'></img>
+
+In het voorbeeld zien we de dataset `Bravo HTTPBin` dat toebehoort aan de consument `Bravo` evenals `Kadaster Percelen` en `Alfa HTTPBin` die toebehoren aan `Alfa`.
+
+### Contractonderhandeling aanbieder en consument {#288808F5}
+De onderhandeling over een contract met betrekking tot een specifiek dataproduct omvat meerdere stappen tussen de consument en aanbieder. Eerst stuurt de consument `Bravo` een onderhandelingsverzoek naar de aanbieder `Alfa` zoals hieronder weergegeven.
+
+<img src='media/section_003/contract-negotiation.png' alt='Contractonderhandeling versturen' style='width: 100%;'></img>
+
+Nu beslist de aanbieder `Alfa` of hij de ontvangen onderhandeling van `Bravo` wil accepteren.
+
+<img src='media/section_003/accept-negotiation.png' alt='Onderhandeling accepteren' style='width: 100%;'></img>
+
+Bij acceptatie, en na ondertekening en tegenondertekening op beide control planes, mag `Bravo` uiteindelijk de gegevensoverdracht aanvragen zoals in de volgende afbeelding wordt getoond.
+
+<img src='media/section_003/request-transfer.png' alt='Overdracht aanvragen' style='width: 100%;'></img>
+
+### Gegevensoverdracht tussen aanbieder en consument {#7BC4931F}
+Zodra de consument de overdracht aanvraagt bij de aanbieder, wordt de overdracht als gestart beschouwd en blijft "open" totdat deze door een van de betrokken partijen als `Beëindigd` of `Voltooid` wordt gemarkeerd.
+
+<img src='media/section_003/initiated-transfer.png' alt='Gestarte gegevensoverdracht' style='width: 100%;'></img>
+
+Wat betekent "open"? Het betekent dat daadwerkelijke gegevensoverdrachten kunnen worden uitgevoerd tussen de data planes van de consument en aanbieder. Om echt gegevens van aanbieder `Alfa` naar consument `Bravo` te verplaatsen, moeten we authenticeren op de interface van de data plane van de consument en een specifiek HTTP-verzoek doorsturen naar de API van de aanbieder. In dit geval gebruiken we de OGC API-endpoint die beschikbaar is via de Kadaster data plane van `Alfa` om een verzameling Nederlandse gebouwen op te vragen.
+
+<img src='media/section_003/http-request-params.png' alt='Verzoek sturen naar aanbieder' style='width: 100%;'></img>
+
+De response van het verzoek ziet er dan als volgt uit:
+
+<img src='media/section_003/http-request-response.png' alt='Respons ontvangen van aanbieder' style='width: 100%;'></img>
 
 ## Het DSP informatiemodel
 
