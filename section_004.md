@@ -1,29 +1,6 @@
-# Minimum viable data space
+# Experiment 1 - Minimum viable data space
 
-## Inleiding
-Voor de uitvoering van het experiment is de volgende aanpak gehanteerd. Volgens het concept van een ‘minimum viable data space’ zijn enkele experimenten uitgevoerd met vertrouwd en souvereign data delen. Daarbij is het open en gestandaardiseerd ‘Dataspace Protocol’ toegepast, dat is geïmplementeerd in diverse data connector software producten. Er is gebruik gemaakt van de TNO Security Gateway (TSG), die als open source software beschikbaar is. Deze <a href='https://internationaldataspaces.org/data-connector-report/' target='_blank'>implementatie van het Dataspace Protocol is gecertificeerd</a> door het IDSA. 
-<br/>
-Een Minimum Viable Data Space (MVDS) is een combinatie van componenten die het mogelijk maken om een data space te creëren met net genoeg functies om bruikbaar te zijn voor veilige en soevereine data-uitwisseling tussen twee partijen, zoals gespecificeerd door de International Data Spaces Association (IDSA). Het doel van een MVDS is om het implementatieproces te stroomlijnen, waardoor het gemakkelijker en sneller wordt om een werkende data space te creëren met veilige en soevereine data-uitwisseling. Door te beginnen met een MVDS kan het ontwikkelteam snel itereren en reageren op de vereisten van de data space, door indien nodig aanpassingen te maken om aan de behoeften van gebruikers te voldoen.
-<br/>
-Het MVDS concept willen we toepassen om het werk van het experiment te vergemakkelijken door de implementatietijd te verkorten (door lange details te vermijden die de eerste release zouden vertragen). Dit stelt ons in staat om te beginnen met een eerste werkende versie (waar veilige en souvereine data-uitwisseling tussen twee partijen wordt toegestaan), waar het ontwikkelteam de aannames over de vereisten van de data space kan herhalen, identificeren en erop kan reageren. 
-<br/>
-</b>Componenten van een MVDS</b>
-<br/>
-Een MVDS bestaat uit:
-<ol>
-  <li>Twee connectoren (één als dataprovider en één als dataconsument);</li>
-  <li>Een identiteitsprovider (Dynamic Attribute Provisioning Service, Certificate Authority);</li>
-  <li>Optionele en aanvullende componenten, zoals een metadata makelaar, een app store, een clearinghouse of een vocabulaireprovider, kunnen aan de MVDS worden toegevoegd om de functionaliteit uit te breiden en meer geavanceerde functies mogelijk te maken, zoals het zoeken naar datasets.</li>
-</ol>
-<br/>
-De MVDS biedt een startpunt voor het experiment om een functionele data space te creëren, die naar behoefte kan worden aangepast en uitgebreid om aan specifieke vereisten te voldoen.
-<br/>
-<figure id="Figuur_x">
-<a href="media/image4.png" target="_blank"><img src="media/image4.png" alt=""></a>
-<figcaption>Minimum Viable Data Space<figcaption>
-</figure>
-
-## Systeemopzet; TNO Security Gateway (TSG)
+## Systeemopzet - TNO Security Gateway (TSG)
 Ons experiment is bedoeld om te verifiëren of we een gegevensoverdracht kunnen realiseren tussen twee connectors binnen een dataspace-ecosysteem. Binnen dit ecosysteem kan elke dataspace-connector fungeren als gegevensaanbieder, consument of beiden. Bovendien zijn connectors gekoppeld aan dataspace-deelnemers (participants), die mensen, instellingen, bedrijven of mogelijk overheden kunnen zijn. In onze specifieke opzet implementeren we één gegevensaanbieder, genaamd `Alfa`, en één consument, genaamd `Bravo`, onder dezelfde deelnemer voor simulatie-doeleinden. 
 <br/>
 De TNO Security Gateway is een kant-en-klare implementatie van dataspace componenten, die door TNO worden aangeboden. De documentatie die bij het project wordt geleverd, legt uit hoe een volledig werkende dataspace connector op een eigen cloudomgeving kan worden geïmplementeerd. Hieronder richten we ons op de modulaire indeling van de dataspace-connector zoals beschreven door TNO: controle plane, data plane en wallet. 
@@ -41,83 +18,31 @@ De data plane fungeert als tegenhanger van de control plane voor een specifieke 
 De wallet bevat de verifieerbare referenties voor elke deelnemer binnen de dataspace. Een deelnemer kan aan meerdere connectors worden gekoppeld, maar andersom is dit niet het geval. Een centrale wallet (of meerdere wallets) geeft referenties uit aan deelnemers binnen het dataspace-ecosysteem.
 <br/>
 
-## Functies en processen van de minimum viable dataspace {#01C8311E}
-Elke module heeft fundamentele functies en kan niet worden weggelaten in de context van een minimale functionele dataspace. Bovendien heeft elke module na de basisimplementatie van TSG zijn eigen dashboard service. We zullen deze dashboards gebruiken om de basisworkflow en het experiment binnen een dataspace te demonstreren. In deze sectie beschrijven we de kernstappen die nodig zijn voor een gegevensoverdracht tussen twee connectors die afzonderlijk optreden als consument en aanbieder.
-
-### Onboarding door aanbieder en consument {#4D30B938}
-pm
-### Dataproducten aanbieden {#32BDC7C7}
-pm
-### Bekijken en wijzigen van condities (‘policies’) {#143AA289}
-We laten zien hoe regels kunnen worden gewijzigd voor de dataset `BravoHTTPBin` van `Bravo`. Je kunt vrijelijk toestemmingen en verboden toevoegen.
-
-<img src='media/section_003/change-rules-dataset.png' alt='Verander regels voor dataset' style='width: 100%;'></img>
-
-### Zoeken van catalogi van andere aanbieders ('participants') {#59F4CA7D}
-pm
-
-### Zoek dataproducten in de catalogus {#79E15E32}
-In de `Registry` binnen de control plane van een connector kunnen we de lijst vinden van gegevensbronnen die worden aangeboden door de huidige connector en de externe connectors waarvan onze connector op de hoogte is.
-
-<img src='media/section_003/browsing-catalog.png' alt='Catalogus doorzoeken vanaf consument' style='width: 100%;'></img>
-
-In het voorbeeld zien we de dataset `Bravo HTTPBin` dat toebehoort aan de consument `Bravo` evenals `Kadaster Percelen` en `Alfa HTTPBin` die toebehoren aan `Alfa`.
-
-### Contractonderhandeling aanbieder en consument {#288808F5}
-De onderhandeling over een contract met betrekking tot een specifiek dataproduct omvat meerdere stappen tussen de consument en aanbieder. Eerst stuurt de consument `Bravo` een onderhandelingsverzoek naar de aanbieder `Alfa` zoals hieronder weergegeven.
-
-<img src='media/section_003/contract-negotiation.png' alt='Contractonderhandeling versturen' style='width: 100%;'></img>
-
-Nu beslist de aanbieder `Alfa` of hij de ontvangen onderhandeling van `Bravo` wil accepteren.
-
-<img src='media/section_003/accept-negotiation.png' alt='Onderhandeling accepteren' style='width: 100%;'></img>
-
-Bij acceptatie, en na ondertekening en tegenondertekening op beide control planes, mag `Bravo` uiteindelijk de gegevensoverdracht aanvragen zoals in de volgende afbeelding wordt getoond.
-
-<img src='media/section_003/request-transfer.png' alt='Overdracht aanvragen' style='width: 100%;'></img>
-
-### Gegevensoverdracht tussen aanbieder en consument {#7BC4931F}
-Zodra de consument de overdracht aanvraagt bij de aanbieder, wordt de overdracht als gestart beschouwd en blijft "open" totdat deze door een van de betrokken partijen als `Beëindigd` of `Voltooid` wordt gemarkeerd.
-
-<img src='media/section_003/initiated-transfer.png' alt='Gestarte gegevensoverdracht' style='width: 100%;'></img>
-
-Wat betekent "open"? Het betekent dat daadwerkelijke gegevensoverdrachten kunnen worden uitgevoerd tussen de data planes van de consument en aanbieder. Om echt gegevens van aanbieder `Alfa` naar consument `Bravo` te verplaatsen, moeten we authenticeren op de interface van de data plane van de consument en een specifiek HTTP-verzoek doorsturen naar de API van de aanbieder. In dit geval gebruiken we de OGC API-endpoint die beschikbaar is via de Kadaster data plane van `Alfa` om een verzameling Nederlandse gebouwen op te vragen.
-
-<img src='media/section_003/http-request-params.png' alt='Verzoek sturen naar aanbieder' style='width: 100%;'></img>
-
-De response van het verzoek ziet er dan als volgt uit:
-
-<img src='media/section_003/http-request-response.png' alt='Respons ontvangen van aanbieder' style='width: 100%;'></img>
-
-## Opstelling TNO Security Gateway (TSG)
-
-Dit experiment toont de mogelijkheden van de TNO Security Gateway (TSG) als IDS data connector voor het opzetten van een minimale functionele dataspace in een gecontaineriseerde omgeving. Het laat zien hoe dataspace partijen data kunnen delen binnen een gecontroleerde en veilige omgeving. Dit is een essentiële stap in het realiseren van interoperabele en veilige dataspaces voor toekomstige dataspace toepassingen. We hebben hier gewerkt met de volgende componenten: 
+Dit experiment toont de mogelijkheden van de TNO Security Gateway (TSG) als data space connector voor het opzetten van een minimale functionele data space in een gecontaineriseerde omgeving. Het laat zien hoe data space partijen data kunnen delen binnen een gecontroleerde en veilige omgeving. Dit is een essentiële stap in het realiseren van interoperabele en veilige data space toepassingen. We hebben hier gewerkt met de volgende componenten: 
 <br/>
 
-**Infrastructuur**
-
-Het dataspace-ecosysteem is opgezet binnen een Kubernetes-cluster op de omgeving van Sogelink. Dit cluster host zowel de autoriteit als de twee deelnemers.
-<br/>
-
-**TNO Security Gateway (TSG)**
-
-Alle dataspace deelnemers maken gebruik van de TSG componenten om data-uitwisseling te faciliteren en beveiligingsmechanismen te handhaven: 
+<ol>
+  <li>Infratructuur.Het dataspace-ecosysteem is opgezet binnen een Kubernetes-cluster op de omgeving van Sogelink. Dit cluster host zowel de autoriteit als de twee deelnemers.</li>
+  <li>TNO Security Gateway (TSG). Alle dataspace deelnemers maken gebruik van de TSG componenten om data-uitwisseling te faciliteren en beveiligingsmechanismen te handhaven: 
 - Autoriteit: Beheert de registratie van deelnemers, policies en data catalogus.
 - Deelnemer 1 (Alfa) fungeert als data aanbieder;
 - Deelnemer 2 (Bravo) fungeert als data consument.
+  </li>
+    <li>Technologieën. Het dataspace-ecosysteem is opgezet binnen een Kubernetes-cluster op de omgeving van Sogelink. Dit cluster host zowel de autoriteit als de twee deelnemers. 
+    - Kubernetes voor het beheer van containers en schaalbaarheid;
+    - TSG voor dataspace-beveiliging en gegevensbeheer;
+    - TSG CLI voor het creëren van een configuratie en de uitrol van de data space connector.
+    De uitrol van het TSG data connector op de kubernetes-cluster heeft geresulteerd in een werkend minimal viable dataspace met 3 deelnemers: de autoriteit, alfa en bravo. In het experiment is het gelukt om een contract op te zetten tussen alfa en bravo, waarbij bravo toegang krijgt tot een dataset van alfa. De data-uitwisseling is vervolgens ook succesvol verlopen. Daarnaast zijn er enkele uitdagingen en problemen geïdentificeerd tijdens het proces, zoals beschreven in de noot "Tegengekomen problemen en oplossingen". Uiteindelijk functioneerde de minimal viable dataspace zoals verwacht, en zijn de services toegankelijk en operationeel.</li>
+</ol>
+<br/>
 <br/>
 
-**Technologieën**
-
-- Kubernetes voor het beheer van containers en schaalbaarheid;
-- TSG voor dataspace-beveiliging en gegevensbeheer;
-- TSG CLI voor het creëren van een configuratie en de uitrol van de data space connector.
-De uitrol van het TSG data connector op de kubernetes-cluster heeft geresulteerd in een werkend minimal viable dataspace met 3 deelnemers: de autoriteit, alfa en bravo. In het experiment is het gelukt om een contract op te zetten tussen alfa en bravo, waarbij bravo toegang krijgt tot een dataset van alfa. De data-uitwisseling is vervolgens ook succesvol verlopen. Daarnaast zijn er enkele uitdagingen en problemen geïdentificeerd tijdens het proces, zoals beschreven in de noot "Tegengekomen problemen en oplossingen". Uiteindelijk functioneerde de minimal viable dataspace zoals verwacht, en zijn de services toegankelijk en operationeel.
-<br/>
 De doorlopen stappen en opgedane ervaringen met de uitrol van de TSG binnen een Kubernetes-cluster op de omgeving van Sogelink zijn hieronder uiteengezet. Achtereenvolgens gaat het om:
-1. het installeren van vereiste ondersteunende software (NodeJS & NPM, TSG CLI en Kubectl);
-2. het bootstrappen (configuratiebestanden maken) van de TSG software; 
-3. het uitrollen van de TSG softwareKubernetes-cluster op de omgeving van Sogelink. 
+</ol>
+  <li>het installeren van vereiste ondersteunende software (NodeJS & NPM, TSG CLI en Kubectl);</li>
+  <li>het bootstrappen (configuratiebestanden maken) van de TSG software;</li>
+  <li>het uitrollen van de TSG softwareKubernetes-cluster op de omgeving van Sogelink Research.</li>
+</ol>
 <br/>
 
 **NodeJS & NPM**
@@ -263,5 +188,75 @@ Ingress Controller with publicly available routes, e.g. Ingress NGINX Controller
 Door een beperking in onze clusteromgeving worden de door TSG aangemaakte ingress-regels niet automatisch opgepikt door onze gateway-operator (Traefik). Oplossing: Handmatig gateway-regels toevoegen aan de gateway operator om alles bereikbaar te maken.
 </aside>
 
-Na de uitrol van de TSG data connector en een werkende minimale functionerende data space zijn een aantal experimenten met de TSG data connector uitgevoerd. In het volgende hoofdstuk 5 is een experiment uitgevoerd met het delen van een geografische dataset via minimum viable dataspace principe waarvan de dataset beschikbaar is gemaakt via een OGC API Features implementatie op de data plane.
+## Uitvoering experiment - Eigendommenkaart delen via minimum viable dataspace
+
+Na de uitrol van de TSG data connector en een werkende minimale functionerende data space zijn is een experiment uitgevoerd met het delen van een geografische dataset via minimum viable dataspace principe waarvan de geodataset beschikbaar is gemaakt via een OGC API Features.
+In dit experiment hebben we een minimal viable data space opgezet waarin systemen van verschillende organisaties samenwerken om een geodataset, de egendommenkaart van het Kadaster -  veilig en gecontroleerd uit te wisselen. De authority van de dataspace is uitgerold op het [Digilab-platform](https://digilab.overheid.nl/), samen met een `Kadaster` deelnemer. Vervolgens hebben we op het Sogelink Research platform een deelnemer uitgerold die onderdeel is van de dataspace op digilab. Het doel was om Kadaster-data, beschikbaar gesteld via een interne API service op Digilab, te delen met een deelnemer op het Sogelink platform.
+<br/>
+
+Het doel van dit experiment is tweeledig:
+<ol>
+  <li>Het valideren van de interoperabiliteit tussen dataspace-deelnemers op verschillende platforms;</li>
+  <li>Het uitwisselen van data tussen dataspace-deelnemers waarbij de data afkomstig is van een afgeschermde API.</li>
+</ol>
+<br/>
+Dit experiment simuleert een meer realistischere situatie waarin twee organisaties samenwerken in een minimum viable dataspace setting, en waarbij een centrale authority toezicht houdt op toegangsbeheer en beveiliging. Het experiment richtte zich op de interoperabiliteit tussen twee verschillende systemen en heeft data gedeeld afkomstig van een afgeschermde API zoals vaak het geval zal zijn in de praktijk.
+
+## Opstelling
+
+De digilab-omgeving is opgezet dmv de TNO Security Gateway (TSG) met een authority en een Kadaster-deelnemer. Op het Sogelink platform is enkel een deelnemer uitgerold welke onderdeel is van de dataspace door zich te registreren met de dataspace authority op Digilab. De Kadaster-deelnemer stelt een dataset beschikbaar met perceel gegevens welke bevraagd kan worden via de dataspace.
+
+In figuur 16 is te zien hoe de verschillende componenten met elkaar communiceren. De deelnemer op het Sogelink platform maakt deel uit van de dataspace via de authority op Digilab. De deelnemer kan een contract afsluiten met de Kadaster deelnemer op Digilab om vervolgens via de http-data-plane de data van de Kadaster deelnemer te bevragen welke intern doorgezet (proxy) wordt naar de Kadaster API Service.
+
+<figure id="Figuur_x">
+<a href="media/Opzet experiment MVDS Eigendommenkaart.jpg" target="_blank"><img src="media/Opzet experiment MVDS Eigendommenkaart.jpg" alt=""></a>
+<figcaption>Opzet experiment MVDS Eigendommenkaart<figcaption>
+</figure>
+<br/>
+
+**Dataset: Eigendommenkaart**
+
+pm
+<br/>
+
+**Digilab**
+
+Het Digilab team heeft een basis setup van een dataspace ecosyteem opgezet zoals beschreven in paragraaf 4.2. Om de setup bruikbaar te maken voor onze use-case hebben we de setup aangepast zodat de deata aanbieder Alpha de dataset (eigendommenkaart van het Kadaster)  met echte data beschikbaar stelt via een interne API (OGC API Features).
+<br/>
+
+**Authority**
+
+De authority is de centrale autoriteit van de dataspace en beheert de registratie van deelnemers en policies. De authority is verantwoordelijk voor het toezicht houden op de dataspace en het beheren van de toegangscontrole. Deelnemers buiten het Digilab platform kunnen zich registreren bij de authority en toegang krijgen tot de dataspace. 
+<br/>
+
+**Kadaster API**
+
+Voor dit experiment hebben we een kleine subset van de eigendommenkaart van het Kadaster beschikbaar gesteld via een OGC API Features service. De OGC API Features service is met behulp van [gokoala](https://github.com/PDOK/gokoala) opgezet. De service is uitgerold op de digilab omgeving en is niet publiekelijk toegankelijk en kan dus enkel intern op het Digilab platform benaderd worden.
+<br/>
+
+**Deelnemer Kadaster**
+
+De Kadaster deelnemer is een deelnemer in de dataspace, de deelnemer registreert zich bij de authority en stelt een `kadaster percelen` dataset beschikbaar via de dataspace. De data-plane van de deelnemer is de standaard TSG [http-data-plane](https://tsg.dataspac.es/docs/apps/http-data-plane/) zie ook section 3.3.2. Deze data-plane is geconfigureerd om inkomende vragen te proxien naar de interne Kadaster API Service. Doordat de kadaster deelnemer intern de API service kan benaderen kan de data via de dataspace gedeeld worden met andere deelnemers binnen de dataspace wanneer er een contract is afgesloten.
+<br/>
+
+**Deelnemer Sogelink**
+
+Op het Sogelink platform is enkel één deelnemer uitgerold die onderdeel is van de dataspace. De deelnemer registreert zich bij de authority op Digilab en krijgt toegang tot de dataspace. De deelnemer kan vervolgens een contract afsluiten met de Kadaster deelnemer om toegang te krijgen tot de `kadaster percelen` dataset.
+<br/>
+
+**Data viewer**
+
+Als test hebben we een eenvoudige data viewer uitgerold op het Sogelink platform welke data van de Kadaster deelnemer kan bevragen via de Sogelink deelnemer.
+
+## Resultaat
+
+Het experiment is succesvol verlopen en de data van de Kadaster deelnemer is succesvol gedeeld met de deelnemer op het Sogelink platform. De deelnemer op het Sogelink platform heeft een contract afgesloten met de Kadaster deelnemer en kan de data van de Kadaster deelnemer bevragen via de dataspace. De viewer op het Sogelink platform kan de data van de Kadaster deelnemer inzien en weergeven. Kadaster data is in deze opstellingen alleen binnen de dataspace beschikbaar en vereist een contract tussen de deelnemers.
+
+In onderstaande Figuur 17 is de viewer te zien welke de data van de Kadaster deelnemer weergeeft op een kaart, daarnaast wordt er extra informatie getoond over beschikbare datasets binnen de dataspace, actieve contracten en transfers.
+
+<figure id="Figuur_x">
+<a href="media/experiment2_viewer.jpg" target="_blank"><img src="media/experiment2_viewer.jpg" alt=""></a>
+<figcaption>data transfer van de eigendommenkaart zichtbaar gemaakt in data viewer<figcaption>
+</figure>
+
 
