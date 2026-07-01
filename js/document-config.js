@@ -1,6 +1,6 @@
 var documentConfig =
 {
-  title: "Dataspace Protocol connector experiment",
+  title: "Data Space Protocol connector experiment",
   shortName: "DataspaceProtocolconnectorexperiment",
   pubDomain: "eu",
   specStatus: "wv",
@@ -26,12 +26,12 @@ var documentConfig =
     },
     {
       name: "Emanual Buttacci",
-      company: "voorheen Sogelink Research (experiment 1)",
+      company: "voorheen Sogelink Research - experiment 1",
       companyURL: "https://www.sogelink.com/nl"
     },
     {
       name: "Tim Ebben",
-      company: "Sogelink Research (experiment 1)",
+      company: "Sogelink Research - experiment 1",
       companyURL: "https://www.sogelink.com/nl"
     },
     {
@@ -61,13 +61,13 @@ var documentConfig =
     },
     {
       name: "Bert Temme",
-      company: "Sogelink Research (experiment 2)",
+      company: "Sogelink Research - experiment 2",
       companyURL: "https://www.sogelink.com/nl"
     },
     {
       name: "Brian de Vogel",
-      company: "voorheen Sogelink Research (experiment 1)",
-      companyURL: ""
+      company: "voorheen Sogelink Research - experiment 1",
+      companyURL: "https://www.sogelink.com/nl"
     },
     ],
   editors: [
