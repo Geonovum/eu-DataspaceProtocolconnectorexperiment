@@ -74,6 +74,29 @@ Een Minimum Viable Data Space (MVDS) is een combinatie van componenten die het m
 <br/>
 Het MVDS concept willen we toepassen om het werk van het experiment te vergemakkelijken door de implementatietijd te verkorten (door lange details te vermijden die de eerste release zouden vertragen). Dit stelt ons in staat om te beginnen met een eerste werkende versie (waar veilige en soevereine data-uitwisseling tussen twee partijen wordt toegestaan), waar het ontwikkelteam de aannames over de vereisten van de data space kan herhalen, identificeren en erop kan reageren.
 
+## Inleiding
+Voor de uitvoering van het experiment is de volgende aanpak gehanteerd. Volgens het concept van een ‘minimum viable data space’ zijn enkele experimenten uitgevoerd met vertrouwd en souvereign data delen. Daarbij is het open en gestandaardiseerd ‘Dataspace Protocol’ toegepast, dat is geïmplementeerd in diverse data connector software producten. Er is gebruik gemaakt van de TNO Security Gateway (TSG), die als open source software beschikbaar is. Deze <a href='https://internationaldataspaces.org/data-connector-report/' target='_blank'>implementatie van het Dataspace Protocol is gecertificeerd</a> door het IDSA. 
+<br/>
+Een Minimum Viable Data Space (MVDS) is een combinatie van componenten die het mogelijk maken om een data space te creëren met net genoeg functies om bruikbaar te zijn voor veilige en soevereine data-uitwisseling tussen twee partijen, zoals gespecificeerd door de International Data Spaces Association (IDSA). Het doel van een MVDS is om het implementatieproces te stroomlijnen, waardoor het gemakkelijker en sneller wordt om een werkende data space te creëren met veilige en soevereine data-uitwisseling. Door te beginnen met een MVDS kan het ontwikkelteam snel itereren en reageren op de vereisten van de data space, door indien nodig aanpassingen te maken om aan de behoeften van gebruikers te voldoen.
+<br/>
+Het MVDS concept willen we toepassen om het werk van het experiment te vergemakkelijken door de implementatietijd te verkorten (door lange details te vermijden die de eerste release zouden vertragen). Dit stelt ons in staat om te beginnen met een eerste werkende versie (waar veilige en souvereine data-uitwisseling tussen twee partijen wordt toegestaan), waar het ontwikkelteam de aannames over de vereisten van de data space kan herhalen, identificeren en erop kan reageren. 
+<br/>
+</b>Componenten van een MVDS</b>
+<br/>
+Een MVDS bestaat uit:
+<ol>
+  <li>Twee connectoren (één als dataprovider en één als dataconsument);</li>
+  <li>Een identiteitsprovider (Dynamic Attribute Provisioning Service, Certificate Authority);</li>
+  <li>Optionele en aanvullende componenten, zoals een metadata makelaar, een app store, een clearinghouse of een vocabulaireprovider, kunnen aan de MVDS worden toegevoegd om de functionaliteit uit te breiden en meer geavanceerde functies mogelijk te maken, zoals het zoeken naar datasets.</li>
+</ol>
+<br/>
+De MVDS biedt een startpunt voor het experiment om een functionele data space te creëren, die naar behoefte kan worden aangepast en uitgebreid om aan specifieke vereisten te voldoen.
+<br/>
+<figure id="Figuur_x">
+<a href="media/image4.png" target="_blank"><img src="media/image4.png" alt=""></a>
+<figcaption>Minimum Viable Data Space<figcaption>
+</figure>
+
 ## Leeswijzer
 
 Hoofdstuk twee biedt algemene informatie en achtergronden bij het Dataspace Protocol en de IDS data connector. In hoofdstuk drie zijn de gebruikte begrippen opgenomen. Hoofdstuk vier word de opzet van het experiment toegelicht: de technische werking van het data space protocol en de data connector worden beschreven. In hoofdstuk vijf wordt de uitvoering van het eerste experiment toegelicht; een data deel use case voor het delen van de eigendommenkaart van het Kadaster in een eenvoudige functionele opzet vanuit twee organisaties / platforms. Vervolgens wordt in hoofdstuk zes een tweede experiment uitgevoerd; het uitwisselen van (DCAT) metadata tussen de TSG data connector en andere catalogi. De opgedane bevindingen en evt. aanbevelingen in de experimenten worden beschreven. In hoofdstuk zeven is plaats ingeruimd voor een volgend experiment. Tot slot, wordt in hoofdstuk acht een korte toelichting gegeven op het ontwikkelde online trainingsmateriaal zodat het experiment eenvoudig herhaalbaar is in praktijkworkshops.
