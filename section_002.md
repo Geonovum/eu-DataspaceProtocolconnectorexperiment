@@ -464,24 +464,32 @@ De beschrijving van het communicatiepatroon tijdens de data uitwisseling maakt g
 ## Dataspace Protocol specificatie en data connector software
 
 Het Dataspace Protocol is een technische specificatie, die de implementatie van het Dataspace Protocol in een data connector mogelijk maakt. Het Dataspace Protocol is een reeks van technische specificaties ontworpen om interoperabele data-uitwisseling mogelijk te maken gebaseerd op webtechnologieën. Deze specificaties definiëren de schema's (JSON) en het berichtenverkeer, die nodig zijn om de datasets te publiceren, overeenkomsten te onderhandelen en toegang te krijgen tot datasets binnen een dataspace. De huidige versie van de Dataspace Protocol specificatie wordt beschouwd als stabiel, en verdere wijzigingen zullen de conformiteit niet beïnvloeden ([[ECLPS-DSP]]). De specificaties zijn georganiseerd in verschillende onderdelen, waaronder:
-1. Dataspace model en dataspace terminologie; 
-2. Catalog protocol en catalog; 
-3. Contractonderhandelingsprotocol en contractonderhandeling;
-4. Data transfer protocol en data transfer proces.
+<ol>
+  <li>Data space model en data space terminologie;</li>
+  <li>Catalog protocol en catalog; </li>
+  <li>Contractonderhandelingsprotocol en contractonderhandeling;</li>
+  <li>Data transfer protocol en data transfer proces.</li>
+  </ol>
+
 We gaan hier niet verder in op de technische specificatie daarvoor verwijzen we naar ([[ECLPS-DSP]]).
 </br>
 
 <b>Data connector software</b>
+
 </br>
 Data connectors zijn softwaretools waarmee data(sets) vertrouwd kunnen worden gedeeld en geïntegreerd tussen verschillende systemen, applicaties en databronnen. In de context van data spaces spelen data connectoren een sleutelrol in de communicatie en gegevensuitwisseling tussen verschillende platforms, systemen en applicaties. Data connectoren zullen daarbij moeten voldoen aan de vooraf gedefinieerde normen en uitwisselingsbeleidslijnen van het Dataspace Protocol. In het data connectors overview report van IDSA [[IDS-DCR]] zijn inmiddels zo’n 40 verschillende implementaties van data connector software beschikbaar. implementaties van data connector software worden door IDSA gecertificeerd. Sinds 2022 hanteert IDSA het IDS-certificeringsschema dat gericht is op het certificeren van de interoperabiliteit, compatibiliteit en betrouwbaarheid van data connectoren. Met de voltooiing van de standaardisatie van het Dataspace Protocol zal het IDS-certificeringsschema evolueren om data connector software te beoordelen door  geautomatiseerde testen.
 </br>
 
 <b>TNO Security Gateway data connector software</b>
+
 </br>
 In dit experiment hebben we gekozen te werken met de data connector software van TNO, de TNO Security Gateway (TSG). De volgende overwegingen hebben daarbij een rol gespeeld:
-1.	TSG is een IDSA-gecertificeerde implementatie (zie [[IDS-DCR]];
-2.	TGS is open source software;
-3.	Geonovum acteert binnen TNO’s Centre of Excellence for Data Sharing en Cloud (CoE-DSC)
+<ol>
+  <li>TSG is een IDSA-gecertificeerde implementatie (zie [[IDS-DCR]]);</li>
+  <li>TGS is open source software;</li>
+  <li>Geonovum acteert binnen TNO’s Centre of Excellence for Data Sharing en Cloud (CoE-DSC).</li>
+  </ol>
+
 Voor alle details over de implementatie van de TSG zie [[TNO-TSG]].
 
 
