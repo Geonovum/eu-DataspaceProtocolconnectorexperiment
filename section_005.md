@@ -373,7 +373,7 @@ pm
 
 ## Opgedane bevindingen
 
-In dit experiment is onderzocht in hoeverre DCAT metadata uit bestaande catalogi uitgewisseld kunnen worden met de DCAT catalogus  van de TNO Security Gateway data space connector. Aanvankelijk bleek dat bij het publiceren van (geo)datasets alleen een beperkt aantal DCAT metadata velden beschikbaar was, zoals `identificatie`, `titel`, `versie` en `backend-URL`. Daardoor was het niet mogelijk om uitgebreidere metadata volgens DCAT profielen, zoals GeoDCAT-AP  mee te geven.
+In dit experiment is onderzocht in hoeverre DCAT metadata uit bestaande catalogi uitgewisseld kunnen worden met de DCAT catalogus  van de TNO Security Gateway data space connector. Aanvankelijk bleek dat bij het publiceren van (geo)datasets alleen een beperkt aantal DCAT metadata velden beschikbaar was, zoals `identificatie`, `titel`, `versie` en `backend-URL`. Daardoor was het niet mogelijk om uitgebreidere metadata volgens DCAT profielen, zoals [[GeoDCAT-AP]] mee te geven.
 <br/>
 Met de introductie van het veld `extraProps` in versie 0.19.0 van de TSG data space connector software is daarin verandering gekomen. Dit nieuwe veld maakt het mogelijk om aanvullende DCAT eigenschappen vanuit bijvoorbeeld [[GeoDCAT-AP]] op te nemen bij het aanmaken of bijwerken van metadatata van geodatasets. Eerst is de metadata geïmporteerd in een CKAN-omgeving. Daarna is deze metadata in [[DCAT-AP-NL]] 3.0 formaat geëxporteerd als JSON-LD en via het veld `extraProps` opgenomen in de catalogus van de TSG data space connector. Vervolgens is aangetoond dat deze metadata binnen de data space beschikbaar is en gebruikt kan worden om datasets te vinden.
 <br/>
