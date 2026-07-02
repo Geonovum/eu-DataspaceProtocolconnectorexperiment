@@ -347,19 +347,19 @@ Deze <a href='https://github.com/sogelink-research/ckan-dataspace/' target='_bla
 
 ### Use case 3 - Publiceren van metadata vanuit CKAN in de SAGE federated catalog ###
 
-In deze use case wordt beschreven hoe metadata uit de CKAN instantie, beschikbaar wordt gesteld via DCAT, en kan worden gepubliceerd naar de federated catalogus van <a href='https://www.greendealdata.eu/' target='_blank'>SAGE - The Data Space for a Sustainable Green Europe</a>. Het publiceren van deze metadata is een belangrijke stap om datasets niet alleen lokaal beschikbaar te maken, maar ook federatief vindbaar te laten zijn binnen een grotere data space. Daarmee wordt het mogelijk om datasets uit verschillende bronnen op een uniforme manier te ontsluiten en te hergebruiken.
+In deze use case wordt beschreven hoe metadata uit de CKAN instantie, beschikbaar wordt gesteld via DCAT, en kan worden gepubliceerd naar de federated catalogus van <a href='https://www.greendealdata.eu/' target='_blank'>SAGE - The Data Space for a Sustainable Green Europe</a>. Het publiceren van deze metadata is een belangrijke stap om datasets niet alleen lokaal beschikbaar te maken, maar ook federatief vindbaar te laten zijn binnen een grotere data space. Daarmee wordt het mogelijk om datasets uit verschillende bronnen op een uniforme manier te ontsluiten en te hergebruiken.<br/>
 
-Binnen deze use case speelt de CKAN catalogus van circulaire grondstromen een centrale rol als schakel tussen de bronmetadata en de federatieve catalogus. 
-<br/>
+Binnen deze use case speelt de CKAN catalogus van circulaire grondstromen een centrale rol als schakel tussen de bronmetadata en de federatieve catalogus.<br/>
 
 Er is een specifieke <a href='https://beta.catalogue.gdds.eu/search/all_collection?q=*' target='_blank'>SAGE catalog portal</a> ontwikkeld om het zoeken van datasets binnen het GDDS ecosysteem mogelijk te maken. De catalogus, gebaseerd op de technische oplossing van CYFRONET, biedt een uniforme en intuïtieve zoekinterface waarmee  gebruikers een breed scala aan metadata bronnen kunnen verkennen. Met behulp van geavanceerde filtermogelijkheden en zoekmogelijkheden kunnen gebruikers zoekopdrachten verfijnen op basis van meerdere criteria, waaronder de mogelijkheid om resultaten te beperken tot geselecteerde onderliggende catalogi. Door geharmoniseerde en gestandaardiseerde  metadata bloot te stellen en gestructureerde navigatie over gefedereerde bronnen te ondersteunen, verbetert de SAGE catalog portal de zichtbaarheid en toegankelijkheid van datasets en vermindert fragmentatie tussen catalogusdiensten. Bij het selecteren van een dataset worden gebruikers naadloos doorgestuurd naar het Federated Catalogue dashboard, waar gedetailleerde metadata kan worden beoordeeld en waar toegangsonderhandelingen en daaropvolgende gegevensoverdracht kunnen worden gestart in overeenstemming met governancekaders.  
 
 <figure id="Figuur_x">
-<a href="media/SAGE_catalog_portal.png" target="_blank"><img src="media/SAGE_catalog_portal.png" alt=""></a>
+<a href="media/SAGE catalog portal.png" target="_blank"><img src="media/SAGE catalog portal.png" alt=""></a>
 <figcaption>SAGE catalog portal<figcaption>
 </figure>
 
-Vanuit technisch oogpunt is de catalogus geïmplementeerd als een modulaire webapplicatie bestaande uit een Python FastAPI-backend en een Angular-frontend, ondersteund door Apache Solr als zoekmachine en de PostgreSQL-database. Metadata records worden opgehaald uit de Federated Catalogue API en gesynchroniseerd in de zoekindex via een speciale transformerservice, eveneens geïmplementeerd in Python met behulp van FastAPI, wat zorgt voor consistente metadatastructuur en efficiënte indexering. Deze architectuur maakt schaalbare opname, snelle query's en flexibele filtering van metadata over meerdere catalogi mogelijk. De SAGE catalog portal is beschreven op <a href='https://github.com/SAGE-EU/catalogue-portal' target='_blank'>github</a> . 
+Vanuit technisch oogpunt is de catalogus geïmplementeerd als een modulaire webapplicatie bestaande uit een Python FastAPI-backend en een Angular-frontend, ondersteund door Apache Solr als zoekmachine en de PostgreSQL-database. Metadata records worden opgehaald uit de Federated Catalogue API en gesynchroniseerd in de zoekindex via een speciale transformerservice, eveneens geïmplementeerd in Python met behulp van FastAPI, wat zorgt voor consistente metadatastructuur en efficiënte indexering. Deze architectuur maakt schaalbare opname, snelle query's en flexibele filtering van metadata over meerdere catalogi mogelijk. De SAGE catalog portal is beschreven op <a href='https://github.com/SAGE-EU/catalogue-portal' target='_blank'>github</a>. 
+<br/> 
 
 </b>Publiceren van metadata in de SAGE catalog portal<b/>
 pm
