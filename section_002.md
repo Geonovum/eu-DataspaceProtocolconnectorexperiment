@@ -134,11 +134,14 @@ Elke module heeft fundamentele functies en kan niet worden weggelaten in de cont
 <br/>
 <b>Onboarding door aanbieder en consument</b>
 pm
+
 <br/>
 <b>Dataproducten aanbieden</b>
 pm
-### Bekijken en wijzigen van condities (‘policies’) {#143AA289}
-We laten zien hoe regels kunnen worden gewijzigd voor de dataset `BravoHTTPBin` van `Bravo`. Je kunt vrijelijk toestemmingen en verboden toevoegen.
+
+<br/>
+<b>Bekijken en wijzigen van policies’)</b>
+We laten zien hoe regels kunnen worden gewijzigd voor de dataset `BravoHTTPBin` van `Bravo`. Je kunt vrijelijk toestemmingen en restricties toevoegen.
 
 <img src='media/section_003/change-rules-dataset.png' alt='Verander regels voor dataset' style='width: 100%;'></img>
 
