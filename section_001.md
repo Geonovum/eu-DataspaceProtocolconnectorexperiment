@@ -11,7 +11,6 @@ In een data-economie is vertrouwen essentieel voor het bevorderen van innovatie 
 Gegevenssoevereiniteit bevordert de interoperabiliteit tussen deelnemers aan dataruimten. Door zich te houden aan gemeenschappelijke technische standaarden kunnen organisaties naadloos gegevens delen en effectief samenwerken op verschillende platforms en domeinen. Het groeiende aantal industriële cloudplatforms en de heterogeniteit van het platformlandschap onderstrepen de noodzaak van normen voor gegevenssoevereiniteit om veilige en betrouwbare gegevensuitwisseling tussen verschillende platforms te garanderen.  
 <br/>
 Binnen het gedachtegoed van data spaces staat het veilig en vertrouwd uitwisselen van data aldus centraal. Het Dataspace Protocol, dat is ontwikkeld door IDSA is hierin gepositioneerd als een mogelijke voorziene standaard in data spaces om vertrouwd data delen mogelijk te maken. Om voorbereid te zijn op de toekomst is het doel van deze verkenning een beter beeld te krijgen van de wijze waarop het Dataspace Protocol functioneert en kan worden geïmplementeerd in een eenvoudige casus, te weten in een ‘minimum viable dataspace’.  Belangrijke context voor het opzetten van dit experiment zijn de EU common data spaces. In de volgende paragraaf meer daarover.  
-<br/>
 
 ## Context experimenten
 
@@ -49,7 +48,6 @@ Voor de realisatie van de EU sectorale data spaces heeft de DSSC een blauwdruk o
 <aside class='note' title="Handreikingen EU Informatie m.b.t. digitale en datastrategie en Verkenning data spaces">
     Zie ook ‘Handreiking EU Informatie m.b.t. digitale en data-strategie' [[GNVM-HEUI]] voor het wettelijke kader en ‘Verkenning dataspaces’ [[GNVM-VDS]] voor richtinggevende data space initiatieven in Nederland en Europa en de positie van de Nationale Geo-informatie Infrastructuur (NGII) in deze initiatieven.  
 </aside>
-<br/>
 
 ### SAGE - The data space for a sustainable green Europe
 
