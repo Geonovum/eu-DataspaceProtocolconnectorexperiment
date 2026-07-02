@@ -188,20 +188,6 @@ Ingress Controller with publicly available routes, e.g. Ingress NGINX Controller
 Door een beperking in onze clusteromgeving worden de door TSG aangemaakte ingress-regels niet automatisch opgepikt door onze gateway-operator (Traefik). Oplossing: Handmatig gateway-regels toevoegen aan de gateway operator om alles bereikbaar te maken.
 </aside>
 
-## Uitvoering experiment - Eigendommenkaart delen via minimum viable dataspace
-
-Na de uitrol van de TSG data connector en een werkende minimale functionerende data space zijn is een experiment uitgevoerd met het delen van een geografische dataset via minimum viable dataspace principe waarvan de geodataset beschikbaar is gemaakt via een OGC API Features.
-In dit experiment hebben we een minimal viable data space opgezet waarin systemen van verschillende organisaties samenwerken om een geodataset, de egendommenkaart van het Kadaster -  veilig en gecontroleerd uit te wisselen. De authority van de dataspace is uitgerold op het [Digilab-platform](https://digilab.overheid.nl/), samen met een `Kadaster` deelnemer. Vervolgens hebben we op het Sogelink Research platform een deelnemer uitgerold die onderdeel is van de dataspace op digilab. Het doel was om Kadaster-data, beschikbaar gesteld via een interne API service op Digilab, te delen met een deelnemer op het Sogelink platform.
-<br/>
-
-Het doel van dit experiment is tweeledig:
-<ol>
-  <li>Het valideren van de interoperabiliteit tussen dataspace-deelnemers op verschillende platforms;</li>
-  <li>Het uitwisselen van data tussen dataspace-deelnemers waarbij de data afkomstig is van een afgeschermde API.</li>
-</ol>
-<br/>
-Dit experiment simuleert een meer realistischere situatie waarin twee organisaties samenwerken in een minimum viable dataspace setting, en waarbij een centrale authority toezicht houdt op toegangsbeheer en beveiliging. Het experiment richtte zich op de interoperabiliteit tussen twee verschillende systemen en heeft data gedeeld afkomstig van een afgeschermde API zoals vaak het geval zal zijn in de praktijk.
-
 ## Opstelling
 
 De digilab-omgeving is opgezet dmv de TNO Security Gateway (TSG) met een authority en een Kadaster-deelnemer. Op het Sogelink platform is enkel een deelnemer uitgerold welke onderdeel is van de dataspace door zich te registreren met de dataspace authority op Digilab. De Kadaster-deelnemer stelt een dataset beschikbaar met perceel gegevens welke bevraagd kan worden via de dataspace.
@@ -247,6 +233,20 @@ Op het Sogelink platform is enkel één deelnemer uitgerold die onderdeel is van
 **Data viewer**
 
 Als test hebben we een eenvoudige data viewer uitgerold op het Sogelink platform welke data van de Kadaster deelnemer kan bevragen via de Sogelink deelnemer.
+
+## Uitvoering
+
+Na de uitrol van de TSG data connector en een werkende minimale functionerende data space zijn is een experiment uitgevoerd met het delen van een geografische dataset via minimum viable dataspace principe waarvan de geodataset beschikbaar is gemaakt via een OGC API Features.
+In dit experiment hebben we een minimal viable data space opgezet waarin systemen van verschillende organisaties samenwerken om een geodataset, de egendommenkaart van het Kadaster -  veilig en gecontroleerd uit te wisselen. De authority van de dataspace is uitgerold op het [Digilab-platform](https://digilab.overheid.nl/), samen met een `Kadaster` deelnemer. Vervolgens hebben we op het Sogelink Research platform een deelnemer uitgerold die onderdeel is van de dataspace op digilab. Het doel was om Kadaster-data, beschikbaar gesteld via een interne API service op Digilab, te delen met een deelnemer op het Sogelink platform.
+<br/>
+
+Het doel van dit experiment is tweeledig:
+<ol>
+  <li>Het valideren van de interoperabiliteit tussen dataspace-deelnemers op verschillende platforms;</li>
+  <li>Het uitwisselen van data tussen dataspace-deelnemers waarbij de data afkomstig is van een afgeschermde API.</li>
+</ol>
+<br/>
+Dit experiment simuleert een meer realistischere situatie waarin twee organisaties samenwerken in een minimum viable dataspace setting, en waarbij een centrale authority toezicht houdt op toegangsbeheer en beveiliging. Het experiment richtte zich op de interoperabiliteit tussen twee verschillende systemen en heeft data gedeeld afkomstig van een afgeschermde API zoals vaak het geval zal zijn in de praktijk.
 
 ## Resultaat
 
