@@ -291,23 +291,21 @@ De eerste stap in een typisch proces voor het publiceren van datasets is het op 
 <b>Publicatie van metadata in de catalog service</b>
 <br/>
 Meestal bieden data connectoren de technische manieren om dataset beschrijvingen in de catalog service te maken en te onderhouden, bijvoorbeeld door middel van geschikte GUI's. Na het bereiken van een syntactisch en semantisch correcte beschrijving, worden ze vervolgens geïmplementeerd bij de data connector van de dataprovider en zijn ze toegankelijk voor andere  data connectoren via de eindpunten. Afhankelijk van de vragende data connector kan de geretourneerde beschrijving van de dataset verschillen. De data connector kan dus verschillende dataset beschrijvingen aanbieden onder verschillende voorwaarden voor verschillende consumenten in een data space. De beschrijvingen van datasets worden in de data connector instantie opgenomen of gepubliceerd. 
-Het kan zijn dat dataproducenten en -providers de gemaakte metadata willen publiceren op een centrale catalog component in een dataspace in plaats van deze alleen aan te bieden in zijn eigen data connector instantie.
+Het kan zijn dat dataproducenten en -providers de gemaakte metadata willen publiceren op een centrale catalog component in een dataspace in plaats van deze alleen aan te bieden in zijn eigen data connector instantie. <br/>
 <br/>
+<b>Catalog broker</b>
 <br/>
-**Catalog broker**
-<br/>
-De centrale catalog component wordt dan een ‘catalog broker’ (een intermediaire dienst). De data provider stuurt de metadata beschrijving van de dataset naar de centrale centrale catalog. De centrale catalog is een onderdeel van een dataspace, die de publicatie van metadata voor datasets (en ook data connectoren) in de dataspace mogelijk maakt. Dataconsumenten kunnen in de centrale catalog geschikte aanbiedingen van datasets vinden zonder het bestaan of de locatie van de aanbieder te kennen. De catalog slaat de geplaatste metadata beschrijvingen op en stelt deze ook beschikbaar voor zoekopdrachten van gebruikers en andere data connectors. Potentiële dataconsumenten kunnen de opgeslagen metadata beschrijvingen doorzoeken, filteren op relevante aanbiedingen, onderhandelen met de dataprovider en de dataset aanvragen bij de data connector. 
+De centrale catalog component wordt dan een ‘catalog broker’ (een intermediaire dienst). De data provider stuurt de metadata beschrijving van de dataset naar de centrale centrale catalog. De centrale catalog is een onderdeel van een dataspace, die de publicatie van metadata voor datasets (en ook data connectoren) in de dataspace mogelijk maakt. Dataconsumenten kunnen in de centrale catalog geschikte aanbiedingen van datasets vinden zonder het bestaan of de locatie van de aanbieder te kennen. De catalog slaat de geplaatste metadata beschrijvingen op en stelt deze ook beschikbaar voor zoekopdrachten van gebruikers en andere data connectors. Potentiële dataconsumenten kunnen de opgeslagen metadata beschrijvingen doorzoeken, filteren op relevante aanbiedingen, onderhandelen met de dataprovider en de dataset aanvragen bij de data connector. <br/>
 
 Het is echter niet verplicht voor een data provider om datasets te publiceren bij een catalog. Ook een dataconsument wordt niet gedwongen om zijn zoekproces te starten bij een catalog, als de consument ook andere opties heeft om zijn dataset partners te vinden en te lokaliseren. Toch hebben beide de mogelijkheid om te communiceren met een centrale catalogus. Daarvoor zijn drie functies van belang:  
 <ol>
   <li>Het registeren van metadata in de centrale catalog door de dataprovider;</li>
   <li>Het zoeken naar datasets door consument in de centrale catalog;</li>
   <li>Onderhouden en updaten van metadata en data connectors in de centrale catalog.</li>
-</ol>
+</ol> <br/>
 <br/>
-
 <b>>Het registeren van metadata bij de catalog broker</b>
-</br>
+<br/>
 De dataprovider kan metadata beschrijvingen naar een catalog broker sturen en publiceren (zie figuur 8). De metadata beschrijving van een dataset moet op zichzelf staan en voldoen aan de specificaties van het informatiemodel. De catalog controleert vervolgens de syntactische juistheid van de aangeleverde metadata en bewaart deze in zijn lokale database. Het controleert niet de semantische correctheid of de plausibiliteit van de verstrekte informatie. Een catalog zoekt niet actief naar metadata of zoekt het niet naar updates. De catalog vertrouwt op de metadata beschrijvingen, die is aangeleverd door de dataprovider. De dataprovider is verantwoordelijk voor de metadata in de catalog en de centrale catalog kan dus niet verantwoordelijk worden gesteld voor verouderde of verkeerde informatie. 
 
 <figure id="Figuur_x">
@@ -434,7 +432,7 @@ Zodra er een contractovereenkomst is bereikt, wordt deze geïnstantieerd en geï
 
 Als een deelnemer op enig moment tijdens de onderhandelingsprocedure niet akkoord gaat met de gedeelde inhoud, kan het contract worden afgewezen. In het geval van een afwijzing van een contract wordt de onderhandelingsprocedure afgebroken. De aangesloten systemen en gebruikers worden op de hoogte gebracht en eerder opgeslagen contractovereenkomsten worden ingetrokken. 
 <br/>
-
+</br>
 <b>Contractonderhandeling gestart door de producent</b>
 <br/>
 De contractonderhandeling kan echter ook door de producent worden gestart. In figuur 10 start niet de consument, maar de producent de contractonderhandeling. Daarbij wordt opgemerkt dat, aangezien de producent degene is die het contract aanbiedt, de producent ook dan degene is die de contractovereenkomst als laatste ondertekent.  
@@ -455,7 +453,7 @@ Het uitvoeren van de data transfer begint met het aanroepen van een Data Operati
 <figcaption>Globale procesbeschrijving data transfer [[IDS-RAM4]]<figcaption>
 </figure>
 <br>
-
+</br>
 <b>Communicatiepatroon</b>
 <br/>
 De communicatie tussen de data connectoren kan synchroon of asynchroon zijn. In het laatste geval hoeft de consument niet te wachten op het resultaat, maar wordt de consument door de provider op de hoogte wordt gebracht zodra het resultaat beschikbaar is. Bovendien kan er in plaats van een pull-request een push-request worden verstuurd. In het geval van een abonnement kan de consument vragen om updates met betrekking tot de gevraagde data. De bijgewerkte data kunnen worden verstrekt na bepaalde gebeurtenissen (bijv. nadat de data door de dataverstrekker zijn bijgewerkt) of binnen bepaalde tijdsintervallen (bijv. elke vijf minuten). Als er een dergelijk verzoek wordt gedaan, ontvangt de dataconsument herhaaldelijk bijgewerkte queryresultaten van de dataproducent. In het geval van een pull-request kan de dataconsument het laatste deel van het proces herhalen om data opnieuw op te vragen (met dezelfde of een andere query).
@@ -471,15 +469,11 @@ Het Dataspace Protocol is een technische specificatie, die de implementatie van 
   <li>Data transfer protocol en data transfer proces.</li>
   </ol>
 
-We gaan hier niet verder in op de technische specificatie daarvoor verwijzen we naar ([[ECLPS-DSP]]).
-
-</br>
+We gaan hier niet verder in op de technische specificatie daarvoor verwijzen we naar ([[ECLPS-DSP]]).</br>
 
 <b>Data connector software</b>
 
-Data connectors zijn softwaretools waarmee data(sets) vertrouwd kunnen worden gedeeld en geïntegreerd tussen verschillende systemen, applicaties en databronnen. In de context van data spaces spelen data connectoren een sleutelrol in de communicatie en gegevensuitwisseling tussen verschillende platforms, systemen en applicaties. Data connectoren zullen daarbij moeten voldoen aan de vooraf gedefinieerde normen en uitwisselingsbeleidslijnen van het Dataspace Protocol. In het data connectors overview report van IDSA [[IDS-DCR]] zijn inmiddels zo’n 40 verschillende implementaties van data connector software beschikbaar. implementaties van data connector software worden door IDSA gecertificeerd. Sinds 2022 hanteert IDSA het IDS-certificeringsschema dat gericht is op het certificeren van de interoperabiliteit, compatibiliteit en betrouwbaarheid van data connectoren. Met de voltooiing van de standaardisatie van het Dataspace Protocol zal het IDS-certificeringsschema evolueren om data connector software te beoordelen door  geautomatiseerde testen.
-
-</br>
+Data connectors zijn softwaretools waarmee data(sets) vertrouwd kunnen worden gedeeld en geïntegreerd tussen verschillende systemen, applicaties en databronnen. In de context van data spaces spelen data connectoren een sleutelrol in de communicatie en gegevensuitwisseling tussen verschillende platforms, systemen en applicaties. Data connectoren zullen daarbij moeten voldoen aan de vooraf gedefinieerde normen en uitwisselingsbeleidslijnen van het Dataspace Protocol. In het data connectors overview report van IDSA [[IDS-DCR]] zijn inmiddels zo’n 40 verschillende implementaties van data connector software beschikbaar. implementaties van data connector software worden door IDSA gecertificeerd. Sinds 2022 hanteert IDSA het IDS-certificeringsschema dat gericht is op het certificeren van de interoperabiliteit, compatibiliteit en betrouwbaarheid van data connectoren. Met de voltooiing van de standaardisatie van het Dataspace Protocol zal het IDS-certificeringsschema evolueren om data connector software te beoordelen door  geautomatiseerde testen.</br>
 
 <b>TNO Security Gateway data connector software</b>
 
