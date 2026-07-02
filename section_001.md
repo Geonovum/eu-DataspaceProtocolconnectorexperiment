@@ -12,11 +12,10 @@ Gegevenssoevereiniteit bevordert de interoperabiliteit tussen deelnemers aan dat
 <br/>
 Binnen het gedachtegoed van data spaces staat het veilig en vertrouwd uitwisselen van data aldus centraal. Het Dataspace Protocol, dat is ontwikkeld door IDSA is hierin gepositioneerd als een mogelijke voorziene standaard in data spaces om vertrouwd data delen mogelijk te maken. Om voorbereid te zijn op de toekomst is het doel van deze verkenning een beter beeld te krijgen van de wijze waarop het Dataspace Protocol functioneert en kan worden geïmplementeerd in een eenvoudige casus, te weten in een ‘minimum viable dataspace’.  Belangrijke context voor het opzetten van dit experiment zijn de EU common data spaces. In de volgende paragraaf meer daarover.  
 <br/>
-<aside class='note' title="Handreikingen EU Informatie m.b.t. digitale en datastrategie en Verkenning data spaces">
-    Zie ook ‘Handreiking EU Informatie m.b.t. digitale en data-strategie' [[GNVM-HEUI]] voor het wettelijke kader en ‘Verkenning dataspaces’ [[GNVM-VDS]] voor richtinggevende data space initiatieven in Nederland en Europa en de positie van de Nationale Geo-informatie Infrastructuur (NGII) in deze initiatieven.  
-</aside>
 
-## Context experiment: ‘EU common dataspaces’
+## Context experimenten
+
+### EU common data spaces
 
 Het concept data space komt voort uit de Europese Datastrategie. De Europese Data Strategie die begin 2020 is voorgesteld, streeft naar een eenheidsmarkt voor de beschikbaarheid en het gebruik van data. De strategie is daarbij gericht op het wereldwijd concurrentievermogen van Europa en op datasoevereiniteit. Technisch wordt naar een pan-Europese dataspace (dataruimte) gestreefd om te zorgen dat er meer data beschikbaar komt voor socio-economisch gebruik, terwijl bedrijven en individuen die data genereren er wel zeggenschap over blijven houden.  
 <br/>
@@ -45,12 +44,43 @@ De bouwstenen voor datasoevereiniteit en -vertrouwen bieden technische enablers 
   <li>Afdwingen van toegangs- en gebruiksbeleid: de mogelijkheid om beleid en regels binnen een bepaalde data space te specificeren door de autoriteit voor de data space en de individuele deelnemers.</li>
 </ol>
 <br/>
-Voor de realisatie van de EU sectorale data spaces heeft de DSSC een blauwdruk of ‘Blueprint’ uitgebracht [[DSSC-BP]]. In de DSSC Blueprint zijn overigens niet alleen de technische bouwstenen, maar ook de besturingsbouwstenen voor de EU sectorale data spaces (‘governance’ bouwstenen’) uitgewerkt. In de blauwdruk is het Dataspace Protocol voor souvereine data delen in EU sectorale data spaces de ‘Foundational Technical Standards’ benoemt en is het IDS Dataspace Protocol een implementatie van de ‘Foundational Technical Standards’  voor de EU sectorale data spaces. Daarbij wordt aangetekend, dat “this protocol only specifies the generic elements. The APIs/technical interfaces for the actual data exchange are data space-specific” [[DSSC-BP]]. Wat dat betekent is onderdeel van deze verkenning.  
+Voor de realisatie van de EU sectorale data spaces heeft de DSSC een blauwdruk of ‘Blueprint’ uitgebracht [[DSSC-BP]]. In de DSSC Blueprint zijn overigens niet alleen de technische bouwstenen, maar ook de besturingsbouwstenen voor de EU sectorale data spaces (‘governance’ bouwstenen’) uitgewerkt. In de blauwdruk is het Dataspace Protocol voor souvereine data delen in EU sectorale data spaces de ‘Foundational Technical Standards’ benoemt en is het IDS Dataspace Protocol een implementatie van de ‘Foundational Technical Standards’  voor de EU sectorale data spaces. Daarbij wordt aangetekend, dat “this protocol only specifies the generic elements. The APIs/technical interfaces for the actual data exchange are data space-specific” [[DSSC-BP]]. Wat dat betekent is onderdeel van deze verkenning.
+
+<aside class='note' title="Handreikingen EU Informatie m.b.t. digitale en datastrategie en Verkenning data spaces">
+    Zie ook ‘Handreiking EU Informatie m.b.t. digitale en data-strategie' [[GNVM-HEUI]] voor het wettelijke kader en ‘Verkenning dataspaces’ [[GNVM-VDS]] voor richtinggevende data space initiatieven in Nederland en Europa en de positie van de Nationale Geo-informatie Infrastructuur (NGII) in deze initiatieven.  
+</aside>
 <br/>
 
-<aside class='note' title="Anticiperen op de Green Deal Data Space">
-    Met dit experiment wordt tevens geanticipeerd op deelname aan het Europese implementatieproject <a href='https://www.greendealdata.eu/' target='_blank'>SAGE</a>, waarin in de periode 2025-2028 gewerkt wordt aan de implementatie en realisatie van de Green Deal Data Space. De use casus “Circulaire grondstromen data space” is door enkele Nederlandse partijen (Sogelink en Geonovum) ingebracht in de realisatie van de GDDS. Vandaar dat in dit experiment enkele data deel use cases zijn opgenomen, die onderdeel uitmaken van Circulaire grondstromen. 
-</aside>
+### SAGE - The data space for a sustainable green Europe
+
+Met dit experiment wordt tevens geanticipeerd op deelname aan het Europese implementatieproject <a href='https://www.greendealdata.eu/' target='_blank'>SAGE</a>, waarin in de periode 2025-2028 gewerkt wordt aan de implementatie en realisatie van 'The data space for a sustainable green Europe'. SAGE is gericht op het verbeteren van de verdere toegankelijkheid, integratie en het gebruik van groene en milieudata in de hele EU. Het moet bedrijven, overheden, onderzoekers en burgers in staat stellen om datagestuurde beslissingen te nemen die aansluiten bij de Europese duurzaamheidsdoelen. Het realiseren van de The data space for a sustainable green Europe', ook wel aangeduid met Green Deal dataspace, wordt gefinancierd onder het Digital Europe Programme met een totaal budget van ongeveer €16 miljoen. Het SAGE consortium heeft meer dan 40 partners, waaronder diverse Nederlandse partijen, zoals SURF, Universiteit Utrecht, CBS, iShare, Sogelink en Geonovum. Een belangrijke rol in SAGE is weggelegd voor 10 use cases, die data spaces creëren voor bossentransformatie, bestuivingsmonitoring, circulaire grondstromen, bouwmilieu CO2 hub & building twins, circulaire textiel, netto-nul-defectproductie, klimaatinvesteringsplannen, milieugevaren voor gezondheid, beoordelingsinstrumentarium natuur en ecosysteemdiensten, luchtkwaliteit en gezondheid. 
+
+<figure id="Figuur_x">
+<a href="media/SAGE_Infographic.png" target="_blank"><img src="media/SAGE_Infographic.png" alt=""></a>
+<figcaption>SAGE <figcaption>
+</figure>
+
+De use casus “Circulaire grondstromen data space” is door enkele Nederlandse partijen (Sogelink en Geonovum) ingebracht in de realisatie van 'The data space for a sustainable green Europe'. Vandaar dat in dit experiment enkele data deel use cases zijn opgenomen, die onderdeel uitmaken van Circulaire grondstromen. Deze data space is van cruciaal belang voor een betrouwbare uitwisseling van grondstromendata in Nederland en Europa. 
+
+### SAGE - Circulaire grondstromen data space
+Grond is een cruciale, waardevolle hulpbron die niet mag worden verspild of verontreinigd. Infrastructuur, dijkversterking, woningbouw, landbouwgrondverbetering en natuurbeheer hebben grond nodig, zoals zand, grind en klei. De hoeveelheden beschikbare primaire grond blijven echter afnemen. Ontgravingswerken waarbij grond vrijkomt, bieden kansen om deze knelpunten aan te pakken. Dergelijke secundaire grond wordt momenteel echter slechts in beperkte mate gerecycled. Naar de toekomst toe is het onvermijdelijk dat grondstromen meer circulair worden. Bovendien moeten de bodemecosystemen in de EU tegen 2050 veerkrachtig en in gezonde toestand zijn. Bescherming, duurzaam gebruik en herstel van de bodem moeten de norm worden. Bodemrecycling en gezonde bodems zijn van cruciaal belang om klimaatneutraliteit te bereiken, veerkrachtig te worden tegen klimaatverandering, een schone en circulaire economie te ontwikkelen, het biodiversiteitsverlies om te buigen, de menselijke gezondheid te beschermen, woestijnvorming een halt toe te roepen en bodemdegradatie om te buigen. 
+
+Om de transitie naar circulaire grondstromen in Nederland en de EU te ondersteunen is uit het    Praktijkvoorbeeld Circulaire Grondstromen van de Basisregistratie Ondergrond (BRO) een twee onderdelen voortgekomen:
+<ol>
+  <li>Een digitale tweeling (“digital twin”) die op basis van openbare ondergrondgegevens (oa. bodemkwaliteit, milieukwaliteit) in kaart kan brengen hoeveel grond beschikbaar komt, waar die kwaliteit voldoende is, en welke logistieke routes mogelijk zijn;</li>
+  <li>Een marktplaats voor grondstromen: een platform waar vraag en aanbod van grond (bijvoorbeeld vrijkomende grond bij bouw- of baggerprojecten) makkelijker verbonden kunnen worden—bij voorkeur dichtbij, zodat transport en milieu-impact beperkt blijven. </li>
+</ol>
+<br/>
+
+Het SAGE project heeft als doel de verdere ontwikkeling en implementatie en gebruik van de digitale tweeling en marktplaats te stimuleren. Aandacht gaat daarbij nadrukkelijk uit naar:
+<ol>
+  <li>Gestandaardiseerde data- en rekenmodelkoppelingen: met name gebruik van de BRO om betrouwbare, actuele informatie over ondergrond en milieukwaliteit te gebruiken. De referentie architectuur voor digitale tweelingen en GDDS zijn hierbij leidraad;</li>
+  <li>Stimuleren van transacties op de marktplaats en compliance met regels & wetgeving; de marktplaats moet voldoen aan wet- en regelgeving omtrent bodembescherming (omgevingswet), grondverzet, kwaliteitseisen, en logistiek;</li>
+  <li>De samenwerking intensiveren met overheden (provincies, ministeries), marktpartijen, softwareleveranciers en kennisinstituten en zowel Nederland als de EU.</li>
+</ol>
+<br/>
+
+Om ervaring op te doen met vertrouwd data delen bij circulaire grondstromen, voeren we diverse experimenten uit ter ondersteuning van de implementatie in Nederland en Europa. Voor de vertrouwde data uitwisseling maken we gebruik van het Dataspace Protocol en een data space connector (de TNO Security Gateway). Het zijn praktische leer ervaringen, waarvan de gemaakte keuzes en opgedane ervaringen in dit levende document zijn vastgelegd. 
 
 ## Doel
 
@@ -90,7 +120,7 @@ Een MVDS bestaat uit:
 </ol>
 <br/>
 De MVDS biedt een startpunt voor het experiment om een functionele data space te creëren, die naar behoefte kan worden aangepast en uitgebreid om aan specifieke vereisten te voldoen.
-<br/>
+
 <figure id="Figuur_x">
 <a href="media/image4.png" target="_blank"><img src="media/image4.png" alt=""></a>
 <figcaption>Minimum Viable Data Space<figcaption>
