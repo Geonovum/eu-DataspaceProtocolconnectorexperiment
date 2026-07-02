@@ -9,7 +9,6 @@ De IDSA heeft tot doel de data-gedreven economie van de toekomst te ontsluiten d
 Om ervoor te zorgen dat de toekomstige data-economie soepel functioneert en zijn waardepropositie waarmaakt, moeten alle spelers zich houden aan een gemeenschappelijk governancekader dat de functionele, technische, operationele en juridische overeenkomsten specificeert die hun rollen en interacties binnen en tussen de verschillende delen van het ecosysteem structureren. Dit boek met regels en richtlijnen schetst dat kader [[IDS-PPRB]]. Door deze regels en richtlijnen te volgen, kunnen alle spelers samenwerken om het gedeelde doel te bereiken om de volledige waarde van de wereldwijde data-economie te ontsluiten.  
 <br/>
 IDSA is verantwoordelijk voor het bijhouden van het regelboek en voor het ondersteunen van de toepassing ervan. De IDSA organisatie helpt bij het coördineren van belangrijke processen en als algemeen bestuur een basis voor de realisatie van interne structuren en interfaces met andere partijen. Daarnaast bestaat het IDSA Open Source project, dat de software componenten ontwikkeld voor het implementeren en testen van de essentiële IDSA componenten. De implementatie van het Dataspace Protocol heeft daarmee in de afgelopen jaren een behoorlijke vlucht genomen. De belangrijke actoren en bouwstenen van een IDS data space zijn in onderstaande figuur 3 weergegeven.
-<br/>
 
 <figure id="Figuur_x">
 <a href="media/IDSA data space bouwstenen (zwart).png" target="_blank"><img src="media/IDSA data space bouwstenen (zwart).png" alt=""></a>
@@ -42,16 +41,13 @@ In het figuur 3 van IDSA is de data aanbieder en data consument gedefinieerd als
 </ol>
 
 Alle typen deelnemers in een data space vervullen daarmee een bepaalde rol (zie figuur 4).
-<br/>
 
 <figure id="Figuur_x">
 <a href="media/Rollen in de dataspace (figuur TNO).png" target="_blank"><img src="media/Rollen in de dataspace (figuur TNO).png" alt=""></a>
-<figcaption>Typen deelnemers (en rollen) in een data space (vrij naar TNO)<figcaption>
+<figcaption>Typen deelnemers en rollen in een data space (vrij naar TNO)<figcaption>
 </figure>
 
-<br/>
-
-In dit Dataspace Protocol experiment gaan we kennismaken met de wijze waarop een data aanbieders en data gebruikers data kunnen uitwisselen. Dat doen we in een minimale data space setting. De data space beheerder speelt ook een rol als beheerder van het deelnemersregister. Data space dienstverleners worden vooralsnog buiten beschouwing gelaten.  
+In dit data space connector experiment gaan we kennismaken met de wijze waarop een data aanbieders en data gebruikers data kunnen uitwisselen. Dat doen we in een minimale data space setting. De data space beheerder speelt ook een rol als beheerder van het deelnemersregister. Data space dienstverleners worden vooralsnog buiten beschouwing gelaten.
 <br/>
 <b>De data connector</b>
 <br/>
@@ -64,7 +60,6 @@ De data connector is de centrale technische component voor veilige en vertrouwde
   <li>De data connector zorgt er dat de datatransfer kan plaatsvinden tussen data aanbieder en data consument.</li>
 </ol>
 <br/>
-
 <b>Control plane en data plane</b>
 <br/>
 De data connector werkt vervolgens met gestandaardiseerde protocollen en afspraken. Een relevant concept voor het gebruik van de data connector is daarbij het onderscheid tussen control plane en data plane (zie figuur 5). Het onderscheid wordt gemaakt om aan te geven dat afspraken en standaarden voor een data space betrekking hebben op de control plane.  
@@ -73,11 +68,11 @@ De control plane (controlelaag) is verantwoordelijk voor beheer en beslissingen 
 
 <figure id="Figuur_x">
 <a href="media/De rol van de IDS data connector in een Dataspace IDSA.png" target="_blank"><img src="media/De rol van de IDS data connector in een Dataspace IDSA.png" alt=""></a>
-<figcaption>De rol van de IDS data connector in een dataspace (vrij naar IDSA)<figcaption>
+<figcaption>De rol van de IDS data connector in een data space (vrij naar IDSA)<figcaption>
 </figure>
 
 <br/>
-De IDS data connector in dit experiment werkt vervolgens met gestandaardiseerde protocollen en afspraken. Dat wordt het ‘Dataspace Protocol’ (kortweg DSP) genoemd. In de volgende paragraaf wordt de werking van het Dataspace Protocol verder beschouwd.
+De data soace connector in dit experiment werkt vervolgens met gestandaardiseerde protocollen en afspraken. Dat wordt het ‘Dataspace Protocol’ (kortweg DSP) genoemd. In de volgende paragraaf wordt de werking van het Dataspace Protocol verder beschouwd.
 <br/>
 
 ## Het Dataspace Protocol
@@ -96,7 +91,6 @@ Het Dataspace Protocol is een reeks van afspraken, standaarden en technologieën
 <br/>
 “a set of specifications designed to facilitate interoperable data sharing between entities governed by usage control and based on Web technologies. These specifications define the schemas and protocols required for entities to publish data, negotiate Agreements, and access data as part of a federation of technical systems termed a Dataspace.” [[IDS-DSP]].
 <br/>
-
 <b>Voordelen van het Dataspace Protocol</b>
 <br/>
 </ul>
@@ -132,33 +126,36 @@ Eind 2023 heeft IDSA de samenwerking gezocht met de Eclipse Foundation om het Da
 </aside>
 
 <br/>
-
 In dit experiment staat de werking en het gebruik van het Dataspace Protocol en de data connectors centraal. Voor het delen van data met een data connector worden aldus drie stadia doorlopen, waarvoor elk verschillende protocollen zijn overeengekomen. Alvorens de werking van het data space protocol connectors in meer detail toe te lichten gaan we eerst in op het informatiemodel achter het data space protocol toe. 
 <br/>
 
 ## Functies en processen in een minimum viable data space {#01C8311E}
 Elke module heeft fundamentele functies en kan niet worden weggelaten in de context van een minimale functionele data space. In deze sectie beschrijven we de kernstappen, die nodig zijn voor een gegevensoverdracht tussen twee connectors die afzonderlijk optreden als consument en aanbieder.
-
-### Onboarding door aanbieder en consument {#4D30B938}
+<br/>
+<b>Onboarding door aanbieder en consument</b>
 pm
-### Dataproducten aanbieden {#32BDC7C7}
+<br/>
+<b>Dataproducten aanbieden</b>
 pm
 ### Bekijken en wijzigen van condities (‘policies’) {#143AA289}
 We laten zien hoe regels kunnen worden gewijzigd voor de dataset `BravoHTTPBin` van `Bravo`. Je kunt vrijelijk toestemmingen en verboden toevoegen.
 
 <img src='media/section_003/change-rules-dataset.png' alt='Verander regels voor dataset' style='width: 100%;'></img>
 
-### Zoeken van catalogi van andere aanbieders ('participants') {#59F4CA7D}
+<br/>
+<b>Zoeken van catalogi van andere aanbieders ('participants')</b>
 pm
 
-### Zoek dataproducten in de catalogus {#79E15E32}
+<br/>
+<b>Zoek dataproducten in de catalogus</b>
 In de `Registry` binnen de control plane van een connector kunnen we de lijst vinden van gegevensbronnen die worden aangeboden door de huidige connector en de externe connectors waarvan onze connector op de hoogte is.
 
 <img src='media/section_003/browsing-catalog.png' alt='Catalogus doorzoeken vanaf consument' style='width: 100%;'></img>
 
 In het voorbeeld zien we de dataset `Bravo HTTPBin` dat toebehoort aan de consument `Bravo` evenals `Kadaster Percelen` en `Alfa HTTPBin` die toebehoren aan `Alfa`.
 
-### Contractonderhandeling aanbieder en consument {#288808F5}
+<br/>
+<b>Contractonderhandeling aanbieder en consument</b>
 De onderhandeling over een contract met betrekking tot een specifiek dataproduct omvat meerdere stappen tussen de consument en aanbieder. Eerst stuurt de consument `Bravo` een onderhandelingsverzoek naar de aanbieder `Alfa` zoals hieronder weergegeven.
 
 <img src='media/section_003/contract-negotiation.png' alt='Contractonderhandeling versturen' style='width: 100%;'></img>
@@ -171,7 +168,8 @@ Bij acceptatie, en na ondertekening en tegenondertekening op beide control plane
 
 <img src='media/section_003/request-transfer.png' alt='Overdracht aanvragen' style='width: 100%;'></img>
 
-### Gegevensoverdracht tussen aanbieder en consument {#7BC4931F}
+<br/>
+<b>Gegevensoverdracht tussen aanbieder en consument</b>
 Zodra de consument de overdracht aanvraagt bij de aanbieder, wordt de overdracht als gestart beschouwd en blijft "open" totdat deze door een van de betrokken partijen als `Beëindigd` of `Voltooid` wordt gemarkeerd.
 
 <img src='media/section_003/initiated-transfer.png' alt='Gestarte gegevensoverdracht' style='width: 100%;'></img>
@@ -470,11 +468,11 @@ Het Dataspace Protocol is een technische specificatie, die de implementatie van 
   </ol>
 
 We gaan hier niet verder in op de technische specificatie daarvoor verwijzen we naar ([[ECLPS-DSP]]).</br>
-
+</br>
 <b>Data connector software</b>
 
 Data connectors zijn softwaretools waarmee data(sets) vertrouwd kunnen worden gedeeld en geïntegreerd tussen verschillende systemen, applicaties en databronnen. In de context van data spaces spelen data connectoren een sleutelrol in de communicatie en gegevensuitwisseling tussen verschillende platforms, systemen en applicaties. Data connectoren zullen daarbij moeten voldoen aan de vooraf gedefinieerde normen en uitwisselingsbeleidslijnen van het Dataspace Protocol. In het data connectors overview report van IDSA [[IDS-DCR]] zijn inmiddels zo’n 40 verschillende implementaties van data connector software beschikbaar. implementaties van data connector software worden door IDSA gecertificeerd. Sinds 2022 hanteert IDSA het IDS-certificeringsschema dat gericht is op het certificeren van de interoperabiliteit, compatibiliteit en betrouwbaarheid van data connectoren. Met de voltooiing van de standaardisatie van het Dataspace Protocol zal het IDS-certificeringsschema evolueren om data connector software te beoordelen door  geautomatiseerde testen.</br>
-
+</br>
 <b>TNO Security Gateway data connector software</b>
 
 In dit experiment hebben we gekozen te werken met de data space connector software van TNO, de TNO Security Gateway, kortweg TSG. De volgende overwegingen hebben daarbij een rol gespeeld:
