@@ -3,7 +3,7 @@ var documentConfig =
   title: "Data Space Protocol connector experiment",
   shortName: "DataspaceProtocolconnectorexperiment",
   pubDomain: "eu",
-  specStatus: "wv",
+  specStatus: "ld",
   specType: "hr",
   license: "cc-by-nd",
   latestVersion: [
