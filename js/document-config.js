@@ -6,9 +6,6 @@ var documentConfig =
   specStatus: "ld",
   specType: "hr",
   license: "cc-by-nd",
-  latestVersion: [
-    "https://docs.geostandaarden.nl/eu/DataspaceProtocolconnectorexperiment/"
-  ],
   publishDate: "2024-11-12",
   publishVersion: "0.2.0",
   thisVersion: [
@@ -18,6 +15,12 @@ var documentConfig =
   issueBase: "https://github.com/geonovum/eu-DataspaceProtocolconnectorexperiment/issues/",
   edDraftURI: "https://geonovum.github.io/eu-DataspaceProtocolconnectorexperiment/",
   canonicalURI: "https://docs.geostandaarden.nl/eu/DataspaceProtocolconnectorexperiment/",
+    "alternateFormats": [
+    {
+      "label": "PDF",
+      "uri": "filenaam.pdf"
+    }
+  ],
   authors: [
     {
       name: "Anne Blankert",
